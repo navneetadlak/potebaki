@@ -101,30 +101,31 @@ const Homepage = () => {
         </section>
 
         {/* Images Section */}
-        <section className="container mx-auto px-4 py-12 md:pb-0  flex justify-center">
-          <div className="flex md:space-x-6 overflow-x-auto no-scrollbar">
-            <img
-              src={img1}
-              alt="People working on financial documents"
-              className="rounded-lg shadow-md flex-none w-[25%] md:w-[25%]"
-            />
-            <img
-              src={img2}
-              alt="Team collaboration"
-              className="rounded-lg shadow-md flex-none w-[75%] md:w-auto"
-            />
-            <img
-              src={img3}
-              alt="Person on a call with a laptop"
-              className="rounded-lg shadow-md flex-none w-[75%] md:w-auto"
-            />
-            <img
-              src={img4}
-              alt="Team meeting"
-              className="rounded-lg shadow-md flex-none w-[75%] md:w-auto"
-            />
-          </div>
-        </section>
+        <section className="container mx-auto px-4 py-12 md:pb-0 flex justify-center">
+  <div className="flex md:space-x-6 overflow-x-auto no-scrollbar justify-center">
+    <img
+      src={img1}
+      alt="People working on financial documents"
+      className="shadow-md flex-none w-1/2 md:w-[20%] h-[150px] md:h-[300px]"
+    />
+    <img
+      src={img2}
+      alt="Team collaboration"
+      className="shadow-md flex-none w-[40%] md:w-[20%] h-[150px] md:h-[300px]"
+    />
+    <img
+      src={img3}
+      alt="Person on a call with a laptop"
+      className="shadow-md flex-none w-[40%] md:w-[20%] h-[150px] md:h-[300px]"
+    />
+    <img
+      src={img4}
+      alt="Team meeting"
+      className="shadow-md flex-none w-1/2 md:w-[20%] h-[150px] md:h-[300px]"
+    />
+  </div>
+</section>
+
 
         {/* Trust Section */}
         <section className="bg-[#F8F8F8] pb-12 pt-0 md:pt-12">
