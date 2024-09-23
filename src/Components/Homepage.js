@@ -37,7 +37,7 @@ const Homepage = () => {
           {/* Log In and Sign Up buttons for desktop */}
           <div className="hidden md:flex space-x-4">
             <a href="#" className="text-gray-700 hover:text-black py-2">Log In</a>
-            <a href="#" className="bg-[#625DFA] text-white px-4 py-2 rounded-full hover:bg-blue-600">
+            <a href="#" className="bg-[#488FCD] text-white px-4 py-2 rounded-full hover:bg-blue-500">
               Sign up Free
             </a>
           </div>
@@ -64,7 +64,7 @@ const Homepage = () => {
               <a href="#" className="text-gray-700 hover:text-black">Contact</a>
               <a href="#" className="text-gray-700 hover:text-black">Blogs</a>
               <a href="#" className="text-gray-700 hover:text-black">Log In</a>
-              <a href="#" className="bg-[#625DFA] text-white px-4 py-2 rounded-full hover:bg-blue-600">
+              <a href="#" className="bg-[#488FCD] text-white px-4 py-2 rounded-full hover:bg-blue-500">
                 Sign up Free
               </a>
             </nav>
@@ -78,7 +78,7 @@ const Homepage = () => {
         <section className="text-center py-20 mx-4 md:mx-0">
           <h1 className="text-2xl md:text-6xl font-semibold text-gray-800">
             Seamless Financial Solutions <br /> for the{" "}
-            <span className="text-[#625DFA]">Modern Era</span>
+            <span className="text-[#488FCD]">Modern Era</span>
           </h1>
           <p className="text-gray-600 mt-4">
             Simplify your financial journey with PayNex—your all-in-one platform
@@ -93,7 +93,7 @@ const Homepage = () => {
                 placeholder="Enter email address"
                 className="px-4 py-4 w-full rounded-full shadow-[10px_20px_50px_rgba(8,_112,_184,_0.7)] focus:outline-none pr-60"
               />
-              <button className="absolute right-2 top-2 bottom-2 bg-[#625DFA] text-white px-6 py-2 rounded-full hover:bg-blue-600">
+              <button className="absolute right-2 top-2 bottom-2 bg-[#488FCD] text-white px-6 py-2 rounded-full hover:bg-blue-500">
                 Get Started
               </button>
             </div>
