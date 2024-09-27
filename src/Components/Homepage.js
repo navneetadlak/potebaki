@@ -1,173 +1,20 @@
 import React, { useState } from "react";
-import logo from "../Assets/logo-design.png";
 import img1 from "../Assets/Homepage-iamges/img-1.jpg";
 import img2 from "../Assets/Homepage-iamges/img-2.jpg";
 import img3 from "../Assets/Homepage-iamges/img-3.jpg";
 import img4 from "../Assets/Homepage-iamges/growth-img.jpg";
 import search from "../Assets/search.png";
+import TrustSection from "./TrustSection";
+import BusinessStats from "./BusinessStats";
+import BusinessStats_sec from "./BusinessStats_sec";
+import Testimonials from "./Testimonials";
 
 const Homepage = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const handleMouseEnter = () => setDropdownOpen(true);
-  const handleMouseLeave = () => setDropdownOpen(false);
+  
 
   return (
+    <>
     <div className="md:bg-white bg-[#F8F8F8]">
-      {/* Header Section */}
-      <header className="bg-white md:drop-shadow-xl rounded-full mx-5 md:mx-20 mt-4">
-        <div className="container mx-auto px-4 py-1 flex justify-between items-center">
-          <div className="flex items-center">
-            <img
-              src={logo}
-              alt="Logo"
-              className="object-cover w-32 h-28 md:w-52 md:h-20"
-            />
-            {/* <span className="font-bold text-xl">POTEBAKI</span> */}
-          </div>
-
-          {/* Navbar */}
-          <nav className="hidden md:flex space-x-6 md:mr-10">
-            <div
-              className="relative"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <a href="#" className="text-gray-700 hover:text-black">
-                About
-              </a>
-              {dropdownOpen && (
-                <div className="absolute left-0 z-10 w-48 bg-white shadow-lg rounded mt-2">
-                  <div className="grid grid-cols-1 gap-5 p-4">
-                    <div>
-                      <a
-                        href="#"
-                        className="block text-gray-700 hover:text-black"
-                      >
-                        Proprietorship
-                      </a>
-                      <a
-                        href="#"
-                        className="block text-gray-700 hover:text-black"
-                      >
-                        Partnership
-                      </a>
-                      <a
-                        href="#"
-                        className="block text-gray-700 hover:text-black"
-                      >
-                        One Person Company
-                      </a>
-                      <a
-                        href="#"
-                        className="block text-gray-700 hover:text-black"
-                      >
-                        Limited Liability Partnership
-                      </a>
-                      <a
-                        href="#"
-                        className="block text-gray-700 hover:text-black"
-                      >
-                        Private Limited Company
-                      </a>
-                    </div>
-                    {/* <div>
-                <a href="#" className="block text-gray-700 hover:text-black">Link 5</a>
-                <a href="#" className="block text-gray-700 hover:text-black">Link 6</a>
-                <a href="#" className="block text-gray-700 hover:text-black">Link 7</a>
-                <a href="#" className="block text-gray-700 hover:text-black">Link 8</a>
-              </div>
-              <div>
-                <a href="#" className="block text-gray-700 hover:text-black">Link 9</a>
-                <a href="#" className="block text-gray-700 hover:text-black">Link 10</a>
-              </div> */}
-                  </div>
-                </div>
-              )}
-            </div>
-            <a href="#" className="text-gray-700 hover:text-black">
-              Startup
-            </a>
-
-            <a href="#" className="text-gray-700 hover:text-black">
-              Registrations
-            </a>
-            <a href="#" className="text-gray-700 hover:text-black">
-              Trademark
-            </a>
-            <a href="#" className="text-gray-700 hover:text-black">
-              Goods & Services Tax
-            </a>
-            <a href="#" className="text-gray-700 hover:text-black">
-              Income Tax
-            </a>
-            <a href="#" className="text-gray-700 hover:text-black">
-              Compliance
-            </a>
-            <a href="#" className="text-gray-700 hover:text-black">
-              Bookkeeping
-            </a>
-            <a href="#" className="text-gray-700 hover:text-black">
-              Consultation
-            </a>
-          </nav>
-
-          {/* Log In and Sign Up buttons for desktop */}
-          {/* <div className="hidden md:flex space-x-4">
-            <a href="#" className="text-gray-700 hover:text-black py-2">Log In</a>
-            <a href="#" className="bg-[#488FCD] text-white px-4 py-2 rounded-full hover:bg-blue-500">
-              Sign up Free
-            </a>
-          </div> */}
-
-          {/* Mobile Menu Icon */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 focus:outline-none"
-            >
-              <i className="fas fa-bars"></i>
-            </button>
-          </div>
-        </div>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden bg-white rounded-full">
-            <nav className="flex flex-col space-y-4 p-4">
-              <a href="#" className="text-gray-700 hover:text-black">
-                About
-              </a>
-              <a href="#" className="text-gray-700 hover:text-black">
-                Startup
-              </a>
-              <a href="#" className="text-gray-700 hover:text-black">
-                Registrations
-              </a>
-              <a href="#" className="text-gray-700 hover:text-black">
-                Trademark
-              </a>
-              <a href="#" className="text-gray-700 hover:text-black">
-                Goods & Services Tax
-              </a>
-              <a href="#" className="text-gray-700 hover:text-black">
-                Income Tax
-              </a>
-              <a href="#" className="text-gray-700 hover:text-black">
-                Compliance
-              </a>
-              <a href="#" className="text-gray-700 hover:text-black">
-                Bookkeeping
-              </a>
-              <a href="#" className="text-gray-700 hover:text-black">
-                Consultation
-              </a>
-            </nav>
-          </div>
-        )}
-      </header>
-
       {/* Main Section */}
       <main className="md:bg-white bg-[]">
         {/* Hero Section */}
@@ -224,43 +71,10 @@ const Homepage = () => {
           </div>
         </section>
 
-      {/* Trust Section */}
-<section className="bg-[#F8F8F8] pb-12 pt-0 md:pt-12">
-  <div className="container mx-auto px-4">
-    {/* Use flex to position heading on the left and statistics on the right */}
-    <div className="flex justify-evenly items-center">
-      {/* Left-aligned heading */}
-      <h2 className="text-5xl font-semibold text-gray-800 mb-0">
-        We earn trust by<br/> working efficiently
-      </h2>
-      {/* Right-aligned statistics */}
-      <div className="flex items-center space-x-8">
-        <div>
-          <span className="text-3xl font-bold text-gray-800">15+</span>
-          <p className="text-gray-600">Years of experience</p>
-        </div>
-        {/* Vertical line separator */}
-        <div className="h-12 border-l border-gray-400"></div>
-        <div>
-          <span className="text-3xl font-bold text-gray-800">84k</span>
-          <p className="text-gray-600">Customers worldwide</p>
-        </div>
-        {/* Vertical line separator */}
-        <div className="h-12 border-l border-gray-400"></div>
-        <div>
-          <span className="text-3xl font-bold text-gray-800">600+</span>
-          <p className="text-gray-600">Projects completed</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
+        <TrustSection />
 
         {/* Partners Section */}
-        <section className="bg-white py-20 w-auto">
+        <section className="bg-white py-20 md:w-auto">
           <div className="container mx-auto px-4 flex justify-center space-x-12">
             <img src="https://placehold.co/100x40" alt="coinbase logo" />
             <img src="https://placehold.co/100x40" alt="Dropbox logo" />
@@ -272,6 +86,10 @@ const Homepage = () => {
         </section>
       </main>
     </div>
+    <BusinessStats />
+    <BusinessStats_sec />
+    <Testimonials />
+    </>
   );
 };
 

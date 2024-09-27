@@ -1,17 +1,26 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BusinessStats from './Components/BusinessStats';
 import Footer from './Components/Footer';
 import Homepage from './Components/Homepage';
+import Navbar from './Components/Navbar';
 import Testimonials from './Components/Testimonials';
+import About from './Components/About';
 
 function App() {
   return (
-    <>
-    <Homepage />
-    <BusinessStats />
-    <Testimonials />
-    <Footer />
-    </>
+    <BrowserRouter>
+      <Navbar />
+
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/business-stats' element={<BusinessStats />} />
+        <Route path='/testimonials' element={<Testimonials />} />
+        <Route path='/footer' element={<Footer />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
