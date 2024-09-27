@@ -50,7 +50,7 @@ const BusinessStats = () => {
         <section className="flex flex-col md:flex-row justify-center items-center">
           <div className="bg-white p-6 md:p-12 rounded-lg shadow-md w-full md:w-1/2 mb-4 md:mb-0 md:mr-7">
             <div className="flex items-center mb-4">
-              <i className="fas fa-smile text-blue-600 text-2xl md:text-5xl mr-2"></i>
+              <i className="fas fa-smile text-[#488FCD] text-2xl md:text-5xl mr-2"></i>
               <h3 className="text-xl md:text-3xl font-semibold text-gray-800">
                 Satisfaction
               </h3>
@@ -64,7 +64,7 @@ const BusinessStats = () => {
           </div>
           <div className="bg-white p-6 md:p-12 rounded-lg shadow-md w-full md:w-1/2">
             <div className="flex items-center mb-4">
-              <i className="fas fa-comments text-blue-600 text-2xl md:text-5xl mr-2"></i>
+              <i className="fas fa-comments text-[#488FCD] text-2xl md:text-5xl mr-2"></i>
               <h3 className="text-xl md:text-3xl  font-semibold text-gray-800">
                 Feedbacks
               </h3>

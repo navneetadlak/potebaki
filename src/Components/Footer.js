@@ -17,8 +17,7 @@ const Footer = () => {
             Our specialists are here to assist you with inquiries
           </h1>
           <p className="text-lg mt-4">
-            We take time for you. We attach great importance to personal service
-            and take time for you and your concerns.
+          "Our commitment to personalized financial service means we invest the time needed to understand  and address your individual financial needs and aspirations." 
           </p>
           <button className="mt-6 px-6 py-3 bg-white text-black font-semibold rounded-full">
             Let's Get started
@@ -122,8 +121,7 @@ const Footer = () => {
               Subscribe to get an update
             </h3>
             <p className="text-gray-400 mb-4">
-              We will not spam, rent, or sell your personal information,
-              including your email address or name.
+            We prioritize your privacy and assure you that your personal information, including your name and email, will never be sold, rented, or disclosed. 
             </p>
             <form className="flex flex-col space-y-4">
               <input

@@ -3,6 +3,11 @@ import React from "react";
 const Testimonials = () => {
   return (
     <section className="bg-[#F8F8F8] py-20">
+      <img
+          src=""
+          alt="Person working on a laptop"
+          className="w-full h-96 object-cover"
+        />
       <div className="container mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-8">
