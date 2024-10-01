@@ -3,6 +3,7 @@ import TrustSection from "./TrustSection";
 import BusinessStats_sec from "./BusinessStats_sec";
 import Testimonials from "./Testimonials";
 import about from "../Assets/about.jpg"
+import TeamSection from "./TeamSection";
 
 const About = () => {
   return (
@@ -12,7 +13,6 @@ const About = () => {
             src={about}
             className="rounded-xl w-full h-96"
         />
-
         </div>
 
       <TrustSection />
@@ -50,6 +50,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+                <TeamSection />
       <Testimonials />
     </>
   );
