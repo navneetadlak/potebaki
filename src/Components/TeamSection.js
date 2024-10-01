@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../Assets/Homepage-iamges/img-1.jpg";
+import img1 from "../Assets/Homepage-iamges/img-1.jpeg";
 import { motion } from "framer-motion";
 
 const TeamSection = () => {

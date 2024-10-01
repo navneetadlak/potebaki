@@ -1,10 +1,11 @@
 import React from "react";
+import peoplebg from "../Assets/people-bg.jpeg"
 
 const Testimonials = () => {
   return (
     <section className="bg-[#F8F8F8] py-20">
       <img
-          src=""
+          src={peoplebg}
           alt="Person working on a laptop"
           className="w-full h-96 object-cover"
         />

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import img1 from "../Assets/Homepage-iamges/img-1.jpg";
-import img2 from "../Assets/Homepage-iamges/img-2.jpg";
-import img3 from "../Assets/Homepage-iamges/img-3.jpg";
-import img4 from "../Assets/Homepage-iamges/growth-img.jpg";
+import img1 from "../Assets/Homepage-iamges/img-1.jpeg";
+import img2 from "../Assets/Homepage-iamges/img-2.jpeg";
+import img3 from "../Assets/Homepage-iamges/img-3.jpeg";
+import img4 from "../Assets/Homepage-iamges/img-4.jpeg";
 import search from "../Assets/search.png";
 import TrustSection from "./TrustSection";
 import BusinessStats from "./BusinessStats";
@@ -51,22 +51,22 @@ const Homepage = () => {
             <img
               src={img1}
               alt="People working on financial documents"
-              className="shadow-md flex-none w-1/2 md:w-[20%] h-[150px] md:h-[300px]"
+              className="shadow-md flex-none w-1/2 md:w-[23%] h-[150px] md:h-[300px]"
             />
             <img
               src={img2}
               alt="Team collaboration"
-              className="shadow-md flex-none w-[40%] md:w-[20%] h-[150px] md:h-[300px]"
+              className="shadow-md flex-none w-[40%] md:w-[23%] h-[150px] md:h-[300px]"
             />
             <img
               src={img3}
               alt="Person on a call with a laptop"
-              className="shadow-md flex-none w-[40%] md:w-[20%] h-[150px] md:h-[300px]"
+              className="shadow-md flex-none w-[40%] md:w-[23%] h-[150px] md:h-[300px]"
             />
             <img
               src={img4}
               alt="Team meeting"
-              className="shadow-md flex-none w-1/2 md:w-[20%] h-[150px] md:h-[300px]"
+              className="shadow-md flex-none w-1/2 md:w-[23%] h-[150px] md:h-[300px]"
             />
           </div>
         </section>

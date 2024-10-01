@@ -1,4 +1,5 @@
 import React from "react";
+import people from "../Assets/people-working-1.jpeg"
 
 const BusinessStats = () => {
   return (
@@ -27,7 +28,7 @@ const BusinessStats = () => {
           </div>
         </div>
         <img
-          src="https://placehold.co/1200x600"
+          src={people}
           alt="People working together in an office setting"
           className="rounded-lg shadow-md w-full md:w-1/2"
         />

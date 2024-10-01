@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="md:bg-white bg-[#F8F8F8]">
       {/* Header Section */}
-      <header className="bg-white md:drop-shadow-xl rounded-full mx-5 md:mx-20 mt-4">
+      <header className="bg-white md:drop-shadow-xl rounded-full mx-5 md:mx-20 ">
         <div className="container mx-auto px-4 py-1 flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/">
