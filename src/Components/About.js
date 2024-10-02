@@ -16,7 +16,9 @@ const About = () => {
         </div>
 
       <TrustSection />
+
       <BusinessStats_sec />
+      
       <div className="flex flex-col items-center justify-center h-auto p-20 bg-[#F8F8F8]">
                     <h1 className="text-4xl font-bold text-gray-800 mb-8">Our Values</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-24 md:mt-8 max-w-4xl">

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const BusinessStats_sec = () => {
   return (
@@ -14,7 +15,9 @@ const BusinessStats_sec = () => {
             Manage, and Optimize.
           </p>
           <button className="bg-[#488FCD] text-white py-2 px-4 rounded-full md:mt-10">
-            Get the App Now
+            <Link to='/contactUs'>
+            Contact Us
+            </Link>
           </button>
         </section>
         <section className="flex flex-col md:flex-row justify-center items-center">

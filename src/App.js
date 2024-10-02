@@ -6,6 +6,7 @@ import Homepage from './Components/Homepage';
 import Navbar from './Components/Navbar';
 import Testimonials from './Components/Testimonials';
 import About from './Components/About';
+import ContactUs from './Components/ContactUs';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/business-stats' element={<BusinessStats />} />
         <Route path='/testimonials' element={<Testimonials />} />
         <Route path='/footer' element={<Footer />} />
+        <Route path='/contactUs' element={<ContactUs />} />
       </Routes>
       <Footer />
     </BrowserRouter>

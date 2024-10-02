@@ -1,7 +1,6 @@
-import { useState } from 'react';
+import { useState } from "react";
 import logo from "../Assets/logo-design.png";
 import { Link } from "react-router-dom";
-
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,12 +16,11 @@ const Navbar = () => {
         <div className="container mx-auto px-4 py-1 flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/">
-            
-            <img
-              src={logo}
-              alt="Logo"
-              className="object-cover w-32 h-28 md:w-52 md:h-20"
-            />
+              <img
+                src={logo}
+                alt="Logo"
+                className="object-cover w-32 h-28 md:w-52 md:h-20"
+              />
             </Link>
           </div>
 
@@ -44,7 +42,7 @@ const Navbar = () => {
               </a>
               {dropdownOpen && (
                 <div className="absolute left-0 z-10 w-48 bg-white shadow-lg rounded mt-2">
-                  <div className="grid grid-cols-1 gap-5 p-4">
+                  <div className="grid grid-cols-1 gap-12 p-4">
                     <div>
                       <a
                         href="#"
@@ -120,9 +118,9 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden bg-white rounded-full">
             <nav className="flex flex-col space-y-4 p-4">
-              <a href="#" className="text-gray-700 hover:text-black">
+              <Link to="/about" className="text-gray-700 hover:text-black">
                 About
-              </a>
+              </Link>
               <a href="#" className="text-gray-700 hover:text-black">
                 Startup
               </a>
