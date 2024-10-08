@@ -40,9 +40,9 @@ const Homepage = () => {
                 </button>
               </div>
             </div> */}
-            <div className="mt-8 flex justify-center items-center z-10 relative">
+            <div className="mt-8 flex justify-center items-center z-10 static">
   <div className="w-full max-w-md">
-    <div className="relative">
+    <div className="sticky">
       <input
         type="text"
         placeholder="Search"

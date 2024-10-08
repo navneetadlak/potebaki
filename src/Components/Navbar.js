@@ -605,7 +605,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="md:bg-white bg-[#F8F8F8]">
+    <div className="md:bg-white bg-[#F8F8F8] relative z-10">
       {/* Header Section */}
       <header className="bg-white md:drop-shadow-xl rounded-full mx-5 md:mx-20 ">
         <div className="container mx-auto px-4 py-1 flex justify-between items-center">
