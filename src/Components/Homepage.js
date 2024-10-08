@@ -27,20 +27,40 @@ const Homepage = () => {
               <br className="hidden md:block" /> seamless transactions, and
               intelligent financial management.
             </p>
-            <div className="mt-8 flex justify-center">
-              <div className="relative w-full max-w-md">
+            {/* <div className="mt-8 flex justify-center items-center z-10">
+              <div className="w-full max-w-md">
                 <input
                   type="text"
                   placeholder="Search"
                   className="px-4 py-4 w-full rounded-full shadow-[10px_20px_50px_rgba(8,_112,_184,_0.7)] focus:outline-none pr-60"
                 />
-                <img
-                  src={search}
-                  alt="Search Icon"
-                  className="absolute w-8 h-8 cursor-pointer right-4 top-3 p-1"
-                />
+                <button
+                  className="flex items-center justify-center w-8 h-8 cursor-pointer right-4 top-3 p-1">
+                     <img src={search} alt="Search Icon" className="w-6 h-6" />
+                </button>
               </div>
-            </div>
+            </div> */}
+            <div className="mt-8 flex justify-center items-center z-10 relative">
+  <div className="w-full max-w-md">
+    <div className="relative">
+      <input
+        type="text"
+        placeholder="Search"
+        className="px-4 py-4 w-full rounded-full shadow-[10px_20px_50px_rgba(8,_112,_184,_0.7)] focus:outline-none pr-12" // Adjust padding for space
+      />
+      <button
+        className="absolute right-3 top-1/2 transform -translate-y-1/2 flex items-center justify-center w-10 h-10 bg-transparent border-none cursor-pointer"
+        onClick={() => {
+          // Add your search functionality here
+        }}
+      >
+        <img src={search} alt="Search Icon" className="w-6 h-6" />
+      </button>
+    </div>
+    </div>
+    </div>
+
+
           </section>
 
           {/* Images Section */}

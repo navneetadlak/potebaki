@@ -4,10 +4,6 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  // const handleMouseEnter = () => setDropdownOpen(true);
-  // const handleMouseLeave = () => setDropdownOpen(false);
 
   const [dropdownOpen, setDropdownOpen] = useState(null); // Track the hovered link
 
@@ -17,8 +13,8 @@ const Navbar = () => {
   // Dropdown content for each nav link
   const dropdownContent = {
     startup: (
-      <div className="absolute left-0 z-10 w-48 bg-white shadow-lg rounded mt-2">
-        <div className="grid grid-cols-1 gap-4 p-4">
+      <div className="absolute left-0 z-20 w-60 bg-white shadow-lg rounded ">
+        <div className="col-lg-1 col-md-4 gap-6 px-4 p-4">
           <Link
             to="/proprietorship"
             className="block text-gray-700 hover:text-black"
@@ -83,7 +79,7 @@ const Navbar = () => {
       </div>
     ),
     registrations: (
-      <div className="absolute left-0 w-96 bg-white shadow-lg rounded mt-0">
+      <div className="absolute left-0 w-60 bg-white shadow-lg rounded z-50">
         <div className="col-lg-1 col-md-4 gap-6 px-4 p-4">
           <Link
             to="/proprietorship"
@@ -209,8 +205,8 @@ const Navbar = () => {
       </div>
     ),
     trademark: (
-      <div className="absolute left-0 z-10 w-48 bg-white shadow-lg rounded mt-2">
-        <div className="grid grid-cols-1 gap-4 p-4">
+      <div className="absolute left-0 z-10 w-60 bg-white shadow-lg rounded">
+        <div className="col-lg-1 col-md-4 gap-6 px-4 p-4">
           <Link
             to="/trademark-registration"
             className="block text-gray-700 hover:text-black"
@@ -311,8 +307,8 @@ const Navbar = () => {
       </div>
     ),
     gst: (
-      <div className="absolute left-0 z-10 w-48 bg-white shadow-lg rounded mt-2">
-        <div className="grid grid-cols-1 gap-4 p-4">
+      <div className="absolute left-0 z-10 w-60 bg-white shadow-lg rounded">
+        <div className="col-lg-1 col-md-4 gap-6 px-4 p-4">
           <Link
             to="/gst-amendment"
             className="block text-gray-700 hover:text-black"
@@ -385,9 +381,9 @@ const Navbar = () => {
         </div>
       </div>
     ),
-    incometax: (
-      <div className="absolute left-0 z-10 w-48 bg-white shadow-lg rounded mt-2">
-        <div className="grid grid-cols-2 gap-4 p-4">
+    income: (
+      <div className="absolute left-0 z-10 w-60 bg-white shadow-lg rounded">
+        <div className="col-lg-1 col-md-4 gap-6 px-4 p-4">
           <Link
             to="/income-tax-e-filing"
             className="block text-gray-700 hover:text-black"
@@ -469,9 +465,75 @@ const Navbar = () => {
         </div>
       </div>
     ),
+    mca: (
+      <div className="absolute left-0 z-10 w-60 bg-white shadow-lg rounded">
+        <div className="col-lg-1 col-md-4 gap-6 px-4 p-4">
+        <Link to="/company-compliance" className="block text-gray-700 hover:text-black">
+        Company Compliance
+      </Link>
+      <Link to="/llp-compliance" className="block text-gray-700 hover:text-black">
+        LLP Compliance
+      </Link>
+      <Link to="/opc-compliance" className="block text-gray-700 hover:text-black">
+        OPC Compliance
+      </Link>
+      <Link to="/name-change-company" className="block text-gray-700 hover:text-black">
+        Name Change - Company
+      </Link>
+      <Link to="/registered-office-change" className="block text-gray-700 hover:text-black">
+        Registered Office Change
+      </Link>
+      <Link to="/din-ekyc-filing" className="block text-gray-700 hover:text-black">
+        DIN eKYC Filing
+      </Link>
+      <Link to="/din-reactivation" className="block text-gray-700 hover:text-black">
+        DIN Reactivation
+      </Link>
+      <Link to="/director-change" className="block text-gray-700 hover:text-black">
+        Director Change
+      </Link>
+      <Link to="/remove-director" className="block text-gray-700 hover:text-black">
+        Remove Director
+      </Link>
+      <Link to="/adt-1-filing" className="block text-gray-700 hover:text-black">
+        ADT-1 Filing
+      </Link>
+      <Link to="/dpt-3-filing" className="block text-gray-700 hover:text-black">
+        DPT-3 Filing
+      </Link>
+      <Link to="/llp-form-11-filing" className="block text-gray-700 hover:text-black">
+        LLP Form 11 Filing
+      </Link>
+      <Link to="/dormant-status-filing" className="block text-gray-700 hover:text-black">
+        Dormant Status Filing
+      </Link>
+      <Link to="/moa-amendment" className="block text-gray-700 hover:text-black">
+        MOA Amendment
+      </Link>
+      <Link to="/aoa-amendment" className="block text-gray-700 hover:text-black">
+        AOA Amendment
+      </Link>
+      <Link to="/authorized-capital-increase" className="block text-gray-700 hover:text-black">
+        Authorized Capital Increase
+      </Link>
+      <Link to="/share-transfer" className="block text-gray-700 hover:text-black">
+        Share Transfer
+      </Link>
+      <Link to="/demat-of-shares" className="block text-gray-700 hover:text-black">
+        Demat of Shares
+      </Link>
+      <Link to="/winding-up-llp" className="block text-gray-700 hover:text-black">
+        Winding Up - LLP
+      </Link>
+      <Link to="/winding-up-company" className="block text-gray-700 hover:text-black">
+        Winding Up - Company
+      </Link>
+          </div>
+          </div>
+    ),
     compliance: (
-      <div className="absolute left-0 z-10 w-48 bg-white shadow-lg rounded mt-2">
-        <div className="grid grid-cols-1 gap-4 p-4">
+      <div className="absolute left-0 z-10 w-60 bg-white shadow-lg rounded">
+        <div className="col-lg-1 col-md-4 gap-6 px-4 p-4">
           <Link
             to="/fssai-renewal"
             className="block text-gray-700 hover:text-black"
@@ -535,14 +597,9 @@ const Navbar = () => {
         </div>
       </div>
     ),
-    bookkeeping: (
-      <div className="absolute left-0 z-10 w-48 bg-white shadow-lg rounded mt-2">
-        <div className="grid grid-cols-1 gap-4 p-4"></div>
-      </div>
-    ),
     consultation: (
-      <div className="absolute left-0 z-10 w-48 bg-white shadow-lg rounded mt-2">
-        <div className="grid grid-cols-1 gap-4 p-4"></div>
+      <div className="absolute left-0 z-10 w-60 bg-white shadow-lg rounded ">
+        <div className="col-lg-1 col-md-4 gap-6 px-4 p-4"></div>
       </div>
     ),
   };
@@ -621,13 +678,24 @@ const Navbar = () => {
 
             <div
               className="relative"
-              onMouseEnter={() => handleMouseEnter("incomeTax")}
+              onMouseEnter={() => handleMouseEnter("income")}
               onMouseLeave={handleMouseLeave}
             >
               <a href="#" className="text-gray-700 hover:text-black">
                 Income Tax
               </a>
-              {dropdownOpen === "incometax" && dropdownContent.incometax}
+              {dropdownOpen === "income" && dropdownContent.income}
+            </div>
+
+            <div
+              className="relative"
+              onMouseEnter={() => handleMouseEnter("mca")}
+              onMouseLeave={handleMouseLeave}
+            >
+              <a href="#" className="text-gray-700 hover:text-black">
+                MCA Services
+              </a>
+              {dropdownOpen === 'mca' && dropdownContent.mca}
             </div>
 
             <div
@@ -641,16 +709,7 @@ const Navbar = () => {
               {dropdownOpen === "compliance" && dropdownContent.compliance}
             </div>
 
-            <div
-              className="relative"
-              onMouseEnter={() => handleMouseEnter("bookkeeping")}
-              onMouseLeave={handleMouseLeave}
-            >
-              <a href="#" className="text-gray-700 hover:text-black">
-                Bookkeeping
-              </a>
-              {/* {dropdownOpen === 'bookkeeping' && dropdownItems} */}
-            </div>
+            
 
             <div
               className="relative"
@@ -660,7 +719,7 @@ const Navbar = () => {
               <a href="#" className="text-gray-700 hover:text-black">
                 Consultation
               </a>
-              {/* {dropdownOpen === 'consultation' && dropdownItems} */}
+              {/* {dropdownOpen === 'consultation' && dropdownContent.consultation} */}
             </div>
           </nav>
 
@@ -698,11 +757,12 @@ const Navbar = () => {
                 Income Tax
               </a>
               <a href="#" className="text-gray-700 hover:text-black">
-                Compliance
+              MCA Services
               </a>
               <a href="#" className="text-gray-700 hover:text-black">
-                Bookkeeping
+                Compliance
               </a>
+              
               <a href="#" className="text-gray-700 hover:text-black">
                 Consultation
               </a>
