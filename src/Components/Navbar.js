@@ -39,6 +39,8 @@ const Navbar = () => {
           >
             Private Limited Company
           </Link>
+          {/* </div> */}
+          {/* <div className="col-lg-1 col-md-4 gap-6 px-4 p-4"> */}
           <Link
             to="/section-8-company"
             className="block text-gray-700 hover:text-black"
@@ -82,121 +84,121 @@ const Navbar = () => {
       <div className="absolute left-0 w-60 bg-white shadow-lg rounded z-50">
         <div className="col-lg-1 col-md-4 gap-6 px-4 p-4">
           <Link
-            to="/proprietorship"
+            to="/startup-india"
             className=" text-gray-700 hover:text-black"
           >
             Startup India
           </Link>
           <Link
-            to="/partnership"
+            to="/trade-license"
             className="block text-gray-700 hover:text-black"
           >
             Trade License
           </Link>
-          <Link to="/opc" className="block text-gray-700 hover:text-black">
+          <Link to="/fssai-registration" className="block text-gray-700 hover:text-black">
             FSSAI Registration
           </Link>
-          <Link to="/llp" className="block text-gray-700 hover:text-black">
+          <Link to="/fssai-license" className="block text-gray-700 hover:text-black">
             FSSAI License
           </Link>
           <Link
-            to="/private-limited-company"
+            to="/icegate-registration"
             className="block text-gray-700 hover:text-black"
           >
             ICEGATE Registration
           </Link>
           <Link
-            to="/section-8-company"
+            to="/import-export-code"
             className="block text-gray-700 hover:text-black"
           >
             Import Export Code
           </Link>
           <Link
-            to="/trust-registration"
+            to="/iso-registration"
             className="block text-gray-700 hover:text-black"
           >
             ISO Registration
           </Link>
           <Link
-            to="/public-limited-company"
+            to="/pf-registration"
             className="block text-gray-700 hover:text-black"
           >
             PF Registration
           </Link>
           <Link
-            to="/producer-company"
+            to="/esi-registration"
             className="block text-gray-700 hover:text-black"
           >
             ESI Registration
           </Link>
           <Link
-            to="/mca-name-approval"
+            to="/professional-tax-registration"
             className="block text-gray-700 hover:text-black"
           >
             Professional Tax Registration
           </Link>
           <Link
-            to="/indian-subsidiary"
+            to="/12a-and-80g-registration"
             className="block text-gray-700 hover:text-black"
           >
             12A and 80G Registration
           </Link>
           <Link
-            to="/proprietorship"
+            to="/12a-registration"
             className="block text-gray-700 hover:text-black"
           >
             12A Registration
           </Link>
           <Link
-            to="/partnership"
+            to="/80g-registration"
             className="block text-gray-700 hover:text-black"
           >
             80G Registration
           </Link>
-          <Link to="/opc" className="block text-gray-700 hover:text-black">
+          <Link to="/barcode-registration" className="block text-gray-700 hover:text-black">
             Barcode Registration
           </Link>
-          <Link to="/llp" className="block text-gray-700 hover:text-black">
+          <Link to="/bis-registration" className="block text-gray-700 hover:text-black">
             BIS Registration
           </Link>
           <Link
-            to="/private-limited-company"
+            to="/certificate-of-incumbency"
             className="block text-gray-700 hover:text-black"
           >
             Certificate of Incumbency
           </Link>
           <Link
-            to="/section-8-company"
+            to="/darpan-registration"
             className="block text-gray-700 hover:text-black"
           >
             Darpan Registration
           </Link>
           <Link
-            to="/trust-registration"
+            to="/digital-signature"
             className="block text-gray-700 hover:text-black"
           >
             Digital Signature
           </Link>
           <Link
-            to="/public-limited-company"
+            to="/digital-signature-dgft-version"
             className="block text-gray-700 hover:text-black"
           >
             Digital Signature - DGFT Version
           </Link>
           <Link
-            to="/producer-company"
+            to="/drug-license"
             className="block text-gray-700 hover:text-black"
           >
             Drug License
           </Link>
           <Link
-            to="/mca-name-approval"
+            to="/udyam-registration"
             className="block text-gray-700 hover:text-black"
           >
             Udyam Registration
           </Link>
           <Link
-            to="/indian-subsidiary"
+            to="/fire-license"
             className="block text-gray-700 hover:text-black"
           >
             Fire License
