@@ -1,140 +1,46 @@
-import React, { useEffect } from "react";
-import CompareTable from "./CompareTable";
+import React, { useEffect, useRef, useState } from "react";
+import CompareTable from "../ReusableComponents/CompareTable";
+import PricingSection from "../ReusableComponents/PricingSection";
 
 const Proprietorship = () => {
-  useEffect(() => {
-    const cur_url = window.location.href;
-    let hyperLinkText = "";
-    document.querySelectorAll(".lnk th a").forEach((link) => {
-      const anchor_link = link.getAttribute("href");
-      if (cur_url === anchor_link) {
-        hyperLinkText = link.parentElement.textContent;
-        link.parentElement.innerHTML = "";
-      }
-    });
+  const sidebarRef = useRef(null);
+  const compareTableRef = useRef(null);
+  const [isSticky, setIsSticky] = useState(true);
+  const [sidebarHeight, setSidebarHeight] = useState(0);
 
-    document.querySelectorAll(".lnk th").forEach((th) => {
-      if (th.textContent === "") {
-        th.textContent = hyperLinkText;
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Stop the sticky behavior when CompareTable is in view
+        setIsSticky(!entry.isIntersecting);
+      },
+      {
+        root: null, // Viewport as the root
+        threshold: 0.5, // Trigger when 10% of CompareTable is visible
       }
-    });
+    );
+
+    if (compareTableRef.current) {
+      observer.observe(compareTableRef.current);
+    }
+
+    return () => {
+      if (compareTableRef.current) {
+        observer.unobserve(compareTableRef.current);
+      }
+    };
   }, []);
+
+  // Calculate the sidebar height to prevent layout shift
+  useEffect(() => {
+    if (sidebarRef.current) {
+      setSidebarHeight(sidebarRef.current.offsetHeight);
+    }
+  }, [isSticky]);
 
   return (
     <>
-      {/* Pricing Section */}
-      <div className="flex flex-col lg:flex-row justify-center py-10 px-4 lg:px-0 md:mx-52">
-        <div className="bg-white shadow-lg rounded-lg p-6 w-full lg:w-3/4 flex flex-col lg:flex-row mb-6 lg:mb-0">
-          <div className="w-full lg:w-1/2 pr-0 lg:pr-6 mb-6 lg:mb-0">
-            <img
-              src="https://placehold.co/400x300"
-              alt="Woman smiling in a shop"
-              className="rounded-lg mb-4"
-            />
-            <h2 className="text-xl font-bold mb-2">Documents Required</h2>
-            <ul className="list-disc list-inside mb-4">
-              <li>PAN Card</li>
-              <li>Aadhaar Card</li>
-            </ul>
-            <a href="#" className="text-blue-600">
-              Load more
-            </a>
-          </div>
-          <div className="w-full lg:w-1/2">
-            <h1 className="text-2xl font-bold mb-2">Proprietorship</h1>
-            <div className="flex items-center mb-4">
-              <span className="text-green-600 text-lg font-bold">4.7</span>
-              <span className="text-gray-600 ml-2">8533 customers</span>
-            </div>
-            <p className="mb-4">
-              Easily set up a sole proprietorship online with GST registration.
-            </p>
-            <div className="relative mb-4">
-              <select className="border rounded-lg w-full p-2">
-                <option>GST Registration</option>
-                <option>Trademark</option>
-                <option>GSTIN + Accountant</option>
-              </select>
-            </div>
-            <div className="border rounded-lg p-4 mb-4">
-              <h3 className="text-lg font-bold mb-2">GST Registration</h3>
-              <div className="flex justify-between items-center mb-2">
-                <span className="text-xl font-bold">INR 2899</span>
-                <span className="text-gray-600">All Inclusive</span>
-              </div>
-              <span className="text-green-600 mb-2 block">
-                3 Exclusive Offers
-              </span>
-              <ul className="list-disc list-inside mb-4">
-                <li>GST Application Submission</li>
-                <li>GST Application Tracking</li>
-                <li>GST Registration certificate</li>
-                <li>Bank Account Opening</li>
-              </ul>
-            </div>
-            <div className="border rounded-lg p-4 mb-4">
-              <h3 className="text-lg font-bold mb-2">Trademark</h3>
-              <div className="flex justify-between items-center mb-2">
-                <span className="text-xl font-bold">INR 6988</span>
-                <span className="text-gray-600">All Inclusive</span>
-              </div>
-              <span className="text-green-600 mb-2 block">
-                3 Exclusive Offers
-              </span>
-              <ul className="list-disc list-inside mb-4">
-                <li>Trademark Filing</li>
-                <li>1 Trademark Class</li>
-                <li>Individuals & MSMEs</li>
-              </ul>
-            </div>
-            <a href="#" className="text-blue-600 mb-4 block">
-              Terms and conditions
-            </a>
-            <a href="#" className="text-blue-600">
-              Refer a Friend
-            </a>
-          </div>
-        </div>
-        <div className="w-full lg:w-1/4 md:ml-7">
-          <div className="bg-white shadow-lg rounded-lg p-6 mb-6">
-            <img
-              src="https://placehold.co/300x100"
-              alt="Personalised Quotes! Great Service, Great Price!"
-              className="rounded-lg mb-4"
-            />
-            <form>
-              <input
-                type="text"
-                placeholder="Name"
-                className="border rounded-lg w-full p-2 mb-4"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="border rounded-lg w-full p-2 mb-4"
-              />
-              <div className="flex mb-4">
-                <select className="border rounded-l-lg p-2">
-                  <option value="+91">+91</option>
-                </select>
-                <input
-                  type="text"
-                  placeholder="Phone"
-                  className="border rounded-r-lg w-full p-2"
-                />
-              </div>
-              <div className="flex items-center mb-4">
-                <input type="checkbox" id="gstin" className="mr-2" />
-                <label htmlFor="gstin">Enter GSTIN to get 18% GST Credit</label>
-              </div>
-              <button className="bg-green-500 text-white rounded-lg w-full p-2">
-                Get Started
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
+      <PricingSection />
       <div className="container mx-auto px-20 py-8">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-3/4 lg:pr-8">
@@ -181,41 +87,49 @@ const Proprietorship = () => {
               conducting business within the framework of a proprietorship.
             </p>
           </div>
-          <div className="lg:w-1/4 mt-8 lg:mt-0">
-            <h3 className="text-xl font-bold mb-4">RELATED GUIDES</h3>
-            <ul className="list-disc list-inside">
-              <li className="mb-2">
-                <a href="#" className="text-blue-600">
-                  Proprietorship Registration: A Comprehensive Guide for
-                  Entrepreneurs
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-blue-600">
-                  Difference between One Person Company and Sole Proprietorship
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-blue-600">
-                  What is meant by a proprietorship firm?
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-blue-600">
-                  What are the types of proprietorship?
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-blue-600">
-                  GST Registration for Proprietorship
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-blue-600">
-                  Conversion of Proprietorship into Private Limited
-                </a>
-              </li>
-            </ul>
+          {/* Sticky Sidebar Section */}
+          <div className="lg:w-1/4 mt-8 lg:mt-4">
+            <div
+              ref={sidebarRef}
+              className={`${isSticky ? "sticky top-20" : "relative"}`}
+              style={{ height: sidebarHeight }} // Prevent layout shift
+            >
+              <h3 className="text-xl font-bold mb-4">RELATED GUIDES</h3>
+              <ul className="list-disc list-inside">
+                <li className="mb-2">
+                  <a href="#" className="text-blue-600">
+                    Proprietorship Registration: A Comprehensive Guide for
+                    Entrepreneurs
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <a href="#" className="text-blue-600">
+                    Difference between One Person Company and Sole
+                    Proprietorship
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <a href="#" className="text-blue-600">
+                    What is meant by a proprietorship firm?
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <a href="#" className="text-blue-600">
+                    What are the types of proprietorship?
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <a href="#" className="text-blue-600">
+                    GST Registration for Proprietorship
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <a href="#" className="text-blue-600">
+                    Conversion of Proprietorship into Private Limited
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -572,7 +486,405 @@ const Proprietorship = () => {
             </span>
           </div>
         </div>
-        <CompareTable />
+        <div ref={compareTableRef}>
+          <CompareTable />
+        </div>
+      </div>
+
+      {/* Documents Required Section */}
+      <div className="flex flex-col items-center justify-center w-full max-w-screen-lg mx-auto mb-10">
+        <h1 className="text-2xl font-bold mb-8 text-center">
+          Documents Required For Proprietorship
+        </h1>
+
+        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 w-full">
+          {/* Left Section */}
+          <div className="bg-white border border-gray-300 rounded-lg p-6 w-full md:w-1/2">
+            <div className="mb-4 border-b border-gray-300 pb-4">
+              <h2 className="text-lg font-bold">PAN Card</h2>
+              <p>PAN card of the Proprietor.</p>
+            </div>
+            <div className="pt-4">
+              <h2 className="text-lg font-bold">Aadhaar Card</h2>
+              <p>Aadhaar card of the Proprietor.</p>
+            </div>
+          </div>
+
+          {/* Right Section */}
+          <div className="bg-white border border-gray-300 rounded-lg p-6 w-full md:w-1/2">
+            <div className="flex justify-between items-center mb-4 border-b border-gray-300 pb-4">
+              <a href="#" className="text-blue-600">
+                Documents Required for LLP Registration
+              </a>
+              <span className="bg-blue-600 text-white rounded-full px-2 py-1 text-sm">
+                8
+              </span>
+            </div>
+            <div className="flex justify-between items-center mb-4 border-b border-gray-300 pb-4">
+              <a href="#" className="text-blue-600">
+                Documents Required for Trademark Registration
+              </a>
+              <span className="bg-blue-600 text-white rounded-full px-2 py-1 text-sm">
+                7
+              </span>
+            </div>
+            <div className="flex justify-between items-center mb-4 border-b border-gray-300 pb-4">
+              <a href="#" className="text-blue-600">
+                Documents Required for GST Registration
+              </a>
+              <span className="bg-blue-600 text-white rounded-full px-2 py-1 text-sm">
+                10
+              </span>
+            </div>
+            <div className="flex justify-between items-center mb-4 border-b border-gray-300 pb-4">
+              <a href="#" className="text-blue-600">
+                Documents Required for Partnership Firm Registration
+              </a>
+              <span className="bg-blue-600 text-white rounded-full px-2 py-1 text-sm">
+                5
+              </span>
+            </div>
+            <div className="flex justify-between items-center">
+              <a href="#" className="text-blue-600">
+                Documents Required for Company Registration
+              </a>
+              <span className="bg-blue-600 text-white rounded-full px-2 py-1 text-sm">
+                7
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* F&Q Secction */}
+      <div className="container flex flex-col lg:flex-row mx-auto px-28 py-8">
+        <div className="lg:w-4/5 lg:pr-6">
+          <h1 className="text-3xl font-bold mb-6">Proprietorship FAQ's</h1>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              What is meant by proprietorship firm?
+            </h2>
+            <p className="text-gray-700">
+              A proprietorship firm is a type of business structure where a
+              single individual owns and manages the entire business. The
+              proprietor is personally liable for all the debts and obligations
+              of the firm. Proprietorship firms are easy to set up and operate,
+              making them a popular choice for small businesses and startups in
+              India.
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              What are the types of proprietorship?
+            </h2>
+            <p className="text-gray-700 mb-2">
+              There are mainly four types of proprietorship in India:
+            </p>
+            <ul className="list-none pl-0">
+              <li className="flex items-center mb-2">
+                <i className="fas fa-check text-blue-500 mr-2"></i> Sole
+                Proprietorship
+              </li>
+              <li className="flex items-center mb-2">
+                <i className="fas fa-check text-blue-500 mr-2"></i> One Person
+                Company (OPC)
+              </li>
+              <li className="flex items-center mb-2">
+                <i className="fas fa-check text-blue-500 mr-2"></i> Registered
+                Proprietorship
+              </li>
+              <li className="flex items-center mb-2">
+                <i className="fas fa-check text-blue-500 mr-2"></i> Unregistered
+                Proprietorship
+              </li>
+            </ul>
+            <p className="text-gray-700">
+              Each type of proprietorship has its advantages and disadvantages,
+              and the choice of business structure depends on the proprietor's
+              needs, goals, and resources.
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              What is the difference between proprietorship and firm?
+            </h2>
+            <p className="text-gray-700">
+              Proprietorship and firm are often used interchangeably, but there
+              is a subtle difference between the two. Proprietorship refers to a
+              type of business structure where a single individual owns and
+              manages the entire business, while a firm refers to a group of
+              individuals who come together to carry out a business activity. In
+              a firm, the ownership is shared among the partners, and the
+              profits and losses are also shared among them. In contrast, in
+              proprietorship, the proprietor has complete control over the
+              business, and all the profits and losses belong to the proprietor
+              alone.
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              Is there any certificate of incorporation?
+            </h2>
+            <p className="text-gray-700">
+              No, there is no certificate of incorporation given.
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              Are there any compliances for the sole proprietorship?
+            </h2>
+            <p className="text-gray-700">
+              As the sole proprietorship and the proprietor are the same the
+              individual has to just file the Income-tax returns and GST returns
+              filing for the proprietorship firm.
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              Is there any minimum requirement to start a sole proprietorship?
+            </h2>
+            <p className="text-gray-700">
+              No, there is no minimum requirement to start a sole proprietorship
+              in India.
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              How long does the sole proprietorship exist?
+            </h2>
+            <p className="text-gray-700">
+              The sole proprietorships exist as long as the proprietor is alive
+              and is desiring to run the business.
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              Is the owner of the sole proprietorship considered to be the same
+              as the sole proprietor?
+            </h2>
+            <p className="text-gray-700">
+              Yes, a sole proprietor is considered to be the same as the sole
+              proprietor.
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              What are the licenses required to register for sole proprietorship
+              company?
+            </h2>
+            <p className="text-gray-700">
+              It generally differs from state to state as in Maharashtra a Shop
+              and Act license is required and for West Bengal, the trade license
+              is required.
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              What is the role of the proprietor in sole proprietorship?
+            </h2>
+            <p className="text-gray-700">
+              The proprietor owns, controls, and manages the sole
+              proprietorships. He has a complete hold over the proprietorship.
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              Can I get PAN card for sole proprietorship?
+            </h2>
+            <p className="text-gray-700">
+              No, PAN card cannot be obtained for proprietorship. Proprietorship
+              PAN card will be the same as the proprietor’s PAN card. There is
+              no separate PAN card for a proprietorship business.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              Can I open a bank account in proprietorship business name?
+            </h2>
+            <p className="text-gray-700">
+              Yes, a proprietorship current account can be opened in the name of
+              the business. However, for all legal and official purposes, the
+              PAN card of the proprietor will be used. Hence, the ultimate owner
+              and operator of the proprietorship bank account will be the
+              proprietor.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              Can I operate a proprietorship from my house?
+            </h2>
+            <p className="text-gray-700">
+              Yes, you can operate a proprietorship business from your house as
+              long as it complies with other regulations that may be applicable
+              to your business.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              What is the address proof for proprietorship?
+            </h2>
+            <p className="text-gray-700">
+              Any official document that has the name of the proprietor, photo,
+              and address, like a driving license or passport, can be used as
+              address proof for proprietorship. In addition, a utility or EB
+              bill in the name of the proprietor can also be submitted.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              What are the mandatory licenses to be obtained for a sole
+              proprietorship?
+            </h2>
+            <p className="text-gray-700">
+              The licenses and registrations for a sole proprietorship will vary
+              depending on the type of business activity.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              Is GST registration mandatory for a sole proprietorship?
+            </h2>
+            <p className="text-gray-700">
+              No, GST registration is not mandatory for proprietorship. However,
+              it is recommended that all proprietorships be registered under GST
+              and have UDYAM registration to undertake various business
+              activities.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              What is a sole proprietorship?
+            </h2>
+            <p className="text-gray-700">
+              Proprietorships in India are a type of unregistered business
+              entity that is owned, managed, and controlled by one person. The
+              micro and small businesses that operate in the unorganized sector
+              prefer getting registered as sole proprietorships.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              Who can get sole proprietorship?
+            </h2>
+            <p className="text-gray-700">
+              An Indian Citizen with a current account in the name of his/her
+              business can get a registration.
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              How long does it take to register a sole proprietorship in India?
+            </h2>
+            <p className="text-gray-700">
+              It takes around 8 to 10 days but is subject to government
+              processing and document submission.
+            </p>
+          </div>
+        </div>
+        <div className="lg:w-2/6">
+          <div className="mb-6">
+            <img
+              src="https://placehold.co/310x350"
+              alt="Company Registration"
+              className="w-60 h-72 mb-2"
+            />
+            <h3 className="text-lg font-semibold">Company Registration</h3>
+            <p className="text-gray-700">From ₹ 6899</p>
+          </div>
+          <div className="mb-6">
+            <img
+              src="https://placehold.co/310x350"
+              alt="OPC Registration"
+              className="w-60 h-72 mb-2"
+            />
+            <h3 className="text-lg font-semibold">OPC Registration</h3>
+            <p className="text-gray-700">From ₹ 2899</p>
+          </div>
+        </div>
+      </div>
+
+      {/* zero late fee platform option */}
+      <div class="flex justify-center items-center lg:flex-row  py-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-8">
+            <h1 class="text-2xl font-bold mb-4">Zero Late Fee Platform</h1>
+            <p class="text-gray-700">
+              Many small businesses pay lakhs in penalty every year to the
+              Government for late filing various statutory returns. Such penalty
+              or late fee paid is not tax deductible and is a drain on
+              profitability. At IndiaFilings, our mission is to provide the most
+              affordable services to our customers and help them avoid all late
+              fee. To achieve our mission - we have built enterprise grade
+              technology to help you proactively know the upcoming compliance
+              and avoid penalty. Checkout our compliance services below, talk to
+              an Advisor and stop paying unwanted late fees.
+            </p>
+          </div>
+          <div class="flex flex-col md:flex-row justify-between items-start">
+            <div class="w-full md:w-2/3 mb-4 md:mb-0">
+              <div class="bg-white shadow-md rounded-lg">
+                <a
+                  href="#"
+                  class="flex justify-between items-center p-4 border-b hover:bg-gray-100"
+                >
+                  <span class="text-blue-600">
+                    Manage Compliance for Proprietorship
+                  </span>
+                  <span class="bg-blue-600 text-white px-3 py-1 rounded-full">
+                    From Rs. 2899
+                  </span>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between items-center p-4 border-b hover:bg-gray-100"
+                >
+                  <span class="text-blue-600">
+                    Manage Compliance for Partnership
+                  </span>
+                  <span class="bg-blue-600 text-white px-3 py-1 rounded-full">
+                    From Rs. 15899
+                  </span>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between items-center p-4 border-b hover:bg-gray-100"
+                >
+                  <span class="text-blue-600">
+                    Manage Compliance for Limited Liability Partnership
+                  </span>
+                  <span class="bg-blue-600 text-white px-3 py-1 rounded-full">
+                    From Rs. 9899
+                  </span>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between items-center p-4 hover:bg-gray-100"
+                >
+                  <span class="text-blue-600">
+                    Manage Compliance for Private Limited Company
+                  </span>
+                  <span class="bg-blue-600 text-white px-3 py-1 rounded-full">
+                    From Rs. 19899
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="w-full md:w-1/3 flex justify-center md:justify-end">
+              <img
+                src="https://placehold.co/300x300"
+                alt="Promotional image with text 'Save Money, Zero Late Fee, Know More'"
+                class="rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -11,7 +11,7 @@ const Testimonials = () => {
         />
       <div className="container mx-auto px-4">
         {/* Header Section */}
-        <div className="text-center mb-8">
+        <div className="text-center m-10">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
             What Our Users Are
             <br /> Saying
