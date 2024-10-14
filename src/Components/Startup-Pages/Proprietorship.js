@@ -1,6 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import CompareTable from "../ReusableComponents/CompareTable";
 import PricingSection from "../ReusableComponents/PricingSection";
+import RelatedBusinessReg from "../ReusableComponents/RelatedBusinessReg";
+import VideoPlaySection from "../ReusableComponents/VideoPlaySection";
+import CustomerReviews from "../ReusableComponents/CustomerReviews";
+import StatesLinks from "../ReusableComponents/StatesLinks";
+import BusinessRegistrationServices from "../ReusableComponents/BusinessRegistrationServices";
+import PopularSearch from "../ReusableComponents/PopularSearch";
 
 const Proprietorship = () => {
   const sidebarRef = useRef(null);
@@ -807,6 +813,15 @@ const Proprietorship = () => {
             <h3 className="text-lg font-semibold">OPC Registration</h3>
             <p className="text-gray-700">From ₹ 2899</p>
           </div>
+          <div className="mb-6">
+            <img
+              src="https://placehold.co/310x350"
+              alt="OPC Registration"
+              className="w-60 h-72 mb-2"
+            />
+            <h3 className="text-lg font-semibold">OPC Registration</h3>
+            <p className="text-gray-700">From ₹ 2899</p>
+          </div>
         </div>
       </div>
 
@@ -876,7 +891,7 @@ const Proprietorship = () => {
                 </a>
               </div>
             </div>
-            <div class="w-full md:w-1/3 flex justify-center md:justify-end">
+            <div class="w-full md:w-1/3 flex justify-center md:ml-8 md:justify-end">
               <img
                 src="https://placehold.co/300x300"
                 alt="Promotional image with text 'Save Money, Zero Late Fee, Know More'"
@@ -886,6 +901,12 @@ const Proprietorship = () => {
           </div>
         </div>
       </div>
+      <RelatedBusinessReg />
+      <VideoPlaySection />
+      <CustomerReviews />
+      <StatesLinks />
+      <BusinessRegistrationServices />
+      <PopularSearch />
     </>
   );
 };
