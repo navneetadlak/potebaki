@@ -1,0 +1,626 @@
+import React, { useEffect, useRef, useState } from "react";
+import CompareTable from "../ReusableComponents/CompareTable";
+import PricingSection from "../ReusableComponents/PricingSection";
+import RelatedBusinessReg from "../ReusableComponents/RelatedBusinessReg";
+import VideoPlaySection from "../ReusableComponents/VideoPlaySection";
+import CustomerReviews from "../ReusableComponents/CustomerReviews";
+import StatesLinks from "../ReusableComponents/StatesLinks";
+import BusinessRegistrationServices from "../ReusableComponents/BusinessRegistrationServices";
+import PopularSearch from "../ReusableComponents/PopularSearch";
+
+const Proprietorship = () => {
+  const sidebarRef = useRef(null);
+  const compareTableRef = useRef(null);
+  const [isSticky, setIsSticky] = useState(true);
+  const [sidebarHeight, setSidebarHeight] = useState(0);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Stop the sticky behavior when CompareTable is in view
+        setIsSticky(!entry.isIntersecting);
+      },
+      {
+        root: null, // Viewport as the root
+        threshold: 0.5, // Trigger when 10% of CompareTable is visible
+      }
+    );
+
+    if (compareTableRef.current) {
+      observer.observe(compareTableRef.current);
+    }
+
+    return () => {
+      if (compareTableRef.current) {
+        observer.unobserve(compareTableRef.current);
+      }
+    };
+  }, []);
+
+  // Calculate the sidebar height to prevent layout shift
+  useEffect(() => {
+    if (sidebarRef.current) {
+      setSidebarHeight(sidebarRef.current.offsetHeight);
+    }
+  }, [isSticky]);
+
+  return (
+    <>
+      <PricingSection />
+      <div className="container mx-auto px-20 py-8">
+        <div className="flex flex-col lg:flex-row">
+          <div className="lg:w-3/4 lg:pr-8">
+            <h1 className="text-5xl font-medium mb-4 text-center items-center">
+            </h1>
+            <p className="mb-4">
+           
+            </p>
+            <p className="mb-4">
+       
+            </p>
+            <p className="mb-4">
+         
+            </p>
+            <h2 className="text-xl font-semibold mb-4">
+            </h2>
+            <p>
+
+            </p>
+          </div>
+          {/* Sticky Sidebar Section */}
+          <div className="lg:w-1/4 mt-8 lg:mt-4">
+            <div
+              ref={sidebarRef}
+              className={`${isSticky ? "sticky top-20" : "relative"}`}
+              style={{ height: sidebarHeight }} // Prevent layout shift
+            >
+              <h3 className="text-xl font-bold mb-4">RELATED GUIDES</h3>
+              <ul className="list-disc list-inside">
+                <li className="mb-2">
+                  <a href="#" className="text-blue-600">
+                 
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <a href="#" className="text-blue-600">
+                    Difference between One Person Company and Sole
+                    Proprietorship
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <a href="#" className="text-blue-600">
+                    What is meant by a proprietorship firm?
+                  </a>
+                </li>
+              
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-4xl py-6">
+          <h1 className="text-xl font-semibold mb-4">
+            Essential Licenses and Registrations for Proprietorships
+          </h1>
+          <p className="mb-4">
+            To run a proprietorship in India, you need important licenses and
+            registrations, including:
+          </p>
+          <ul className="list-disc list-inside mb-6">
+            <li className="mb-2">
+              Get a Permanent Account Number (PAN) and an Aadhaar card for your
+              business identification.
+            </li>
+            <li className="mb-2">
+              Register under{" "}
+              <a href="#" className="text-blue-600 underline">
+                UDYAM
+              </a>
+              , which recognizes your business as a Micro, Small, or Medium
+              Enterprise (MSME) and offers government benefits.
+            </li>
+          
+           
+          </ul>
+          <h2 className="text-2xl font-semibold mb-4">
+            Advantages of Proprietorship
+          </h2>
+          <div className="mb-4">
+            <span className="font-semibold">Easy registration:</span>
+            <span>
+            </span>
+          </div>
+          <div className="mb-4">
+            <span className="font-semibold">Lower compliance:</span>
+            <span>
+            </span>
+          </div>
+          <div className="mb-4">
+            <span className="font-semibold">Simplicity:</span>
+            <span>
+            </span>
+          </div>
+          <div className="mb-4">
+            <span className="font-semibold">Business decision:</span>
+            <span>
+            </span>
+          </div>
+          <div className="mb-4">
+            <span className="font-semibold">Complete control:</span>
+            <span>
+            </span>
+          </div>
+
+          {/* Disadvantage section of proprietorship */}
+          <h2 className="text-2xl font-semibold mb-4">
+            Disadvantages of Sole Proprietorship
+          </h2>
+          <div className="mb-4">
+            <span className="font-semibold">Funding:</span>
+            <span>
+            </span>
+          </div>
+          <div className="mb-4">
+            <span className="font-semibold">Personal liability:</span>
+            <span>
+            </span>
+          </div>
+          <div className="mb-4">
+            <span className="font-semibold">Business continuity:</span>
+            <span>
+            </span>
+          </div>
+          <div className="mb-4">
+            <span className="font-semibold">Growth:</span>
+            <span>
+            </span>
+          </div>
+          <div className="mb-4">
+            <span className="font-semibold">Unincorporated business:</span>
+            <span>
+            </span>
+          </div>
+
+          {/* Registering a Proprietorship Online through potebaki */}
+          <h1 className="text-2xl font-semibold mb-4">
+          </h1>
+          <p className="mb-4">
+          </p>
+          <ul className="list-disc list-inside mb-4">
+            <li>GST Registration</li>
+            <li>
+            </li>
+          </ul>
+          <p className="mb-4">
+          </p>
+          <ol className="list-decimal list-inside mb-4">
+            <li>
+              Login to{" "}
+              <a href="#" class="text-blue-600">
+                LEDGERS
+              </a>{" "}
+            </li>
+            <li>Go to Services Tab & Select Proprietorship Engagement</li>
+           
+          </ol>
+          <h2 className="text-xl font-semibold mb-2">
+            PAN Card for Proprietorship Firm Registration Online
+          </h2>
+          <p className="mb-4">
+          </p>
+          <h2 className="text-xl font-semibold mb-2">
+          </h2>
+          <p className="mb-4">
+          </p>
+          <ul className="list-disc list-inside mb-4">
+           
+            <li>Declaration / Authorization to Authorized Signatory</li>
+            <li>
+              For commercial purposes, the rent / lease agreement should be in
+              the name of the proprietor.
+            </li>
+            <li>
+              Additional documents such as Aadhaar Card, Driving Licence,
+              Passport, or Voter ID in the name of the Owner with the complete
+              address of the premises should also be provided if the address on
+              the ownership document (Property Tax Receipt or Municipal Khata
+              copy or copy of Electricity Bill) is incomplete.
+            </li>
+          </ul>
+          <h2 className="text-xl font-semibold mb-2">
+            Obtaining GST Registration for Proprietorship
+          </h2>
+          <p className="mb-4">
+            <a href="" class="text-blue-600">
+              Udyam Registration
+            </a>
+          </p>
+          <h2 className="text-xl font-semibold mb-2">
+            Bank Account for Proprietorship
+          </h2>
+          <p className="mb-4">
+            
+          </p>
+          <ul className="list-disc list-inside mb-4">
+           
+            <li>
+              Banks may also accept IEC (Importer Exporter Code) issued to the
+              proprietary concern by the office of DGFT as an identity document
+              for opening a bank account etc.
+            </li>
+          </ul>
+          <h2 className="text-xl font-semibold mb-2">
+            Obtaining Shops & Establishment Act License for Proprietorship
+          </h2>
+          <p className="mb-4">
+           
+          </p>
+
+          <h2 className="text-xl font-semibold mb-2">
+            Timelines for Sole Proprietorship Registration
+          </h2>
+          <p className="mb-4">
+            
+          </p>
+
+          <h2 className="text-2xl font-semibold mb-2">
+            Proprietorship Business Activities
+          </h2>
+          <p className="mb-4">
+          
+          </p>
+
+          <h2 className="text-2xl font-semibold mb-2">
+            Compliances for Proprietorship
+          </h2>
+          <div className="mb-4">
+            <p className="mb-2">
+              The following are some of the compliances that are applicable for
+              a sole proprietorship registration:
+            </p>
+            <span className="font-semibold">Income Tax Filing:</span>
+            <span>
+              
+            </span>
+          </div>
+          <div className="mb-4">
+            <span className="font-semibold">Business Income:</span>
+            <span>
+          
+            </span>
+          </div>
+          <div className="mb-4">
+            <span className="font-semibold">GST Return Filing:</span>
+            <span>
+          
+            </span>
+          </div>
+          <div className="mb-4">
+            <span className="font-semibold">TDS Returns:</span>
+            <span>
+            
+            </span>
+          </div>
+        </div>
+        <div ref={compareTableRef}>
+          <CompareTable />
+        </div>
+      </div>
+
+      {/* Documents Required Section */}
+      <div className="flex flex-col items-center justify-center w-full max-w-screen-lg mx-auto mb-10">
+        <h1 className="text-2xl font-bold mb-8 text-center">
+          Documents Required For Proprietorship
+        </h1>
+
+        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 w-full">
+          {/* Left Section */}
+          <div className="bg-white border border-gray-300 rounded-lg p-6 w-full md:w-1/2">
+            <div className="mb-4 border-b border-gray-300 pb-4">
+              <h2 className="text-lg font-bold">PAN Card</h2>
+              <p>PAN card of the Proprietor.</p>
+            </div>
+            <div className="pt-4">
+              <h2 className="text-lg font-bold">Aadhaar Card</h2>
+              <p>Aadhaar card of the Proprietor.</p>
+            </div>
+          </div>
+
+          {/* Right Section */}
+          <div className="bg-white border border-gray-300 rounded-lg p-6 w-full md:w-1/2">
+            <div className="flex justify-between items-center mb-4 border-b border-gray-300 pb-4">
+              <a href="#" className="text-blue-600">
+                Documents Required for LLP Registration
+              </a>
+              <span className="bg-blue-600 text-white rounded-full px-2 py-1 text-sm">
+                8
+              </span>
+            </div>
+            <div className="flex justify-between items-center mb-4 border-b border-gray-300 pb-4">
+              <a href="#" className="text-blue-600">
+                Documents Required for Trademark Registration
+              </a>
+              <span className="bg-blue-600 text-white rounded-full px-2 py-1 text-sm">
+                7
+              </span>
+            </div>
+            <div className="flex justify-between items-center mb-4 border-b border-gray-300 pb-4">
+              <a href="#" className="text-blue-600">
+                Documents Required for GST Registration
+              </a>
+              <span className="bg-blue-600 text-white rounded-full px-2 py-1 text-sm">
+                10
+              </span>
+            </div>
+            <div className="flex justify-between items-center mb-4 border-b border-gray-300 pb-4">
+              <a href="#" className="text-blue-600">
+                Documents Required for Partnership Firm Registration
+              </a>
+              <span className="bg-blue-600 text-white rounded-full px-2 py-1 text-sm">
+                5
+              </span>
+            </div>
+            <div className="flex justify-between items-center">
+              <a href="#" className="text-blue-600">
+                Documents Required for Company Registration
+              </a>
+              <span className="bg-blue-600 text-white rounded-full px-2 py-1 text-sm">
+                7
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* F&Q Secction */}
+      <div className="container flex flex-col lg:flex-row mx-auto px-28 py-8">
+        <div className="lg:w-4/5 lg:pr-6">
+          <h1 className="text-3xl font-bold mb-6">Proprietorship FAQ's</h1>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              What is meant by proprietorship firm?
+            </h2>
+            <p className="text-gray-700">
+            
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              What are the types of proprietorship?
+            </h2>
+            <p className="text-gray-700 mb-2">
+              There are mainly four types of proprietorship in India:
+            </p>
+            <ul className="list-none pl-0">
+             
+              <li className="flex items-center mb-2">
+                <i className="fas fa-check text-blue-500 mr-2"></i> Unregistered
+                Proprietorship
+              </li>
+            </ul>
+           
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              What is the difference between proprietorship and firm?
+            </h2>
+            <p className="text-gray-700">
+             
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              Is there any certificate of incorporation?
+            </h2>
+            <p className="text-gray-700">
+              No, there is no certificate of incorporation given.
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              Are there any compliances for the sole proprietorship?
+            </h2>
+            <p className="text-gray-700">
+           
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              Is there any minimum requirement to start a sole proprietorship?
+            </h2>
+            <p className="text-gray-700">
+              No, there is no minimum requirement to start a sole proprietorship
+              in India.
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              How long does the sole proprietorship exist?
+            </h2>
+            <p className="text-gray-700">
+              The sole proprietorships exist as long as the proprietor is alive
+              and is desiring to run the business.
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+          
+            </h2>
+            <p className="text-gray-700">
+             
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+             
+            </h2>
+            <p className="text-gray-700">
+              
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+            </h2>
+            <p className="text-gray-700">
+            </p>
+          </div>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+            </h2>
+            <p className="text-gray-700">
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+            </h2>
+            <p className="text-gray-700">
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+            </h2>
+            <p className="text-gray-700">
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+            </h2>
+            <p className="text-gray-700">
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+             
+            </h2>
+            <p className="text-gray-700">
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+            </h2>
+            <p className="text-gray-700">
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              What is a sole proprietorship?
+            </h2>
+            <p className="text-gray-700">
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+              Who can get sole proprietorship
+            </h2>
+            <p className="text-gray-700">
+            </p>
+          </div>
+
+        </div>
+        <div className="lg:w-2/6">
+          <div className="mb-6">
+            <img
+              src="https://placehold.co/310x350"
+              alt="Company Registration"
+              className="w-60 h-72 mb-2"
+            />
+            <h3 className="text-lg font-semibold">Company Registration</h3>
+            <p className="text-gray-700">From ₹ 6899</p>
+          </div>
+         
+          <div className="mb-6">
+            <img
+              src="https://placehold.co/310x350"
+              alt="OPC Registration"
+              className="w-60 h-72 mb-2"
+            />
+            <h3 className="text-lg font-semibold">OPC Registration</h3>
+            <p className="text-gray-700">From ₹ 2899</p>
+          </div>
+        </div>
+      </div>
+
+      {/* zero late fee platform option */}
+      <div class="flex justify-center items-center lg:flex-row  py-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-8">
+            <h1 class="text-2xl font-bold mb-4">Zero Late Fee Platform</h1>
+            <p class="text-gray-700">
+            </p>
+          </div>
+          <div class="flex flex-col md:flex-row justify-between items-start">
+            <div class="w-full md:w-2/3 mb-4 md:mb-0">
+              <div class="bg-white shadow-md rounded-lg">
+                <a
+                  href="#"
+                  class="flex justify-between items-center p-4 border-b hover:bg-gray-100"
+                >
+                  <span class="text-blue-600">
+                    Manage Compliance for Proprietorship
+                  </span>
+                  <span class="bg-blue-600 text-white px-3 py-1 rounded-full">
+                    From Rs. 2899
+                  </span>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between items-center p-4 border-b hover:bg-gray-100"
+                >
+                  <span class="text-blue-600">
+                    Manage Compliance for Partnership
+                  </span>
+                  <span class="bg-blue-600 text-white px-3 py-1 rounded-full">
+                    From Rs. 15899
+                  </span>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between items-center p-4 border-b hover:bg-gray-100"
+                >
+                  <span class="text-blue-600">
+                    Manage Compliance for Limited Liability Partnership
+                  </span>
+                  <span class="bg-blue-600 text-white px-3 py-1 rounded-full">
+                    From Rs. 9899
+                  </span>
+                </a>
+                <a
+                  href="#"
+                  class="flex justify-between items-center p-4 hover:bg-gray-100"
+                >
+                  <span class="text-blue-600">
+                    Manage Compliance for Private Limited Company
+                  </span>
+                  <span class="bg-blue-600 text-white px-3 py-1 rounded-full">
+                    From Rs. 19899
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="w-full md:w-1/3 flex justify-center md:ml-8 md:justify-end">
+              <img
+                src="https://placehold.co/300x300"
+                alt="Promotional image with text 'Save Money, Zero Late Fee, Know More'"
+                class="rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <RelatedBusinessReg />
+      <VideoPlaySection />
+      <CustomerReviews />
+      <StatesLinks />
+      <BusinessRegistrationServices />
+      <PopularSearch />
+    </>
+  );
+};
+
+export default Proprietorship;

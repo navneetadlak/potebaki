@@ -2,12 +2,13 @@ import Proprietorship from "../Components/Startup-Pages/Proprietorship";
 import Partnership from "../Components/Startup-Pages/Partnership"
 import React from "react";
 import { Routes, Route } from 'react-router-dom';
+import { Content } from "../Components/ReusableComponents/Content";
 
 const Startup = () => {
   return (
     <div>
       <Routes>
-        <Route path="/proprietorship" element={<Proprietorship />} />
+        <Route path="/proprietorship" element={<Proprietorship content={Content.proprietorship}/>} />
         <Route path='/partnership' element={<Partnership />} />
         {/* <Route path='/' element={<Homepage />} />
     <Route path='/about' element={<About />} />
