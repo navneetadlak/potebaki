@@ -9,9 +9,10 @@ import BusinessRegistrationServices from "../ReusableComponents/BusinessRegistra
 import PopularSearch from "../ReusableComponents/PopularSearch";
 import DocumentReqSection from "../ReusableComponents/DocumentReqSection";
 import FQ from "../ReusableComponents/FQ";
+import { Content } from "../ReusableComponents/Content";
 
 const Proprietorship = ({ content }) => {
-  const { mainSection, sidebar, newSection, onlineRegistration, additionalInfo, bankAccount, licenseDetails, timeline, businessActivities, compliance, partnership } = content;
+  const { mainSection, sidebar, newSection, onlineRegistration, additionalInfo, bankAccount, licenseDetails, timeline, businessActivities, compliance, partnership, documentsRequired, } = content;
   const sidebarRef = useRef(null);
   const compareTableRef = useRef(null);
   const [isSticky, setIsSticky] = useState(true);
@@ -49,8 +50,8 @@ const Proprietorship = ({ content }) => {
 
   return (
     <>
-      <PricingSection />
-      <div className="container mx-auto px-20 py-8">
+    <PricingSection pricingSection={Content.proprietorship.pricingSection} />
+    <div className="container mx-auto px-20 py-8">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-3/4 lg:pr-8">
             <h1 className="text-5xl font-medium mb-4 text-center items-center">
@@ -219,12 +220,6 @@ const Proprietorship = ({ content }) => {
             <p className="mb-2">
               {compliance.subTitle}
             </p>
-            <span className="font-semibold">Income Tax Filing:</span>
-            <span>
-              {" "}
-              The business owner of a proprietorship will have to file a
-              personal income tax return using the form ITR-3 or ITR-4.
-            </span>
           </div>
           {compliance.items.map((item, index) => (
         <div className="mb-4" key={index}>
@@ -238,85 +233,8 @@ const Proprietorship = ({ content }) => {
         </div>
       </div>
 
-      <DocumentReqSection />
+      <DocumentReqSection documentsRequired={Content.documentsRequired} />
       <FQ />
-
-      {/* zero late fee platform option */}
-      <div class="flex justify-center items-center lg:flex-row  py-4">
-        <div class="max-w-4xl mx-auto">
-          <div class="text-center mb-8">
-            <h1 class="text-2xl font-bold mb-4">Zero Late Fee Platform</h1>
-            <p class="text-gray-700">
-              Many small businesses pay lakhs in penalty every year to the
-              Government for late filing various statutory returns. Such penalty
-              or late fee paid is not tax deductible and is a drain on
-              profitability. At IndiaFilings, our mission is to provide the most
-              affordable services to our customers and help them avoid all late
-              fee. To achieve our mission - we have built enterprise grade
-              technology to help you proactively know the upcoming compliance
-              and avoid penalty. Checkout our compliance services below, talk to
-              an Advisor and stop paying unwanted late fees.
-            </p>
-          </div>
-          <div class="flex flex-col md:flex-row justify-between items-start">
-            <div class="w-full md:w-2/3 mb-4 md:mb-0">
-              <div class="bg-white shadow-md rounded-lg">
-                <a
-                  href="#"
-                  class="flex justify-between items-center p-4 border-b hover:bg-gray-100"
-                >
-                  <span class="text-blue-600">
-                    Manage Compliance for Proprietorship
-                  </span>
-                  <span class="bg-blue-600 text-white px-3 py-1 rounded-full">
-                    From Rs. 2899
-                  </span>
-                </a>
-                <a
-                  href="#"
-                  class="flex justify-between items-center p-4 border-b hover:bg-gray-100"
-                >
-                  <span class="text-blue-600">
-                    Manage Compliance for Partnership
-                  </span>
-                  <span class="bg-blue-600 text-white px-3 py-1 rounded-full">
-                    From Rs. 15899
-                  </span>
-                </a>
-                <a
-                  href="#"
-                  class="flex justify-between items-center p-4 border-b hover:bg-gray-100"
-                >
-                  <span class="text-blue-600">
-                    Manage Compliance for Limited Liability Partnership
-                  </span>
-                  <span class="bg-blue-600 text-white px-3 py-1 rounded-full">
-                    From Rs. 9899
-                  </span>
-                </a>
-                <a
-                  href="#"
-                  class="flex justify-between items-center p-4 hover:bg-gray-100"
-                >
-                  <span class="text-blue-600">
-                    Manage Compliance for Private Limited Company
-                  </span>
-                  <span class="bg-blue-600 text-white px-3 py-1 rounded-full">
-                    From Rs. 19899
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-1/3 flex justify-center md:ml-8 md:justify-end">
-              <img
-                src="https://placehold.co/300x300"
-                alt="Promotional image with text 'Save Money, Zero Late Fee, Know More'"
-                class="rounded-lg shadow-md"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
       <RelatedBusinessReg />
       <VideoPlaySection />
       <CustomerReviews />

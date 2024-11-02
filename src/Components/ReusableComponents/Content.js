@@ -1,7 +1,29 @@
-import { Heading2 } from "lucide-react";
-
 export const Content = {
   proprietorship: {
+    pricingSection: {
+      title: "Proprietorship",
+      customerRating: {
+        rating: 4.7,
+        count: 8533,
+      },
+      description: "Easily set up a sole proprietorship online with GST registration.",
+      documentTitle: "Documents Required",
+      documents: ["PAN Card", "Aadhaar Card"],
+      products: [
+        {
+          title: "GST Registration",
+          price: "INR 2899",
+          offers: ["GST Application Submission", "GST Application Tracking", "GST Registration certificate", "Bank Account Opening"],
+          allInclusive: true,
+        },
+        {
+          title: "Trademark",
+          price: "INR 6988",
+          offers: ["Trademark Filing", "1 Trademark Class", "Individuals & MSMEs"],
+          allInclusive: true,
+        }
+      ]
+    },
     "mainSection": {
       "title": "Proprietorship Registration",
       "description": [
@@ -234,6 +256,20 @@ export const Content = {
     title: "Partnership Business",
     description: "A business run by two or more individuals sharing profits and responsibilities.",
   },
+  documentsRequired: {
+    title: "Documents Required For Proprietorship",
+    leftSection: [
+      { title: "PAN Card", description: "PAN card of the Proprietor." },
+      { title: "Aadhaar Card", description: "Aadhaar card of the Proprietor." }
+    ],
+    rightSection: [
+      { label: "Documents Required for LLP Registration", count: 8 },
+      { label: "Documents Required for Trademark Registration", count: 7 },
+      { label: "Documents Required for GST Registration", count: 10 },
+      { label: "Documents Required for Partnership Firm Registration", count: 5 },
+      { label: "Documents Required for Company Registration", count: 7 }
+    ]
+  }
 };
 
 
