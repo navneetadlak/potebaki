@@ -11,7 +11,7 @@ import DocumentReqSection from "../ReusableComponents/DocumentReqSection";
 import FQ from "../ReusableComponents/FQ";
 import { Content } from "../ReusableComponents/Content";
 
-const Proprietorship = ({ content }) => {
+const Proprietorship = ({ content, pricingSection = Content.proprietorship.pricingSection  }) => {
   const { mainSection, sidebar, newSection, onlineRegistration, additionalInfo, bankAccount, licenseDetails, timeline, businessActivities, compliance, partnership, documentsRequired, } = content;
   const sidebarRef = useRef(null);
   const compareTableRef = useRef(null);
@@ -50,7 +50,8 @@ const Proprietorship = ({ content }) => {
 
   return (
     <>
-    <PricingSection pricingSection={Content.proprietorship.pricingSection} />
+    {/* <PricingSection pricingSection={Content.proprietorship.pricingSection} /> */}
+    <PricingSection pricingSection={pricingSection} />
     <div className="container mx-auto px-20 py-8">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-3/4 lg:pr-8">
