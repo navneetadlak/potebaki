@@ -1,14 +1,9 @@
 import React from 'react'
 import Proprietorship from './Proprietorship'
+import { partnershipContent } from './partnershipContent'
 
 const Partnership = () => {
-  return (
-    <>
-    <div>Partnership</div>
-    <Proprietorship />
-    </>
-
-  )
+  return <Proprietorship content={partnershipContent}/>
 }
 
 export default Partnership

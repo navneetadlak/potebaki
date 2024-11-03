@@ -1,9 +1,9 @@
 import React from 'react'
+import Proprietorship from './Proprietorship'
+import { onePersonCompanyContent } from './onePersonCompanyContent'
 
 const OnePersonCompany = () => {
-  return (
-    <div>OnePersonCompany</div>
-  )
+  return <Proprietorship content={onePersonCompanyContent}/>
 }
 
 export default OnePersonCompany

@@ -3,6 +3,7 @@ import Partnership from "../Components/Startup-Pages/Partnership"
 import React from "react";
 import { Routes, Route } from 'react-router-dom';
 import { Content } from "../Components/ReusableComponents/Content";
+import OnePersonCompany from "../Components/Startup-Pages/OnePersonCompany";
 
 const Startup = () => {
   return (
@@ -10,6 +11,7 @@ const Startup = () => {
       <Routes>
         <Route path="/proprietorship" element={<Proprietorship content={Content.proprietorship}/>} />
         <Route path='/partnership' element={<Partnership />} />
+        <Route path="/opc" element={<OnePersonCompany />} />
         {/* <Route path='/' element={<Homepage />} />
     <Route path='/about' element={<About />} />
     <Route path='/business-stats' element={<BusinessStats />} />

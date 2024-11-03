@@ -252,10 +252,6 @@ export const Content = {
       ],
     },
   },
-  partnership: {
-    title: "Partnership Business",
-    description: "A business run by two or more individuals sharing profits and responsibilities.",
-  },
   documentsRequired: {
     title: "Documents Required For Proprietorship",
     leftSection: [
