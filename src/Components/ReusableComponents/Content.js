@@ -1,3 +1,5 @@
+import Licenses from "./Licenses";
+
 export const Content = {
   proprietorship: {
     pricingSection: {
@@ -63,7 +65,7 @@ export const Content = {
         }
       ]
     },
-    newSection: {
+    licenses: {
       title: "Essential Licenses and Registrations for Proprietorships",
       description: [
         "To run a proprietorship in India, you need important licenses and registrations, including:",
@@ -75,6 +77,8 @@ export const Content = {
         "Open a separate bank account for your business to manage finances smoothly.",
         "Depending on your business location, register under your state's Shops and Establishment Act to follow local labor regulations.",
       ],
+    },
+    newSection: {
       advantages: [
         {
           heading: "Advantages of Proprietorship", 

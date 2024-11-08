@@ -1,8 +1,8 @@
 import React from 'react'
 
 export const partnershipContent = {
-        pricingSection: {
-          title: "Partnership",
+    PricingSection: {
+          title: "Partnership Firm Registration",
           customerRating: {
             rating: 4.7,
             count: 8533,
@@ -26,48 +26,46 @@ export const partnershipContent = {
           ]
         },
         "mainSection": {
-          "title": "Proprietorship Registration",
+          "title": "Partnership Firm Registration",
           "description": [
-            "Sole proprietorship is one of the oldest and easiest Business Structure to start in India. A proprietorship is a type of business that is owned, managed, and controlled by one person - who is the proprietor. As the proprietorship and proprietor are one and the same, it is very easy to start and there are very minimal compliance requirements.",
-            "As the proprietor and the business are one and the same, a proprietorship cannot have other partners or shareholders. Further, there is no limited liability protection for the proprietor from the business activities conducted in the sole proprietorship. Hence, this type of business entity is best suited for every small businesses with no more than 5 employees.",
-            "Potebaki can assist you in registering for a Sole proprietorship, a simple and efficient business structure that is ideal for solo entrepreneurs. With our expert guidance and streamlined process, you can start your proprietorship firm registration online quickly and hassle-free. Start your Sole Proprietorship registration with us and unlock the potential of your business ideas."
+            "A partnership firm is a popular choice among entrepreneurs due to its simplicity and flexibility. It allows multiple individuals to come together and combine their resources, skills, and expertise to run a business. Registering your partnership firm is the first step towards formalizing your partnership and ensuring its legal recognition. At IndiaFilings, we understand that navigating the intricacies of partnership firm registration can be daunting. That's why we offer a comprehensive and hassle-free partnership firm registration online service designed to meet your needs with affordable partnership firm registration fees. Whether you are a new startup or an existing unregistered partnership looking to formalize your business, our expert team of professionals guides you through every step of the registration process. Contact us now to learn more and get started on your partnership firm registration journey."
           ],
-          "subTitle": "Sole Proprietorship Registration in India",
-          "subDescription": "Sole Proprietorship registration in India follows a unique approach, as there isn't a dedicated government-established registration process for this business structure. Instead, a proprietorship firm registration online gains recognition through tax registrations mandated by relevant laws and regulations. One pivotal tax registration is the GST (Goods and Services Tax) Registration, which must be secured under the proprietor's name to formalize the business's proprietorship status. This sole proprietorship registration signifies that the proprietor is conducting business within the framework of a proprietorship."
+          "subTitle": "Partnership Firms",
+          "subDescription": "A partnership stands as one of the fundamental structures for conducting business. It materializes when two or more individuals collaborate to establish a business venture, sharing profits according to an agreed-upon ratio. This form of business encompasses a broad spectrum of trades, occupations, and professions. A notable advantage is that partnership firms entail relatively fewer regulatory requirements than companies."
         },
         "sidebar": {
           "title": "RELATED GUIDES",
           "guides": [
             {
-              "title": "Proprietorship Registration: A Comprehensive Guide for Entrepreneurs",
+              "title": "What is Partnership Deed?",
               "link": "#"
             },
             {
-              "title": "Difference between One Person Company and Sole Proprietorship",
+              "title": "Who is eligible for partnership?",
               "link": "#"
             },
             {
-              "title": "What is meant by a proprietorship firm?",
+              "title": "What is the Registration of a partnership?",
               "link": "#"
             },
             {
-              "title": "What are the types of proprietorship?",
+              "title": "Is an unregistered partnership deed valid in India?",
               "link": "#"
             },
             {
-              "title": "GST Registration for Proprietorship",
+              "title": "What is the Difference Between Partnership & Limited Liability Partnership Firm?",
               "link": "#"
             },
             {
-              "title": "Conversion of Proprietorship into Private Limited",
+              "title": "Partnership Firm – Partnership Deed Registration",
               "link": "#"
             }
           ]
         },
         newSection: {
-          title: "Essential Licenses and Registrations for Proprietorships",
+          title: "Who Can Be a Partner in India's Partnership Firms?",
           description: [
-            "To run a proprietorship in India, you need important licenses and registrations, including:",
+            "To become a partner in an Indian partnership firm, you need to meet these conditions:",
           ],
           licenses: [
             "Get a Permanent Account Number (PAN) and an Aadhaar card for your business identification.",
@@ -78,72 +76,78 @@ export const partnershipContent = {
           ],
           advantages: [
             {
-              heading: "Advantages of Proprietorship", 
+              heading: "Advantages of a Partnership Firm", 
             },
             {
-              title: "Easy registration",
+              title: "Ease of Formation",
               description:
-                "Sole proprietorship registration does not have any formal incorporation or dissolution process - as it's the same as the Proprietor. However, to operate a business, the proprietor may have to obtain certain registrations and licenses to be compliant with the laws and regulations of India.",
+                " Partnership firms are relatively easy and cost-effective to establish, involving fewer formalities compared to other business structures.",
             },
             {
-              title: "Lower compliance",
+              title: "Varied Skill Sets",
               description:
-                "As most proprietorships are only registered with government departments like Income Tax & GST, the compliance burden will be lower. On the other hand, entities like LLP or Company are registered with the Ministry of Corporate Affairs and have to file various statutory returns and be audited by a Chartered Accountant each year.",
+                "Partners can bring diverse skills, knowledge, and resources to the business, enhancing its overall capabilities.",
             },
             {
-              title: "Simplicity",
+              title: "Shared Financial Burden",
               description:
-                "As there are no partners, shareholders, or directors, the proprietor can easily operate this business with minimal documents and consent requirements. Hence, this type of business structure is best suited for very small businesses.",
+                "Partners share the financial responsibilities and risks, making it more manageable for each individual.",
             },
             {
-              title: "Business decision",
+              title: "Tax Benefits",
               description:
-                "In a proprietorship, the business owner takes all business decisions. There is no consent or approval required from any other person. Hence, a proprietor can normally take quick decisions regarding his business affairs.",
+                "Partnership firms are not subject to income tax themselves. Instead, profits are taxed at the individual partners' tax rates, which can lead to potential tax savings.",
             },
             {
-              title: "Complete control",
+              title: "Flexible Decision-Making",
               description:
-                "As sole proprietorship is owned only by the proprietor. He/she has complete control over the assets, revenue, expenses, and all business operations.",
+                "Partnerships allow for flexible decision-making as partners have a say in the business's operations and direction.",
             },
+            {
+                title: "Greater Access to Capital",
+                description:
+                  "Partners can contribute capital, and additional partners can be added to raise more funds for the business.",
+              },
           ],
           disadvantages: [
             {
-              heading: "Disadvantages of Sole Proprietorship",
+              heading: "Disadvantages of a Partnership Firm",
             },
             {
-              title: "Funding",
+              title: "Unlimited Liability",
               description:
-                "This type of business structure relies solely on one person's savings, borrowings, and credit history. As there are no other persons involved, raising funds from banks will be very hard. Raising equity funds will not be possible, as this type of business entity does not allow for profit sharing or shareholding.",
+                " Partners have unlimited personal liability, meaning they are personally responsible for the firm's debts and obligations, which can put their personal assets at risk.",
             },
             {
-              title: "Personal liability",
+              title: "Limited Capital",
               description:
-                "If a proprietor is unable to pay business loans or taxes, the personal assets of the business owner can be attached or encumbered. In this structure, the proprietor will be held personally liable until all liabilities are extinguished.",
+                "Raising substantial capital may be challenging as it relies on the partners' contributions and potential loans.",
             },
             {
-              title: "Business continuity",
+              title: "Conflict Potential",
               description:
-                "In case of death or disability of the business owner, the sole proprietorship will be automatically dissolved. Hence, there will be no business continuity.",
+                "Differences in opinion among partners can lead to conflicts and hinder decision-making.",
             },
             {
-              title: "Growth",
+              title: "Limited Growth Potential",
               description:
-                "A proprietorship has various restrictions in terms of fundraising, liability, and business continuity. Hence, only very small businesses in the unorganized sector operate as proprietorships.",
+                "A partnership may need more growth and scalability compared to larger business structures.",
             },
             {
-              title: "Unincorporated business",
+              title: "Continuity Issues",
               description:
-                "Sole proprietorships are unincorporated businesses. Hence, there is no centralized database to see if a sole proprietorship is active or inactive. Thus, such entities are mostly classified as unorganized businesses.",
+                "The firm's continuity may be disrupted due to a partner's death, withdrawal, or insolvency unless provisions are made in the partnership deed.",
             },
+            {
+                title: "Tax Complexity",
+                description:
+                  "Partnerships can involve complex tax arrangements, and each partner is responsible for their own tax compliance, which may require professional assistance.",
+              },
           ],
         },
         onlineRegistration: {
-          title: "Registering a Proprietorship Online through IndiaFilings",
-          description: `
-            You can easily complete proprietorship firm registration online through Potebaki. 
-            For a sole proprietorship registration, only the PAN & Aadhaar card of the business owner is required. 
-            We can help you obtain the following registrations in less than 15 days:
-          `,
+          title: "Importance of Registering a Partnership Firm",
+          description: `While registering a partnership firm is not legally required under the Indian Partnership Act, it offers several significant advantages and is considered advisable:`,
           registrations: [
             "GST Registration",
             "Zero-Balance Business Current Account with LEDGERS Accounting Software"
