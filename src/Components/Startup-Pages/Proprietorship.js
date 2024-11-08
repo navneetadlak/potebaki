@@ -13,6 +13,7 @@ import { Content } from "../ReusableComponents/Content";
 import Licenses from "../ReusableComponents/Licenses";
 import OnlineRegistration from "../ReusableComponents/OnlineRegistration";
 import AdditionalInfo from "../ReusableComponents/AdditionalInfo";
+import AdvantageAndDisadvantages from "../ReusableComponents/AdvantageAndDisadvantages";
 
 const Proprietorship = ({
   content,
@@ -22,6 +23,9 @@ const Proprietorship = ({
     mainSection,
     sidebar,
     licenses,
+    partnerinindia, //for partnership page
+    advantages,
+    disadvantages,
     newSection,
     onlineRegistration,
     additionalInfo,
@@ -113,28 +117,33 @@ const Proprietorship = ({
         <div className="max-w-4xl py-6">
           {Licenses && <Licenses licensesData={licenses} />}
 
+          {partnership?.map((item, index) => (
+  <div key={index}>
+    {item.title && <h2 className="text-2xl font-semibold mb-2">{item.title}</h2>}
+    {item.description && (
+      <p className="mb-4">
+        {item.description.split("\n").map((line, idx) => (
+          <React.Fragment key={idx}>
+            {line}
+            <br />
+          </React.Fragment>
+        ))}
+      </p>
+    )}
+  </div>
+))}
+
+
+          {/* Partner in india same structure as Advantages and Disadvantages */}
+          {AdvantageAndDisadvantages && <AdvantageAndDisadvantages advantagesData={partnerinindia} />}
+
           {/* Advantages section of proprietorship */}
-          <h2 className="text-2xl font-semibold mb-4">
-            {newSection.advantages[0].heading}
-          </h2>
-          {newSection.advantages.slice(1).map((advantages, index) => (
-            <div key={index} className="mb-4">
-              <span className="font-semibold">{advantages.title}:</span>
-              <span> {advantages.description}</span>
-            </div>
-          ))}
+          {AdvantageAndDisadvantages && <AdvantageAndDisadvantages advantagesData={advantages} />}
 
           {/* Disadvantage section of proprietorship */}
-          <h2 className="text-2xl font-semibold mb-4">
-            {newSection.disadvantages[0].heading}
-          </h2>
+          {AdvantageAndDisadvantages && <AdvantageAndDisadvantages advantagesData={disadvantages} />}
 
-          {newSection.disadvantages.slice(1).map((disadvantage, index) => (
-            <div key={index} className="mb-4">
-              <span className="font-semibold">{disadvantage.title}:</span>
-              <span> {disadvantage.description}</span>
-            </div>
-          ))}
+      
 
           {OnlineRegistration && (
             <OnlineRegistration onlineRegistrationData={onlineRegistration} />

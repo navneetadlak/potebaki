@@ -78,68 +78,66 @@ export const Content = {
         "Depending on your business location, register under your state's Shops and Establishment Act to follow local labor regulations.",
       ],
     },
-    newSection: {
-      advantages: [
-        {
-          heading: "Advantages of Proprietorship", 
-        },
-        {
-          title: "Easy registration",
-          description:
-            "Sole proprietorship registration does not have any formal incorporation or dissolution process - as it's the same as the Proprietor. However, to operate a business, the proprietor may have to obtain certain registrations and licenses to be compliant with the laws and regulations of India.",
-        },
-        {
-          title: "Lower compliance",
-          description:
-            "As most proprietorships are only registered with government departments like Income Tax & GST, the compliance burden will be lower. On the other hand, entities like LLP or Company are registered with the Ministry of Corporate Affairs and have to file various statutory returns and be audited by a Chartered Accountant each year.",
-        },
-        {
-          title: "Simplicity",
-          description:
-            "As there are no partners, shareholders, or directors, the proprietor can easily operate this business with minimal documents and consent requirements. Hence, this type of business structure is best suited for very small businesses.",
-        },
-        {
-          title: "Business decision",
-          description:
-            "In a proprietorship, the business owner takes all business decisions. There is no consent or approval required from any other person. Hence, a proprietor can normally take quick decisions regarding his business affairs.",
-        },
-        {
-          title: "Complete control",
-          description:
-            "As sole proprietorship is owned only by the proprietor. He/she has complete control over the assets, revenue, expenses, and all business operations.",
-        },
-      ],
-      disadvantages: [
-        {
-          heading: "Disadvantages of Sole Proprietorship",
-        },
-        {
-          title: "Funding",
-          description:
-            "This type of business structure relies solely on one person's savings, borrowings, and credit history. As there are no other persons involved, raising funds from banks will be very hard. Raising equity funds will not be possible, as this type of business entity does not allow for profit sharing or shareholding.",
-        },
-        {
-          title: "Personal liability",
-          description:
-            "If a proprietor is unable to pay business loans or taxes, the personal assets of the business owner can be attached or encumbered. In this structure, the proprietor will be held personally liable until all liabilities are extinguished.",
-        },
-        {
-          title: "Business continuity",
-          description:
-            "In case of death or disability of the business owner, the sole proprietorship will be automatically dissolved. Hence, there will be no business continuity.",
-        },
-        {
-          title: "Growth",
-          description:
-            "A proprietorship has various restrictions in terms of fundraising, liability, and business continuity. Hence, only very small businesses in the unorganized sector operate as proprietorships.",
-        },
-        {
-          title: "Unincorporated business",
-          description:
-            "Sole proprietorships are unincorporated businesses. Hence, there is no centralized database to see if a sole proprietorship is active or inactive. Thus, such entities are mostly classified as unorganized businesses.",
-        },
-      ],
-    },
+    advantages: [
+      {
+        heading: "Advantages of Proprietorship", 
+      },
+      {
+        title: "Easy registration",
+        description:
+          "Sole proprietorship registration does not have any formal incorporation or dissolution process - as it's the same as the Proprietor. However, to operate a business, the proprietor may have to obtain certain registrations and licenses to be compliant with the laws and regulations of India.",
+      },
+      {
+        title: "Lower compliance",
+        description:
+          "As most proprietorships are only registered with government departments like Income Tax & GST, the compliance burden will be lower. On the other hand, entities like LLP or Company are registered with the Ministry of Corporate Affairs and have to file various statutory returns and be audited by a Chartered Accountant each year.",
+      },
+      {
+        title: "Simplicity",
+        description:
+          "As there are no partners, shareholders, or directors, the proprietor can easily operate this business with minimal documents and consent requirements. Hence, this type of business structure is best suited for very small businesses.",
+      },
+      {
+        title: "Business decision",
+        description:
+          "In a proprietorship, the business owner takes all business decisions. There is no consent or approval required from any other person. Hence, a proprietor can normally take quick decisions regarding his business affairs.",
+      },
+      {
+        title: "Complete control",
+        description:
+          "As sole proprietorship is owned only by the proprietor. He/she has complete control over the assets, revenue, expenses, and all business operations.",
+      },
+    ],
+    disadvantages: [
+      {
+        heading: "Disadvantages of Sole Proprietorship",
+      },
+      {
+        title: "Funding",
+        description:
+          "This type of business structure relies solely on one person's savings, borrowings, and credit history. As there are no other persons involved, raising funds from banks will be very hard. Raising equity funds will not be possible, as this type of business entity does not allow for profit sharing or shareholding.",
+      },
+      {
+        title: "Personal liability",
+        description:
+          "If a proprietor is unable to pay business loans or taxes, the personal assets of the business owner can be attached or encumbered. In this structure, the proprietor will be held personally liable until all liabilities are extinguished.",
+      },
+      {
+        title: "Business continuity",
+        description:
+          "In case of death or disability of the business owner, the sole proprietorship will be automatically dissolved. Hence, there will be no business continuity.",
+      },
+      {
+        title: "Growth",
+        description:
+          "A proprietorship has various restrictions in terms of fundraising, liability, and business continuity. Hence, only very small businesses in the unorganized sector operate as proprietorships.",
+      },
+      {
+        title: "Unincorporated business",
+        description:
+          "Sole proprietorships are unincorporated businesses. Hence, there is no centralized database to see if a sole proprietorship is active or inactive. Thus, such entities are mostly classified as unorganized businesses.",
+      },
+    ],
     onlineRegistration: {
       title: "Registering a Proprietorship Online through IndiaFilings",
       description: `

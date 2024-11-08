@@ -30,8 +30,8 @@ export const partnershipContent = {
           "description": [
             "A partnership firm is a popular choice among entrepreneurs due to its simplicity and flexibility. It allows multiple individuals to come together and combine their resources, skills, and expertise to run a business. Registering your partnership firm is the first step towards formalizing your partnership and ensuring its legal recognition. At IndiaFilings, we understand that navigating the intricacies of partnership firm registration can be daunting. That's why we offer a comprehensive and hassle-free partnership firm registration online service designed to meet your needs with affordable partnership firm registration fees. Whether you are a new startup or an existing unregistered partnership looking to formalize your business, our expert team of professionals guides you through every step of the registration process. Contact us now to learn more and get started on your partnership firm registration journey."
           ],
-          "subTitle": "Partnership Firms",
-          "subDescription": "A partnership stands as one of the fundamental structures for conducting business. It materializes when two or more individuals collaborate to establish a business venture, sharing profits according to an agreed-upon ratio. This form of business encompasses a broad spectrum of trades, occupations, and professions. A notable advantage is that partnership firms entail relatively fewer regulatory requirements than companies."
+        //   "subTitle": "Partnership Firms",
+        //   "subDescription": "A partnership stands as one of the fundamental structures for conducting business. It materializes when two or more individuals collaborate to establish a business venture, sharing profits according to an agreed-upon ratio. This form of business encompasses a broad spectrum of trades, occupations, and professions. A notable advantage is that partnership firms entail relatively fewer regulatory requirements than companies."
         },
         "sidebar": {
           "title": "RELATED GUIDES",
@@ -62,6 +62,131 @@ export const partnershipContent = {
             }
           ]
         },
+        partnership: [
+            {
+                title: "Partnership Firms",
+                description:
+                  "A partnership stands as one of the fundamental structures for conducting business. It materializes when two or more individuals collaborate to establish a business venture, sharing profits according to an agreed-upon ratio. This form of business encompasses a broad spectrum of trades, occupations, and professions. A notable advantage is that partnership firms entail relatively fewer regulatory requirements than companies.",
+              },
+              {
+                title: "Law Governing the Partnership Firms Registration",
+                description:
+                  "In India, the operation of partnership firms is governed by the Indian Partnership Act of 1932. Those who unite to create a partnership firm are referred to as partners, and the formation of the partnership firm is based on a contractual agreement among these individuals. The agreement among partners is commonly referred to as a partnership deed.",
+              },
+              {
+                title: "Partnership Deed",
+                description:
+                  `A partnership deed is a legal document that outlines the terms and conditions of a partnership. It includes details such as the rights and duties of partners, the distribution of profits, individual capital contributions, and the partnership's duration. \n\n This document is significant as it helps prevent misunderstandings and conflicts among partners by clearly defining their roles and responsibilities. Moreover, it serves as proof of the partnership's existence and can be used in legal proceedings to resolve disputes.`,
+              },
+              {
+                title: "Partnership Firm Registration",
+                description:
+                  "Partnership registration involves the formal registration of a partnership firm by its partners with the Registrar of Firms. This process typically occurs in the state where the firm is located. It's important to note that partnership firm registration is not mandatory, it's optional. Partners can choose to apply for partnership deed registration at the time of forming the firm or later during its ongoing operations. \n\n For partnership deed registration to take place, two or more individuals must come together as partners, agree on a firm name, and create a partnership deed.",
+              },
+            ],
+            partnerinindia: [
+                {
+                    heading: "Who Can Be a Partner in India's Partnership Firms?", 
+                    subheading: "To become a partner in an Indian partnership firm, you need to meet these conditions:",
+                  },
+                  {
+                    title: "Mental and Legal Fitness",
+                    description:
+                      "You must be mentally sound, not underage, not insolvent, and not legally prohibited from making contracts.",
+                  },
+                  {
+                    title: "Registered Partnership Firms",
+                    description:
+                      "A registered partnership firm can partner with other firms or businesses.",
+                  },
+                  {
+                    title: "Head of a Hindu Family",
+                    description:
+                      "A Hindu Undivided Family (HUF) leader can be a partner if they contribute their own skills and labor to the partnership.",
+                  },
+                  {
+                    title: "Companies as Partners",
+                    description:
+                      "Companies, considered legal entities, can also be partners if their objectives permit it.",
+                  },
+                  {
+                    title: "Trustees of Specific Trusts",
+                    description:
+                      "Trustees of private religious, family, or Hindu trusts can partner unless their rules explicitly prohibit it.",
+                  },
+            ],
+            advantages: [
+                {
+                  heading: "Advantages of a Partnership Firm", 
+                  subheading: "The advantages of a Partnership Firm are listed as follows:",
+                },
+                {
+                  title: "Ease of Formation",
+                  description:
+                    " Partnership firms are relatively easy and cost-effective to establish, involving fewer formalities compared to other business structures.",
+                },
+                {
+                  title: "Varied Skill Sets",
+                  description:
+                    "Partners can bring diverse skills, knowledge, and resources to the business, enhancing its overall capabilities.",
+                },
+                {
+                  title: "Shared Financial Burden",
+                  description:
+                    "Partners share the financial responsibilities and risks, making it more manageable for each individual.",
+                },
+                {
+                  title: "Tax Benefits",
+                  description:
+                    "Partnership firms are not subject to income tax themselves. Instead, profits are taxed at the individual partners' tax rates, which can lead to potential tax savings.",
+                },
+                {
+                  title: "Flexible Decision-Making",
+                  description:
+                    "Partnerships allow for flexible decision-making as partners have a say in the business's operations and direction.",
+                },
+                {
+                    title: "Greater Access to Capital",
+                    description:
+                      "Partners can contribute capital, and additional partners can be added to raise more funds for the business.",
+                  },
+              ],
+              disadvantages: [
+                {
+                  heading: "Disadvantages of a Partnership Firm",
+                  subheading: "Partnership firm registration online can be fruitful since it is cost-effective and provides greater access to capital. But you will have the following drawbacks:",
+                },
+                {
+                  title: "Unlimited Liability",
+                  description:
+                    " Partners have unlimited personal liability, meaning they are personally responsible for the firm's debts and obligations, which can put their personal assets at risk.",
+                },
+                {
+                  title: "Limited Capital",
+                  description:
+                    "Raising substantial capital may be challenging as it relies on the partners' contributions and potential loans.",
+                },
+                {
+                  title: "Conflict Potential",
+                  description:
+                    "Differences in opinion among partners can lead to conflicts and hinder decision-making.",
+                },
+                {
+                  title: "Limited Growth Potential",
+                  description:
+                    "A partnership may need more growth and scalability compared to larger business structures.",
+                },
+                {
+                  title: "Continuity Issues",
+                  description:
+                    "The firm's continuity may be disrupted due to a partner's death, withdrawal, or insolvency unless provisions are made in the partnership deed.",
+                },
+                {
+                    title: "Tax Complexity",
+                    description:
+                      "Partnerships can involve complex tax arrangements, and each partner is responsible for their own tax compliance, which may require professional assistance.",
+                  },
+              ],
         newSection: {
           title: "Who Can Be a Partner in India's Partnership Firms?",
           description: [
@@ -73,76 +198,6 @@ export const partnershipContent = {
             "If your business exceeds specific thresholds, you must register for Goods and Services Tax (GST) to collect and pay GST.",
             "Open a separate bank account for your business to manage finances smoothly.",
             "Depending on your business location, register under your state's Shops and Establishment Act to follow local labor regulations.",
-          ],
-          advantages: [
-            {
-              heading: "Advantages of a Partnership Firm", 
-            },
-            {
-              title: "Ease of Formation",
-              description:
-                " Partnership firms are relatively easy and cost-effective to establish, involving fewer formalities compared to other business structures.",
-            },
-            {
-              title: "Varied Skill Sets",
-              description:
-                "Partners can bring diverse skills, knowledge, and resources to the business, enhancing its overall capabilities.",
-            },
-            {
-              title: "Shared Financial Burden",
-              description:
-                "Partners share the financial responsibilities and risks, making it more manageable for each individual.",
-            },
-            {
-              title: "Tax Benefits",
-              description:
-                "Partnership firms are not subject to income tax themselves. Instead, profits are taxed at the individual partners' tax rates, which can lead to potential tax savings.",
-            },
-            {
-              title: "Flexible Decision-Making",
-              description:
-                "Partnerships allow for flexible decision-making as partners have a say in the business's operations and direction.",
-            },
-            {
-                title: "Greater Access to Capital",
-                description:
-                  "Partners can contribute capital, and additional partners can be added to raise more funds for the business.",
-              },
-          ],
-          disadvantages: [
-            {
-              heading: "Disadvantages of a Partnership Firm",
-            },
-            {
-              title: "Unlimited Liability",
-              description:
-                " Partners have unlimited personal liability, meaning they are personally responsible for the firm's debts and obligations, which can put their personal assets at risk.",
-            },
-            {
-              title: "Limited Capital",
-              description:
-                "Raising substantial capital may be challenging as it relies on the partners' contributions and potential loans.",
-            },
-            {
-              title: "Conflict Potential",
-              description:
-                "Differences in opinion among partners can lead to conflicts and hinder decision-making.",
-            },
-            {
-              title: "Limited Growth Potential",
-              description:
-                "A partnership may need more growth and scalability compared to larger business structures.",
-            },
-            {
-              title: "Continuity Issues",
-              description:
-                "The firm's continuity may be disrupted due to a partner's death, withdrawal, or insolvency unless provisions are made in the partnership deed.",
-            },
-            {
-                title: "Tax Complexity",
-                description:
-                  "Partnerships can involve complex tax arrangements, and each partner is responsible for their own tax compliance, which may require professional assistance.",
-              },
           ],
         },
         onlineRegistration: {
