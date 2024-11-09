@@ -1,6 +1,8 @@
 import React from 'react'
 
 const AdvantageAndDisadvantages = ({ advantagesData }) => {
+    if(!advantagesData) return null;
+
   return (
     <>
      <h2 className="text-2xl font-semibold mb-4">

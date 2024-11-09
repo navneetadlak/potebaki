@@ -24,8 +24,11 @@ const Proprietorship = ({
     sidebar,
     licenses,
     partnerinindia, //for partnership page
+    impotanceofpartnership,
+    eligibility,
     advantages,
     disadvantages,
+    requiredDocument,
     newSection,
     onlineRegistration,
     additionalInfo,
@@ -36,6 +39,7 @@ const Proprietorship = ({
     compliance,
     partnership,
     documentsRequired,
+    lastparagraph,
   } = content;
   const sidebarRef = useRef(null);
   const compareTableRef = useRef(null);
@@ -137,13 +141,23 @@ const Proprietorship = ({
           {/* Partner in india same structure as Advantages and Disadvantages */}
           {AdvantageAndDisadvantages && <AdvantageAndDisadvantages advantagesData={partnerinindia} />}
 
+          {/* Eligibility criteria section */}
+          {AdvantageAndDisadvantages && <AdvantageAndDisadvantages advantagesData={eligibility} />}
+
           {/* Advantages section of proprietorship */}
           {AdvantageAndDisadvantages && <AdvantageAndDisadvantages advantagesData={advantages} />}
 
           {/* Disadvantage section of proprietorship */}
           {AdvantageAndDisadvantages && <AdvantageAndDisadvantages advantagesData={disadvantages} />}
 
-      
+          {/* Required Documents for OPC Registration Online */}
+          {requiredDocument?.heading && requiredDocument?.subheading &&(
+            <>
+                <h2 className="text-xl font-semibold mb-2">{requiredDocument.heading}</h2>
+                <p className="mb-4">{requiredDocument.subheading}</p>
+                <p className="mb-4">{requiredDocument.titles}</p>
+            </>
+          )}
 
           {OnlineRegistration && (
             <OnlineRegistration onlineRegistrationData={onlineRegistration} />
@@ -176,6 +190,28 @@ const Proprietorship = ({
   </>
 )}
 
+
+{/* Importance of Registering a Partnership Firm */}
+{impotanceofpartnership?.title && impotanceofpartnership?.subTitle && impotanceofpartnership?.items?.length > 0 && (
+  <>
+    <h2 className="text-2xl font-semibold mb-2">{impotanceofpartnership.title}</h2>
+    <div className="mb-4">
+      <p className="mb-2">{impotanceofpartnership.subTitle}</p>
+    </div>
+    {impotanceofpartnership.items.map((item, index) => (
+      <div className="mb-4" key={index}>
+        <span className="font-semibold">{item.label}:</span>
+        <span>  {item.description.split("\n").map((line, idx) => (
+          <React.Fragment key={idx}>
+            {line}
+            <br />
+          </React.Fragment>
+        ))}</span>
+      </div>
+    ))}
+  </>
+)}
+
 {compliance?.title && compliance?.subTitle && compliance?.items?.length > 0 && (
   <>
     <h2 className="text-2xl font-semibold mb-2">{compliance.title}</h2>
@@ -185,11 +221,37 @@ const Proprietorship = ({
     {compliance.items.map((item, index) => (
       <div className="mb-4" key={index}>
         <span className="font-semibold">{item.label}:</span>
-        <span> {item.description}</span>
+        <span>  {item.description.split("\n").map((line, idx) => (
+          <React.Fragment key={idx}>
+            {line}
+            <br />
+          </React.Fragment>
+        ))}</span>
       </div>
     ))}
   </>
 )}
+
+{/* lastparagraph section */}
+ {lastparagraph?.title && lastparagraph?.description && (
+  <>
+    <h2 className="text-2xl font-semibold mb-2">{lastparagraph.title}</h2>
+    <div className="mb-4">
+      <p className="mb-2">
+        {lastparagraph.description.split("\n").map((line, idx) => (
+          <React.Fragment key={idx}>
+            {line}
+            <br />
+          </React.Fragment>
+        ))}
+      </p>
+    </div>
+    {lastparagraph.note && (
+      <p className="font-bold text-xl">{lastparagraph.note}</p>
+    )}
+  </>
+)}
+
 
         </div>
         <div ref={compareTableRef}>

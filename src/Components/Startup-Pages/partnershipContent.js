@@ -200,116 +200,62 @@ export const partnershipContent = {
             "Depending on your business location, register under your state's Shops and Establishment Act to follow local labor regulations.",
           ],
         },
-        onlineRegistration: {
-          title: "Importance of Registering a Partnership Firm",
-          description: `While registering a partnership firm is not legally required under the Indian Partnership Act, it offers several significant advantages and is considered advisable:`,
-          registrations: [
-            "GST Registration",
-            "Zero-Balance Business Current Account with LEDGERS Accounting Software"
-          ],
-          para: [
-            `Once, you have registered for the proprietorship firm registration online on IndiaFilings, please follow the steps below and upload the following documents by logging into LEDGERS.`
-          ],
-          instructions: [
-            "Login to LEDGERS using the email address for payment.",
-            "Go to Services Tab & Select Proprietorship Engagement.",
-            "Upload your PAN & Aadhaar Card Copy.",
-            "An Potebaki expert will file the registration with the GST Department and bank for a current account.",
-            "Access to LEDGERS for GST invoicing, filing, and other services."
-          ],
-        },
-          additionalInfo: {
-            heading:`PAN Card for Proprietorship Firm Registration Online`,
-            panCard: `
-              A proprietorship is not a separate business entity. Hence, there is no procedure to obtain proprietorship PAN card. The PAN card of the business owner is used for the proprietorship.
-            `,
-            heading2:`Obtaining GST Registration for Proprietorship`,
-            gst: `
-              Udyam Registration can be obtained online to avail various benefits available for small
-                and medium sized businesses. Once the GST registration is obtained,
-                the IndiaFilings team would help obtain UDYAM registration by
-                submitting Aadhaar card, PAN card and GST certificate to Government.
-            `,
-            gstDocuments: [
-              "Permanent Account Number (PAN) of Proprietor",
-              "Digital Signature Certificate of the Authorized Signatory",
-              "Consent by Proprietor for obtaining GST Registration",
-              "Photograph of Proprietor and Authorized Signatory",
-              "Bank account details: Cancelled cheque with business name, account number, and IFSC code.",
-              "Declaration / Authorization to Authorized Signatory",
-              "For commercial purposes, the rent / lease agreement should be in the name of the proprietor.",
-              "Additional documents such as Aadhaar Card, Driving Licence, Passport, or Voter ID in the name of the Owner with the complete address of the premises should also be provided if the address on the ownership document (Property Tax Receipt or Municipal Khata copy or copy of Electricity Bill) is incomplete."
-            ]
-        },
-        bankAccount: {
-          title: "Bank Account for Proprietorship",
-          description: `
-            The bank current account for a proprietorship will be opened in the
-                name of the business owner using his/her PAN. The business owner
-                will have to submit proof for doing business. Any two of the
-                following documents can be submitted to create a current account
-                instead of savings account in the name of proprietorship:
-          `,
-          documents: [
-            "GST registration certificate",
-            "Shop & Establishment Act license",
-            "License issued by the Registering authority like Certificate of Practice issued by Institute of Chartered Accountants of India, Institute of Cost Accountants of India, Institute of Company Secretaries of India, Indian Medical Council, Food and Drug Control Authorities,",
-            "Banks may also accept IEC (Importer Exporter Code) issued to theproprietary concern by the office of DGFT as an identity document for opening a bank account etc."
-          ]
-        },
-        licenseDetails: {
-          title: "Obtaining Shops & Establishment Act License for Proprietorship",
-          description: `
-            From state to state, the process for acquiring a Shop and
-                Establishment registration certificate changes. It is available both
-                online and offline. In most states, Shop and Establishment Act
-                registration can be obtained within 2-3 weeks.
-          `
-        },
-        timeline: {
-          title: "Timelines for Sole Proprietorship Registration",
-          description: `
-            A sole proprietorship registration can normally be done in India
-                through IndiaFilings in less than 15 days. However, the timelines
-                for registration will vary from case to case, depending on the
-                government and bank processing timelines.
-          `
-        },
-        businessActivities: {
-          title: "Proprietorship Business Activities",
-          description: `
-           A proprietorship can undertake any type of business activity that an
-                Indian person can undertake across most sectors and industries.
-                However, there are some activities like banking, insurance,
-                financial services, lending, defence, and telecommunication that
-                require specialized approval. In such cases, a company is
-                mandatorily required to obtain various approvals from the
-                Government. Hence, the proprietorship business structure only works
-                for business activities that are small-scale in nature. This might
-                be one of the limitations of the proprietorship firm registration.
-          `
-        },
         compliance: {
-          title: "Compliances for Proprietorship",
-          subTitle: "The following are some of the compliances that are applicable for a sole proprietorship registration:",
+          title: "Procedure for Partnership Firm Registration",
+          subTitle: "The procedure for partnership deed registration is explained in detail below:",
           items: [
             {
-              label: "Income Tax Filing",
-              description: "The business owner of a proprietorship will have to file a personal income tax return using the form ITR-3 or ITR-4.",
+              label: "Obtain a Digital Signature Certificate (DSC)",
+              description: "Obtain a DSC for all partners. This electronic signature is necessary for online document signing and can be acquired from a certified agency.",
             },
             {
-              label: "Business Income",
-              description: "Only income tax forms ITR-3 and ITR-4 allow for declaring business income. Hence, all proprietorships will have to file form ITR-3 or ITR-4 to be compliant with the income tax regulations.",
+              label: "Obtain a Designated Partner Identification Number (DPIN)",
+              description: "After securing the DSC, partners must apply for a unique DPIN. This identification number is required for all partners and can be obtained through the MCA website.",
             },
             {
-              label: "GST Return Filing",
-              description: "If a proprietorship has GST registration, GST return must be filed every month and quarter as per the scheme under which the business is registered.",
+              label: "Choose a Name for the Partnership Firm",
+              description: "Select a unique name for the partnership firm, ensuring it is not identical or similar to any existing company or LLP. It must also comply with legal naming regulations.",
             },
             {
-              label: "TDS Returns",
-              description: "In case the proprietorship is having employees or purchasing goods/services beyond a certain threshold - tax must be deducted at source and TDS returns must be filed every quarter. In addition to the above, various other compliance requirements may be applicable to the proprietorship based on industry and location.",
+              label: "Draft the Partnership Deed",
+              description: "Create a comprehensive partnership deed outlining the terms and conditions of the partnership. This document should include the firm's name, partner names and addresses, business nature, profit-sharing ratio, and the partnership's duration.",
             },
+            {
+                label: "Application for Registration",
+                description: "Partners must apply with the Registrar of Firms, including firm details, partners' names and addresses, and the duration of the firm. \n\n The name of the Partnership Firm \n The principal place of business \n The location of any other sites where the firm carries on business \n The date of joining of partners \nThe names and addresses of the partners \n The duration of the firm",
+              },
+              {
+                label: "Obtain the Certificate of Registration",
+                description: "Following verification by the Registrar of Firms, If the Registrar is satisfied with the application, a Certificate of Registration will be issued to confirm the partnership deed registration. This certificate proves the firm's registration with the Registrar of Firms.",
+              },
+              {
+                label: "Apply for PAN and TAN",
+                description: "Apply for a Permanent Account Number (PAN) and a Tax Deduction and Collection Account Number (TAN) from the Income Tax Department. These numbers are essential for tax-related matters.",
+              },
           ],
+        },
+        impotanceofpartnership: {
+            title: "Importance of Registering a Partnership Firm",
+            subTitle: "While registering a partnership firm is not legally required under the Indian Partnership Act, it offers several significant advantages and is considered advisable:",
+            items: [
+              {
+                label: "Legal Standing",
+                description: "A registered partnership firm obtains legal recognition. This allows partners to enforce their contractual rights against other partners or the firm. In contrast, unregistered partnership firms face limitations when pursuing legal action.",
+              },
+              {
+                label: "Suing Third Parties",
+                description: "Registered firm can file a lawsuit against third parties to enforce its contractual rights, providing legal protection unregistered firms do not enjoy. Unregistered firms cannot initiate legal proceedings against external parties.",
+              },
+              {
+                label: "Claiming Set-Off",
+                description: "Registered firms can claim set-off or other legal remedies to enforce contractual rights. Unregistered firms lack this legal advantage in proceedings brought against them.",
+              },
+            ],
+          },
+          lastparagraph: {
+            title: "How can Potebaki help in Partnership Firm Registration?",
+            description: "We offer comprehensive assistance in Partnership Firm Registration, simplifying the complex process for you. Our experienced team provides expert guidance, aids in document preparation, assists with name selection, and ensures full legal compliance with affordable partnership firm registration fees. We take care of submitting your application to the relevant authorities and keep you informed with timely updates. Whether initiating a new partnership or formalizing an existing one, our services are tailored to your unique needs. We don't stop at registration; our support continues post-registration, helping you understand the ongoing responsibilities of operating a registered partnership firm. \n\n    With IndiaFilings, you can confidently navigate the partnership firm registration online process, knowing that your partnership is established efficiently, allowing you to concentrate on your business's growth. Our effective solutions and reasonable partnership firm registration fees make the entire process hassle-free and affordable. Contact us today to take the first step towards a successful partnership.",
+            note: "Your success is our priority!",
         },
 }
 

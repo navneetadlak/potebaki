@@ -1,256 +1,320 @@
 import React from 'react'
 
-export const onePersonCompanyContent = {
-        pricingSection: {
-          title: "One Person Company",
-          customerRating: {
-            rating: 4.7,
-            count: 8533,
-          },
-          description: "Easily set up a sole proprietorship online with GST registration.",
-          documentTitle: "Documents Required",
-          documents: ["PAN Card", "Aadhaar Card"],
-          products: [
-            {
-              title: "GST Registration",
-              price: "INR 2899",
-              offers: ["GST Application Submission", "GST Application Tracking", "GST Registration certificate", "Bank Account Opening"],
-              allInclusive: true,
+  export const onePersonCompanyContent = {
+      PricingSection: {
+            title: "OPC Registration",
+            customerRating: {
+              rating: 4.2,
+              count: 9533,
             },
-            {
-              title: "Trademark",
-              price: "INR 6988",
-              offers: ["Trademark Filing", "1 Trademark Class", "Individuals & MSMEs"],
-              allInclusive: true,
-            }
-          ]
-        },
-        "mainSection": {
-          "title": "Proprietorship Registration",
-          "description": [
-            "Sole proprietorship is one of the oldest and easiest Business Structure to start in India. A proprietorship is a type of business that is owned, managed, and controlled by one person - who is the proprietor. As the proprietorship and proprietor are one and the same, it is very easy to start and there are very minimal compliance requirements.",
-            "As the proprietor and the business are one and the same, a proprietorship cannot have other partners or shareholders. Further, there is no limited liability protection for the proprietor from the business activities conducted in the sole proprietorship. Hence, this type of business entity is best suited for every small businesses with no more than 5 employees.",
-            "Potebaki can assist you in registering for a Sole proprietorship, a simple and efficient business structure that is ideal for solo entrepreneurs. With our expert guidance and streamlined process, you can start your proprietorship firm registration online quickly and hassle-free. Start your Sole Proprietorship registration with us and unlock the potential of your business ideas."
-          ],
-          "subTitle": "Sole Proprietorship Registration in India",
-          "subDescription": "Sole Proprietorship registration in India follows a unique approach, as there isn't a dedicated government-established registration process for this business structure. Instead, a proprietorship firm registration online gains recognition through tax registrations mandated by relevant laws and regulations. One pivotal tax registration is the GST (Goods and Services Tax) Registration, which must be secured under the proprietor's name to formalize the business's proprietorship status. This sole proprietorship registration signifies that the proprietor is conducting business within the framework of a proprietorship."
-        },
-        "sidebar": {
-          "title": "RELATED GUIDES",
-          "guides": [
-            {
-              "title": "Proprietorship Registration: A Comprehensive Guide for Entrepreneurs",
-              "link": "#"
-            },
-            {
-              "title": "Difference between One Person Company and Sole Proprietorship",
-              "link": "#"
-            },
-            {
-              "title": "What is meant by a proprietorship firm?",
-              "link": "#"
-            },
-            {
-              "title": "What are the types of proprietorship?",
-              "link": "#"
-            },
-            {
-              "title": "GST Registration for Proprietorship",
-              "link": "#"
-            },
-            {
-              "title": "Conversion of Proprietorship into Private Limited",
-              "link": "#"
-            }
-          ]
-        },
-        newSection: {
-          title: "Essential Licenses and Registrations for Proprietorships",
-          description: [
-            "To run a proprietorship in India, you need important licenses and registrations, including:",
-          ],
-          licenses: [
-            "Get a Permanent Account Number (PAN) and an Aadhaar card for your business identification.",
-            "Register under UDYAM, which recognizes your business as a Micro, Small, or Medium Enterprise (MSME) and offers government benefits.",
-            "If your business exceeds specific thresholds, you must register for Goods and Services Tax (GST) to collect and pay GST.",
-            "Open a separate bank account for your business to manage finances smoothly.",
-            "Depending on your business location, register under your state's Shops and Establishment Act to follow local labor regulations.",
-          ],
-          advantages: [
-            {
-              heading: "Advantages of Proprietorship", 
-            },
-            {
-              title: "Easy registration",
-              description:
-                "Sole proprietorship registration does not have any formal incorporation or dissolution process - as it's the same as the Proprietor. However, to operate a business, the proprietor may have to obtain certain registrations and licenses to be compliant with the laws and regulations of India.",
-            },
-            {
-              title: "Lower compliance",
-              description:
-                "As most proprietorships are only registered with government departments like Income Tax & GST, the compliance burden will be lower. On the other hand, entities like LLP or Company are registered with the Ministry of Corporate Affairs and have to file various statutory returns and be audited by a Chartered Accountant each year.",
-            },
-            {
-              title: "Simplicity",
-              description:
-                "As there are no partners, shareholders, or directors, the proprietor can easily operate this business with minimal documents and consent requirements. Hence, this type of business structure is best suited for very small businesses.",
-            },
-            {
-              title: "Business decision",
-              description:
-                "In a proprietorship, the business owner takes all business decisions. There is no consent or approval required from any other person. Hence, a proprietor can normally take quick decisions regarding his business affairs.",
-            },
-            {
-              title: "Complete control",
-              description:
-                "As sole proprietorship is owned only by the proprietor. He/she has complete control over the assets, revenue, expenses, and all business operations.",
-            },
-          ],
-          disadvantages: [
-            {
-              heading: "Disadvantages of Sole Proprietorship",
-            },
-            {
-              title: "Funding",
-              description:
-                "This type of business structure relies solely on one person's savings, borrowings, and credit history. As there are no other persons involved, raising funds from banks will be very hard. Raising equity funds will not be possible, as this type of business entity does not allow for profit sharing or shareholding.",
-            },
-            {
-              title: "Personal liability",
-              description:
-                "If a proprietor is unable to pay business loans or taxes, the personal assets of the business owner can be attached or encumbered. In this structure, the proprietor will be held personally liable until all liabilities are extinguished.",
-            },
-            {
-              title: "Business continuity",
-              description:
-                "In case of death or disability of the business owner, the sole proprietorship will be automatically dissolved. Hence, there will be no business continuity.",
-            },
-            {
-              title: "Growth",
-              description:
-                "A proprietorship has various restrictions in terms of fundraising, liability, and business continuity. Hence, only very small businesses in the unorganized sector operate as proprietorships.",
-            },
-            {
-              title: "Unincorporated business",
-              description:
-                "Sole proprietorships are unincorporated businesses. Hence, there is no centralized database to see if a sole proprietorship is active or inactive. Thus, such entities are mostly classified as unorganized businesses.",
-            },
-          ],
-        },
-        onlineRegistration: {
-          title: "Registering a Proprietorship Online through IndiaFilings",
-          description: `
-            You can easily complete proprietorship firm registration online through Potebaki. 
-            For a sole proprietorship registration, only the PAN & Aadhaar card of the business owner is required. 
-            We can help you obtain the following registrations in less than 15 days:
-          `,
-          registrations: [
-            "GST Registration",
-            "Zero-Balance Business Current Account with LEDGERS Accounting Software"
-          ],
-          para: [
-            `Once, you have registered for the proprietorship firm registration online on IndiaFilings, please follow the steps below and upload the following documents by logging into LEDGERS.`
-          ],
-          instructions: [
-            "Login to LEDGERS using the email address for payment.",
-            "Go to Services Tab & Select Proprietorship Engagement.",
-            "Upload your PAN & Aadhaar Card Copy.",
-            "An Potebaki expert will file the registration with the GST Department and bank for a current account.",
-            "Access to LEDGERS for GST invoicing, filing, and other services."
-          ],
-        },
-          additionalInfo: {
-            heading:`PAN Card for Proprietorship Firm Registration Online`,
-            panCard: `
-              A proprietorship is not a separate business entity. Hence, there is no procedure to obtain proprietorship PAN card. The PAN card of the business owner is used for the proprietorship.
-            `,
-            heading2:`Obtaining GST Registration for Proprietorship`,
-            gst: `
-              Udyam Registration can be obtained online to avail various benefits available for small
-                and medium sized businesses. Once the GST registration is obtained,
-                the IndiaFilings team would help obtain UDYAM registration by
-                submitting Aadhaar card, PAN card and GST certificate to Government.
-            `,
-            gstDocuments: [
-              "Permanent Account Number (PAN) of Proprietor",
-              "Digital Signature Certificate of the Authorized Signatory",
-              "Consent by Proprietor for obtaining GST Registration",
-              "Photograph of Proprietor and Authorized Signatory",
-              "Bank account details: Cancelled cheque with business name, account number, and IFSC code.",
-              "Declaration / Authorization to Authorized Signatory",
-              "For commercial purposes, the rent / lease agreement should be in the name of the proprietor.",
-              "Additional documents such as Aadhaar Card, Driving Licence, Passport, or Voter ID in the name of the Owner with the complete address of the premises should also be provided if the address on the ownership document (Property Tax Receipt or Municipal Khata copy or copy of Electricity Bill) is incomplete."
+            description: "Easily set up a sole proprietorship online with GST registration.",
+            documentTitle: "Documents Required",
+            documents: ["PAN Card", "Aadhaar Card"],
+            products: [
+              {
+                title: "MCA Name Approval",
+                price: "INR 2899",
+                offers: ["Name Application Fee", "Instant Filing", "4 Name Choice"],
+                allInclusive: true,
+              },
+              {
+                title: "Name & Incorporation",
+                price: "INR 6988",
+                offers: ["MCA Name Approval", "Instant Incorporation", "Incorporation Fee", "Company Incorporation", "Hyper Token", "DSC Support & Shipping", "Bank Account Assistance"],
+                allInclusive: true,
+              }
             ]
-        },
-        bankAccount: {
-          title: "Bank Account for Proprietorship",
-          description: `
-            The bank current account for a proprietorship will be opened in the
-                name of the business owner using his/her PAN. The business owner
-                will have to submit proof for doing business. Any two of the
-                following documents can be submitted to create a current account
-                instead of savings account in the name of proprietorship:
-          `,
-          documents: [
-            "GST registration certificate",
-            "Shop & Establishment Act license",
-            "License issued by the Registering authority like Certificate of Practice issued by Institute of Chartered Accountants of India, Institute of Cost Accountants of India, Institute of Company Secretaries of India, Indian Medical Council, Food and Drug Control Authorities,",
-            "Banks may also accept IEC (Importer Exporter Code) issued to theproprietary concern by the office of DGFT as an identity document for opening a bank account etc."
-          ]
-        },
-        licenseDetails: {
-          title: "Obtaining Shops & Establishment Act License for Proprietorship",
-          description: `
-            From state to state, the process for acquiring a Shop and
-                Establishment registration certificate changes. It is available both
-                online and offline. In most states, Shop and Establishment Act
-                registration can be obtained within 2-3 weeks.
-          `
-        },
-        timeline: {
-          title: "Timelines for Sole Proprietorship Registration",
-          description: `
-            A sole proprietorship registration can normally be done in India
-                through IndiaFilings in less than 15 days. However, the timelines
-                for registration will vary from case to case, depending on the
-                government and bank processing timelines.
-          `
-        },
-        businessActivities: {
-          title: "Proprietorship Business Activities",
-          description: `
-           A proprietorship can undertake any type of business activity that an
-                Indian person can undertake across most sectors and industries.
-                However, there are some activities like banking, insurance,
-                financial services, lending, defence, and telecommunication that
-                require specialized approval. In such cases, a company is
-                mandatorily required to obtain various approvals from the
-                Government. Hence, the proprietorship business structure only works
-                for business activities that are small-scale in nature. This might
-                be one of the limitations of the proprietorship firm registration.
-          `
-        },
-        compliance: {
-          title: "Compliances for Proprietorship",
-          subTitle: "The following are some of the compliances that are applicable for a sole proprietorship registration:",
-          items: [
-            {
-              label: "Income Tax Filing",
-              description: "The business owner of a proprietorship will have to file a personal income tax return using the form ITR-3 or ITR-4.",
-            },
-            {
-              label: "Business Income",
-              description: "Only income tax forms ITR-3 and ITR-4 allow for declaring business income. Hence, all proprietorships will have to file form ITR-3 or ITR-4 to be compliant with the income tax regulations.",
-            },
-            {
-              label: "GST Return Filing",
-              description: "If a proprietorship has GST registration, GST return must be filed every month and quarter as per the scheme under which the business is registered.",
-            },
-            {
-              label: "TDS Returns",
-              description: "In case the proprietorship is having employees or purchasing goods/services beyond a certain threshold - tax must be deducted at source and TDS returns must be filed every quarter. In addition to the above, various other compliance requirements may be applicable to the proprietorship based on industry and location.",
-            },
-          ],
-        },
-}
+          },
+          "mainSection": {
+            "title": "One-Person Company (OPC) Registration",
+            "description": [
+              "Registering a One-Person Company (OPC) is favored among entrepreneurs who desire limited liability and a distinct legal identity. OPC is a unique business structure that permits a single person to function as a company, giving them the benefits of limited liability while retaining complete control. In an OPC, the individual serves as both the director and shareholder, merging the advantages of a sole proprietorship with the legal protection of a private limited company. \n\n At IndiaFilings, we specialize in simplifying the OPC registration process, ensuring that entrepreneurs can smoothly navigate the complexities of legal formalities with reasonable One person company registration fees. Our experienced team is dedicated to assisting you at every step, from document preparation to filing, we offer expert guidance to help you make informed decisions regarding your One Person Company Registration. \n\n Contact us now and take the first step toward building your entrepreneurial dream!"
+            ],
+          //   "subTitle": "Partnership Firms",
+          //   "subDescription": "A partnership stands as one of the fundamental structures for conducting business. It materializes when two or more individuals collaborate to establish a business venture, sharing profits according to an agreed-upon ratio. This form of business encompasses a broad spectrum of trades, occupations, and professions. A notable advantage is that partnership firms entail relatively fewer regulatory requirements than companies."
+          },
+          "sidebar": {
+            "title": "RELATED GUIDES",
+            "guides": [
+              {
+                "title": "What is OPC?",
+                "link": "#"
+              },
+              {
+                "title": "Who is eligible for OPC?",
+                "link": "#"
+              },
+              {
+                "title": "How to Register a One Person Company (OPC)",
+                "link": "#"
+              },
+              {
+                "title": "Can a person be a member of more than one OPC?",
+                "link": "#"
+              },
+              {
+                "title": "What are the benefits of OPC?",
+                "link": "#"
+              },
+              {
+                "title": "Documents Required for Company Registration",
+                "link": "#"
+              },
+              {
+                "title": "One Person Company in India, Companies Act 2013",
+                "link": "#"
+              }
+            ]
+          },
+          partnership: [
+              {
+                  title: "Introduction to One Person Company (OPC)",
+                  description:
+                    "One Person Company (OPC) registration in India was introduced as a concept under the Companies Act of 2013, enabling a single individual to establish a company and enjoy the combined benefits of both a sole proprietorship and a traditional company structure. This concept became available with the implementation of the Companies Act in 2013. \n\n The primary objective behind creating one-person companies was to foster entrepreneurship and encourage the formalization of Micro, Small, and Medium Enterprises (MSMEs). According to Section 2(62) of the Companies Act 2013, a company can be formed with just one director and one member, and interestingly, these roles can be held by the same individual. Simply, OPC Company registration allows a single person to set up a limited liability company in India. The following describes the eligibility and procedure to register one person company.",
+                },
+                // {
+                //   title: "Law Governing the Partnership Firms Registration",
+                //   description:
+                //     "In India, the operation of partnership firms is governed by the Indian Partnership Act of 1932. Those who unite to create a partnership firm are referred to as partners, and the formation of the partnership firm is based on a contractual agreement among these individuals. The agreement among partners is commonly referred to as a partnership deed.",
+                // },
+                // {
+                //   title: "Partnership Deed",
+                //   description:
+                //     `A partnership deed is a legal document that outlines the terms and conditions of a partnership. It includes details such as the rights and duties of partners, the distribution of profits, individual capital contributions, and the partnership's duration. \n\n This document is significant as it helps prevent misunderstandings and conflicts among partners by clearly defining their roles and responsibilities. Moreover, it serves as proof of the partnership's existence and can be used in legal proceedings to resolve disputes.`,
+                // },
+                // {
+                //   title: "Partnership Firm Registration",
+                //   description:
+                //     "Partnership registration involves the formal registration of a partnership firm by its partners with the Registrar of Firms. This process typically occurs in the state where the firm is located. It's important to note that partnership firm registration is not mandatory, it's optional. Partners can choose to apply for partnership deed registration at the time of forming the firm or later during its ongoing operations. \n\n For partnership deed registration to take place, two or more individuals must come together as partners, agree on a firm name, and create a partnership deed.",
+                // },
+              ],
+              // partnerinindia: [
+              //     {
+              //         heading: "Who Can Be a Partner in India's Partnership Firms?", 
+              //         subheading: "To become a partner in an Indian partnership firm, you need to meet these conditions:",
+              //       },
+              //       {
+              //         title: "Mental and Legal Fitness",
+              //         description:
+              //           "You must be mentally sound, not underage, not insolvent, and not legally prohibited from making contracts.",
+              //       },
+              //       {
+              //         title: "Registered Partnership Firms",
+              //         description:
+              //           "A registered partnership firm can partner with other firms or businesses.",
+              //       },
+              //       {
+              //         title: "Head of a Hindu Family",
+              //         description:
+              //           "A Hindu Undivided Family (HUF) leader can be a partner if they contribute their own skills and labor to the partnership.",
+              //       },
+              //       {
+              //         title: "Companies as Partners",
+              //         description:
+              //           "Companies, considered legal entities, can also be partners if their objectives permit it.",
+              //       },
+              //       {
+              //         title: "Trustees of Specific Trusts",
+              //         description:
+              //           "Trustees of private religious, family, or Hindu trusts can partner unless their rules explicitly prohibit it.",
+              //       },
+              // ],
+              eligibility: [
+                {
+                  heading: "Eligibility Criteria", 
+                  subheading: "Before you go ahead and engage in OPC registration process, it's crucial to understand the specific eligibility criteria and limitations that govern its formation. The Companies Act sets out clear requirements that must be met to ensure that the individual promoting the OPC is eligible to do so.",
+                },
+                {
+                  title: "Natural Person and Indian Citizen",
+                  description:
+                    " Only a natural person who is an Indian citizen can establish an OPC. Legal entities like companies or LLPs cannot create an OPC.",
+                },
+                {
+                  title: "Resident in India",
+                  description:
+                    "The promoter must be a resident in India, meaning they should have lived in India for at least 182 days during the previous calendar year.",
+                },
+                {
+                  title: "Minimum Authorized Capital",
+                  description:
+                    "The OPC must have a minimum authorized capital of Rs 1 00,000, the amount stated in the company's capital clause during the OPC Company registration.",
+                },
+                {
+                  title: "Nominee Appointment",
+                  description:
+                    "The promoter must appoint a nominee during the OPC's incorporation. This nominee would become a member of the OPC in the event of the promoter's death or incapacity.",
+                },
+                {
+                  title: "Restrictions on Certain Businesses",
+                  description:
+                    "Businesses involved in financial activities such as banking, insurance, or investments are not eligible for OPC company registration.",
+                },
+                {
+                    title: "Conversion to Private Limited Company",
+                    description:
+                      "If the OPC's paid-up share capital exceeds 50 lakhs or its average annual turnover surpasses 2 Crores, it must be converted into a private limited company to comply with the regulatory requirements for larger companies.",
+                  },
+              ],
+              advantages: [
+                  {
+                    heading: "Advantages of One Person Company (OPC)", 
+                    subheading: "Advantages of One Person Company (OPC) include the following:",
+                  },
+                  {
+                    title: "Legal Status",
+                    description:
+                      "An OPC obtains a separate legal entity status, safeguarding the individual who founded it from personal liability for company losses.",
+                  },
+                  {
+                    title: "Easy Fundraising",
+                    description:
+                      "Being a private company, OPCs find it easier to raise funds through venture capitalists, angel investors, and banks compared to proprietorship firms.",
+                  },
+                  {
+                    title: "Minimum Authorized Capital",
+                    description:
+                      "The OPC must have a minimum authorized capital of Rs 1 00,000, the amount stated in the company's capital clause during the OPC Company registration.",
+                  },
+                  {
+                    title: "Reduced Compliance",
+                    description:
+                      "OPCs enjoy certain exemptions from compliance requirements under the Companies Act, 2013, simplifying administrative obligations.",
+                  },
+                  {
+                    title: "Simple Incorporation",
+                    description:
+                      "OPCs can be established with just one member and one nominee, with the member also serving as the director. No minimum paid-up capital requirement simplifies the incorporation process.",
+                  },
+                  {
+                      title: "Efficient Management",
+                      description:
+                        "With a single person managing the OPC, decision-making is swift, leading to efficient company management without conflicts or delays.",
+                    },
+                    {
+                      title: "Perpetual Succession",
+                      description:
+                        "OPCs maintain perpetual succession, ensuring the company's continuity even with only one member.",
+                    },
+                ],
+                disadvantages: [
+                  {
+                    heading: "Disadvantages of OPC",
+                    subheading: "While OPCs offer advantages, there are also limitations:",
+                  },
+                  {
+                    title: "Suitable for Small Businesses",
+                    description:
+                      "OPCs are primarily suitable for small-scale businesses as they can only have one member. This limits their ability to raise additional capital as the business expands",
+                  },
+                  {
+                    title: "Restriction on Business Activities",
+                    description:
+                      "OPCs are restricted from engaging in certain activities, such as non-banking financial investments and charitable objectives. Hence, the companies with these business activities are not eligible for OPC company registration.",
+                  },
+                  {
+                    title: "Ownership and Management",
+                    description:
+                      "There's a lack of clear distinction between ownership and management in OPCs, as the sole member can also be the director. This can potentially lead to ethical concerns or conflicts of interest",
+                  },
+                  // {
+                  //   title: "Limited Growth Potential",
+                  //   description:
+                  //     "A partnership may need more growth and scalability compared to larger business structures.",
+                  // },
+                  // {
+                  //   title: "Continuity Issues",
+                  //   description:
+                  //     "The firm's continuity may be disrupted due to a partner's death, withdrawal, or insolvency unless provisions are made in the partnership deed.",
+                  // },
+                  // {
+                  //     title: "Tax Complexity",
+                  //     description:
+                  //       "Partnerships can involve complex tax arrangements, and each partner is responsible for their own tax compliance, which may require professional assistance.",
+                  //   },
+                ],
+                requiredDocument: {
+                  heading: "Required Documents for OPC Registration Online",
+                  subheading: "Several essential documents must be prepared and submitted to the Registrar of Companies (ROC) as part of the One Person Company registration process:",
+                  titles: [
+                    "Memorandum of Association (MoA)",
+                    "Articles of Association (AoA)",
+                    "The nominee's consent, along with their PAN card and Aadhaar card, must be submitted via Form INC-3.",
+                    "Proof of Registered Office",
+                    "The proposed director should furnish a declaration in Form INC-9 and their consent in Form DIR-2.",
+                    "A declaration by a qualified professional certifying that all necessary legal compliances have been adhered to.",
+                  ],
+                },
 
+          newSection: {
+            title: "Who Can Be a Partner in India's Partnership Firms?",
+            description: [
+              "To become a partner in an Indian partnership firm, you need to meet these conditions:",
+            ],
+            licenses: [
+              "Get a Permanent Account Number (PAN) and an Aadhaar card for your business identification.",
+              "Register under UDYAM, which recognizes your business as a Micro, Small, or Medium Enterprise (MSME) and offers government benefits.",
+              "If your business exceeds specific thresholds, you must register for Goods and Services Tax (GST) to collect and pay GST.",
+              "Open a separate bank account for your business to manage finances smoothly.",
+              "Depending on your business location, register under your state's Shops and Establishment Act to follow local labor regulations.",
+            ],
+          },
+          // compliance: {
+          //   title: "Procedure for Partnership Firm Registration",
+          //   subTitle: "The procedure for partnership deed registration is explained in detail below:",
+          //   items: [
+          //     {
+          //       label: "Obtain a Digital Signature Certificate (DSC)",
+          //       description: "Obtain a DSC for all partners. This electronic signature is necessary for online document signing and can be acquired from a certified agency.",
+          //     },
+          //     {
+          //       label: "Obtain a Designated Partner Identification Number (DPIN)",
+          //       description: "After securing the DSC, partners must apply for a unique DPIN. This identification number is required for all partners and can be obtained through the MCA website.",
+          //     },
+          //     {
+          //       label: "Choose a Name for the Partnership Firm",
+          //       description: "Select a unique name for the partnership firm, ensuring it is not identical or similar to any existing company or LLP. It must also comply with legal naming regulations.",
+          //     },
+          //     {
+          //       label: "Draft the Partnership Deed",
+          //       description: "Create a comprehensive partnership deed outlining the terms and conditions of the partnership. This document should include the firm's name, partner names and addresses, business nature, profit-sharing ratio, and the partnership's duration.",
+          //     },
+          //     {
+          //         label: "Application for Registration",
+          //         description: "Partners must apply with the Registrar of Firms, including firm details, partners' names and addresses, and the duration of the firm. \n\n The name of the Partnership Firm \n The principal place of business \n The location of any other sites where the firm carries on business \n The date of joining of partners \nThe names and addresses of the partners \n The duration of the firm",
+          //       },
+          //       {
+          //         label: "Obtain the Certificate of Registration",
+          //         description: "Following verification by the Registrar of Firms, If the Registrar is satisfied with the application, a Certificate of Registration will be issued to confirm the partnership deed registration. This certificate proves the firm's registration with the Registrar of Firms.",
+          //       },
+          //       {
+          //         label: "Apply for PAN and TAN",
+          //         description: "Apply for a Permanent Account Number (PAN) and a Tax Deduction and Collection Account Number (TAN) from the Income Tax Department. These numbers are essential for tax-related matters.",
+          //       },
+          //   ],
+          // },
+          // impotanceofpartnership: {
+          //     title: "Importance of Registering a Partnership Firm",
+          //     subTitle: "While registering a partnership firm is not legally required under the Indian Partnership Act, it offers several significant advantages and is considered advisable:",
+          //     items: [
+          //       {
+          //         label: "Legal Standing",
+          //         description: "A registered partnership firm obtains legal recognition. This allows partners to enforce their contractual rights against other partners or the firm. In contrast, unregistered partnership firms face limitations when pursuing legal action.",
+          //       },
+          //       {
+          //         label: "Suing Third Parties",
+          //         description: "Registered firm can file a lawsuit against third parties to enforce its contractual rights, providing legal protection unregistered firms do not enjoy. Unregistered firms cannot initiate legal proceedings against external parties.",
+          //       },
+          //       {
+          //         label: "Claiming Set-Off",
+          //         description: "Registered firms can claim set-off or other legal remedies to enforce contractual rights. Unregistered firms lack this legal advantage in proceedings brought against them.",
+          //       },
+          //     ],
+          //   },
+            lastparagraph: {
+              title: "Post-Incorporation Formalities for OPC",
+              description: "Following the successful incorporation of a One Person Company (OPC), specific compliance formalities must be adhered to, akin to those applicable to private limited companies. Our experts are ready to assist you in fulfilling OPC compliance requirements, ensuring that your business remains in full legal compliance.",
+              // note: "Your success is our priority!",
+          },
+  }
+  
+  

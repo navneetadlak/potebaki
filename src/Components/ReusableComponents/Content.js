@@ -81,6 +81,8 @@ export const Content = {
     advantages: [
       {
         heading: "Advantages of Proprietorship", 
+        // subheading: "The advantages of a Proprietorship Firm are listed as follows:",
+
       },
       {
         title: "Easy registration",
