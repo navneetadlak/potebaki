@@ -29,6 +29,7 @@ const Proprietorship = ({
     advantages,
     disadvantages,
     requiredDocument,
+    opcRegistration,
     newSection,
     onlineRegistration,
     additionalInfo,
@@ -155,9 +156,47 @@ const Proprietorship = ({
             <>
                 <h2 className="text-xl font-semibold mb-2">{requiredDocument.heading}</h2>
                 <p className="mb-4">{requiredDocument.subheading}</p>
-                <p className="mb-4">{requiredDocument.titles}</p>
+                <ul className="list-disc list-inside mb-4">
+                  {requiredDocument.titles.map((title, index)=>(
+                    <li key={index} className="mb-2">
+                        {title}
+                    </li>
+                  ))}
+                </ul>
             </>
           )}
+
+{opcRegistration?.heading && opcRegistration?.intro && (
+  <>
+    <h2 className="text-xl font-semibold mb-2">{opcRegistration.heading}</h2>
+    <p className="mb-4">{opcRegistration.intro}</p>
+
+    {/* Sections */}
+    {opcRegistration.sections.map((section, index) => (
+      <div key={index} className="mb-4">
+        <h3 className="text-lg font-semibold mb-2">{section.title}</h3>
+        
+        {/* Steps */}
+        {section.steps && section.steps.map((step, idx) => (
+          <div key={idx} className="mb-4">
+            <p className="font-semibold">{step.stepTitle}</p>
+            <p>{step.stepDescription}</p>
+          </div>
+        ))}
+      </div>
+    ))}
+          <h2 className="text-xl mb-2 font-semibold">{opcRegistration.heading2}</h2>
+          <p className="mb-2">
+  {opcRegistration.description.split('\n').map((line, index) => (
+    <React.Fragment key={index}>
+      {line}
+      <br />
+    </React.Fragment>
+  ))}
+</p>
+</>
+)}
+
 
           {OnlineRegistration && (
             <OnlineRegistration onlineRegistrationData={onlineRegistration} />

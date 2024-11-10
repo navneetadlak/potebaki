@@ -244,6 +244,36 @@ import React from 'react'
                     "A declaration by a qualified professional certifying that all necessary legal compliances have been adhered to.",
                   ],
                 },
+                
+                 opcRegistration : {
+                  heading: "Registration of One Person Company (OPC) in India",
+                  intro: "In India, OPC company registration is facilitated through the SPICe+ form, which has replaced previous application forms for incorporation.",
+                  heading2: "Why IndiaFilings for OPC Registration Online?",
+                  description: "IndiaFilings is the ideal partner for OPC registration online for several compelling reasons. With years of expertise in company registration and a deep understanding of the regulatory landscape, IndiaFilings simplifies the often complex OPC registration process. Our one person company registration fees are designed to be affordable while providing exceptional value, ensuring a seamless experience from start to finish.\n\n We offer expert guidance, from name reservation to document preparation and submission for effortless OPC company registration. Our commitment to accuracy and compliance guarantees that your OPC registration process adheres to all legal requirements, while our dedicated support team is readily available to address any queries or concerns you may have. With our transparent one person company registration fees, you can trust IndiaFilings to deliver reliable and professional service tailored to your needs. \n\n Get started now and embark on your entrepreneurial journey with confidence!",
+                  sections: [
+                    {
+                      title: "The OPC Registration process consists of two parts",
+                      steps: [
+                        { stepTitle: "Part A", stepDescription: "Secures approval for the company name and applies for the Director Identification Number (DIN) or Permanent Account Number (PAN)." },
+                        { stepTitle: "Part B", stepDescription: "Furnish incorporation-related details, including office address, share capital, director, and shareholder information." }
+                      ],
+                    },
+                    {
+                      title: "Steps for OPC Registration Online",
+                      steps: [
+                        { stepTitle: "Step 1: Obtain a Digital Signature Certificate (DSC)", stepDescription: "Secure a Digital Signature Certificate (DSC) for the intended director of the OPC. The DSC is utilized for electronically signing crucial documents." },
+                        { stepTitle: "Step 2: Obtain Director Identification Number (DIN)", stepDescription: "Acquire a Director Identification Number (DIN) for the proposed director from the Ministry of Corporate Affairs (MCA)." },
+                        { stepTitle: "Step 3: Name Reservation", stepDescription: "Apply for name reservation through the MCA portal using Form SPICe+ (Part A). Ensure that the chosen name for your company is distinct and does not resemble any existing company or trademark." },
+                        { stepTitle: "Step 4: Prepare MOA and AOA", stepDescription: "Draft the Memorandum of Association (MOA) and Articles of Association (AOA) for your company. These documents define the company's objectives and internal rules." },
+                        { stepTitle: "Step 5: File the Forms", stepDescription: "File the necessary forms with the MCA to register One Person Company. Attach the relevant documents to the SPICe+ form, including MOA, AOA, declarations, proof of the registered office, nominee appointment, and other documents as required by the MCA." },
+                        { stepTitle: "Step 6: Certificate of Incorporation", stepDescription: "Upon approval by the ROC and verification of compliance requirements, the ROC will issue a Certificate of Incorporation, signifying the successful registration of your One Person Company. Notably, the PAN number (Permanent Account Number) and TAN (Tax Deduction and Collection Account Number) are generated automatically during the incorporation process, eliminating the need for separate applications. \n With this Certificate of Incorporation, your OPC is officially recognized and ready to commence its operations in India." },
+                      ]
+                    },
+                  ],
+                },
+                
+                
+                
 
           newSection: {
             title: "Who Can Be a Partner in India's Partnership Firms?",
