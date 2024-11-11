@@ -25,12 +25,16 @@ const Proprietorship = ({
     licenses,
     partnerinindia, //for partnership page
     impotanceofpartnership,
+    whatisprivatelimited,
     eligibility,
     advantages,
     disadvantages,
     requiredDocument,
     opcRegistration,
+    privateRegistration,
+    requiredDocumentPrivateLtd,
     newSection,
+    documentChecklist,
     onlineRegistration,
     additionalInfo,
     bankAccount,
@@ -40,6 +44,7 @@ const Proprietorship = ({
     compliance,
     partnership,
     documentsRequired,
+    secLastPara,
     lastparagraph,
   } = content;
   const sidebarRef = useRef(null);
@@ -137,7 +142,8 @@ const Proprietorship = ({
     )}
   </div>
 ))}
-
+          {/* What is private limited section  */}
+          {AdvantageAndDisadvantages && <AdvantageAndDisadvantages advantagesData={whatisprivatelimited} />}
 
           {/* Partner in india same structure as Advantages and Disadvantages */}
           {AdvantageAndDisadvantages && <AdvantageAndDisadvantages advantagesData={partnerinindia} />}
@@ -165,6 +171,24 @@ const Proprietorship = ({
                 </ul>
             </>
           )}
+
+          {/* requiredDocumentPrivateLtd section */}
+          {requiredDocumentPrivateLtd?.heading && requiredDocumentPrivateLtd?.subheading && (
+        <>
+          <h2 className="text-xl font-semibold mb-2">{requiredDocumentPrivateLtd.heading}</h2>
+          <p className="mb-4">{requiredDocumentPrivateLtd.subheading}</p>
+
+          {/* Mapping each section in requiredDocumentPrivateLtd.details */}
+          {requiredDocumentPrivateLtd.details.map((section, index) => (
+            <div key={index} className="mb-4">
+              <h3 className="text-lg font-semibold mb-2">{section.title}</h3>
+              {section.points.map((point, idx) => (
+                <p key={idx} className="mb-2">{point}</p>
+              ))}
+            </div>
+          ))}
+        </>
+      )}
 
 {opcRegistration?.heading && opcRegistration?.intro && (
   <>
@@ -196,6 +220,42 @@ const Proprietorship = ({
 </p>
 </>
 )}
+
+{/* Registration for private limited */}
+{privateRegistration?.heading && privateRegistration?.intro && (
+  <>
+    <h2 className="text-xl font-semibold mb-2">{privateRegistration.heading}</h2>
+    <p className="mb-4">{privateRegistration.intro}</p>
+
+    {/* Sections */}
+    {privateRegistration.sections.map((section, index) => (
+      <div key={index} className="mb-4">
+        <h3 className="text-lg font-semibold mb-2">{section.title}</h3>
+        
+        {/* Steps */}
+        {section.steps && section.steps.map((step, idx) => (
+          <div key={idx} className="mb-4">
+            <p className="font-semibold">{step.stepTitle}</p>
+            <p className="mb-2">
+              {step.stepDescription
+                ? step.stepDescription.split('\n').map((line, lineIndex) => (
+                    <React.Fragment key={lineIndex}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  ))
+                : null}
+            </p>
+          </div>
+        ))}
+      </div>
+    ))}
+  </>
+)}
+
+
+    {/* Document checklist section in private limited component */}
+    {AdvantageAndDisadvantages && <AdvantageAndDisadvantages advantagesData={documentChecklist} />}
 
 
           {OnlineRegistration && (
@@ -271,6 +331,26 @@ const Proprietorship = ({
   </>
 )}
 
+{/* secound last paragraph section */}
+{secLastPara?.title && secLastPara?.description && (
+  <>
+    <h2 className="text-2xl font-semibold mb-2">{secLastPara.title}</h2>
+    <div className="mb-4">
+      <p className="mb-2">
+        {secLastPara.description.split("\n").map((line, idx) => (
+          <React.Fragment key={idx}>
+            {line}
+            <br />
+          </React.Fragment>
+        ))}
+      </p>
+    </div>
+    {secLastPara.note && (
+      <p className="font-bold text-xl">{secLastPara.note}</p>
+    )}
+  </>
+)}
+
 {/* lastparagraph section */}
  {lastparagraph?.title && lastparagraph?.description && (
   <>
@@ -290,6 +370,7 @@ const Proprietorship = ({
     )}
   </>
 )}
+
 
 
         </div>

@@ -1,9 +1,9 @@
 import React from 'react'
+import Proprietorship from './Proprietorship'
+import { PrivateLimitedContent } from './PrivateLimitedContent'
 
 const PrivateLimitedCompany = () => {
-  return (
-    <div>PrivateLimitedCompany</div>
-  )
+   return( <Proprietorship content={PrivateLimitedContent} pricingSection={PrivateLimitedContent.PricingSection} /> )
 }
 
 export default PrivateLimitedCompany

@@ -15,7 +15,8 @@ const Startup = () => {
         <Route path='/partnership' element={<Partnership />} />
         <Route path="/opc" element={<OnePersonCompany />} />
         <Route path="/llp" element={<LimitedLiabilityPartnership />} />
-        <Route path="/private-limited-company" element={<PrivateLimitedCompany />} />
+        <Route path="private-limited-company" element={<PrivateLimitedCompany />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
         {/* <Route path='/' element={<Homepage />} />
     <Route path='/about' element={<About />} />
     <Route path='/business-stats' element={<BusinessStats />} />
