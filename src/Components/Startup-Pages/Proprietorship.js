@@ -43,7 +43,9 @@ const Proprietorship = ({
     businessActivities,
     compliance,
     partnership,
+    paragraphLLP,
     documentsRequired,
+    effortlessLLP,
     secLastPara,
     lastparagraph,
   } = content;
@@ -156,6 +158,27 @@ const Proprietorship = ({
 
           {/* Disadvantage section of proprietorship */}
           {AdvantageAndDisadvantages && <AdvantageAndDisadvantages advantagesData={disadvantages} />}
+
+          {/* Limited Liability Partnership (LLP) Name Structure */}
+          {/* lastparagraph section */}
+ {paragraphLLP?.title && paragraphLLP?.description && (
+  <>
+    <h2 className="text-2xl font-semibold mb-2">{paragraphLLP.title}</h2>
+    <div className="mb-4">
+      <p className="mb-2">
+        {paragraphLLP.description.split("\n").map((line, idx) => (
+          <React.Fragment key={idx}>
+            {line}
+            <br />
+          </React.Fragment>
+        ))}
+      </p>
+    </div>
+    {paragraphLLP.note && (
+      <p className="font-bold text-xl">{paragraphLLP.note}</p>
+    )}
+  </>
+)}
 
           {/* Required Documents for OPC Registration Online */}
           {requiredDocument?.heading && requiredDocument?.subheading &&(
@@ -331,8 +354,12 @@ const Proprietorship = ({
   </>
 )}
 
+{/* Effortless LLP section */}
+{AdvantageAndDisadvantages && <AdvantageAndDisadvantages advantagesData={effortlessLLP} />}
+
+
 {/* secound last paragraph section */}
-{secLastPara?.title && secLastPara?.description && (
+{secLastPara?.description && (
   <>
     <h2 className="text-2xl font-semibold mb-2">{secLastPara.title}</h2>
     <div className="mb-4">
