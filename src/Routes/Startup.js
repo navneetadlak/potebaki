@@ -6,6 +6,7 @@ import { Content } from "../Components/ReusableComponents/Content";
 import OnePersonCompany from "../Components/Startup-Pages/OnePersonCompany";
 import LimitedLiabilityPartnership from "../Components/Startup-Pages/LimitedLiabilityPartnership";
 import PrivateLimitedCompany from "../Components/Startup-Pages/PrivateLimitedCompany";
+import Section8Company from "../Components/Startup-Pages/Section8Company";
 
 const Startup = () => {
   return (
@@ -16,6 +17,7 @@ const Startup = () => {
         <Route path="/opc" element={<OnePersonCompany />} />
         <Route path="/llp" element={<LimitedLiabilityPartnership />} />
         <Route path="private-limited-company" element={<PrivateLimitedCompany />} />
+        <Route path="section-8-company" element={<Section8Company />} />
         {/* <Route path="*" element={<NotFound />} /> */}
         {/* <Route path='/' element={<Homepage />} />
     <Route path='/about' element={<About />} />

@@ -30,6 +30,7 @@ const Proprietorship = ({
     advantages,
     disadvantages,
     requiredDocument,
+    requiredDocumentsec,
     opcRegistration,
     privateRegistration,
     requiredDocumentPrivateLtd,
@@ -102,7 +103,11 @@ const Proprietorship = ({
             <h2 className="text-xl font-semibold mb-4">
               {mainSection.subTitle}
             </h2>
-            <p>{mainSection.subDescription}</p>
+            <p className="mb-4">{mainSection.subDescription}</p>
+            <h2 className="text-xl font-semibold mb-4">
+              {mainSection.subTitle2}
+            </h2>
+            <p>{mainSection.subDescription2}</p>
           </div>
 
           {/* Sticky Sidebar Section */}
@@ -181,12 +186,29 @@ const Proprietorship = ({
 )}
 
           {/* Required Documents for OPC Registration Online */}
-          {requiredDocument?.heading && requiredDocument?.subheading &&(
+          {requiredDocument?.heading &&(
             <>
+                {/* {console.log("requiredDocument.heading",requiredDocument.heading)} */}
                 <h2 className="text-xl font-semibold mb-2">{requiredDocument.heading}</h2>
                 <p className="mb-4">{requiredDocument.subheading}</p>
                 <ul className="list-disc list-inside mb-4">
                   {requiredDocument.titles.map((title, index)=>(
+                    <li key={index} className="mb-2">
+                        {title}
+                    </li>
+                  ))}
+                </ul>
+            </>
+          )}
+
+           {/* Required Documents for OPC Registration Online */}
+           {requiredDocumentsec?.heading &&(
+            <>
+                {console.log("requiredDocument.heading",requiredDocumentsec.heading)}
+                <h2 className="text-xl font-semibold mb-2">{requiredDocumentsec.heading}</h2>
+                <p className="mb-4">{requiredDocumentsec.subheading}</p>
+                <ul className="list-disc list-inside mb-4">
+                  {requiredDocumentsec.titles.map((title, index)=>(
                     <li key={index} className="mb-2">
                         {title}
                     </li>
