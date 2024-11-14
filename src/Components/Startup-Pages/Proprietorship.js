@@ -149,6 +149,31 @@ const Proprietorship = ({
     )}
   </div>
 ))}
+
+    {/* Required Documents for OPC Registration Online */}
+    {requiredDocumentsec && requiredDocumentsec.length > 0 && (
+  <>
+    {requiredDocumentsec.map((section, index) => (
+      <div key={index} className="mb-4">
+        {/* Render heading if available */}
+        {section.heading && (
+          <h2 className="text-xl font-semibold mb-2">{section.heading}</h2>
+        )}
+
+        {/* Render subheading if available */}
+        {section.subheading && (
+          <p className="mb-4">{section.subheading}</p>
+        )}
+
+        {/* Render title if available */}
+        {section.title && (
+          <p className="mb-2">{section.title}</p>
+        )}
+      </div>
+    ))}
+  </>
+)}
+
           {/* What is private limited section  */}
           {AdvantageAndDisadvantages && <AdvantageAndDisadvantages advantagesData={whatisprivatelimited} />}
 
@@ -165,6 +190,7 @@ const Proprietorship = ({
           {AdvantageAndDisadvantages && <AdvantageAndDisadvantages advantagesData={disadvantages} />}
 
           {/* Limited Liability Partnership (LLP) Name Structure */}
+
           {/* lastparagraph section */}
  {paragraphLLP?.title && paragraphLLP?.description && (
   <>
@@ -201,10 +227,10 @@ const Proprietorship = ({
             </>
           )}
 
-           {/* Required Documents for OPC Registration Online */}
+           {/* Documents Required for Section 8 Company Incorporation */}
            {requiredDocumentsec?.heading &&(
             <>
-                {console.log("requiredDocument.heading",requiredDocumentsec.heading)}
+                {/* {console.log("requiredDocument.heading",requiredDocument.heading)} */}
                 <h2 className="text-xl font-semibold mb-2">{requiredDocumentsec.heading}</h2>
                 <p className="mb-4">{requiredDocumentsec.subheading}</p>
                 <ul className="list-disc list-inside mb-4">
@@ -216,6 +242,10 @@ const Proprietorship = ({
                 </ul>
             </>
           )}
+
+       
+
+
 
           {/* requiredDocumentPrivateLtd section */}
           {requiredDocumentPrivateLtd?.heading && requiredDocumentPrivateLtd?.subheading && (
