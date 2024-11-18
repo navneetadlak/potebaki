@@ -8,6 +8,10 @@ import LimitedLiabilityPartnership from "../Components/Startup-Pages/LimitedLiab
 import PrivateLimitedCompany from "../Components/Startup-Pages/PrivateLimitedCompany";
 import Section8Company from "../Components/Startup-Pages/Section8Company";
 import TrustRegistration from "../Components/Startup-Pages/TrustRegistration";
+import PublicLimitedCompany from "../Components/Startup-Pages/PublicLimitedCompany";
+import ProducerCompany from "../Components/Startup-Pages/ProducerCompany";
+import McaNameApproval from "../Components/Startup-Pages/McaNameApproval";
+import IndianSubsidiary from "../Components/Startup-Pages/IndianSubsidiary";
 
 const Startup = () => {
   return (
@@ -20,6 +24,11 @@ const Startup = () => {
         <Route path="private-limited-company" element={<PrivateLimitedCompany />} />
         <Route path="section-8-company" element={<Section8Company />} />
         <Route path="trust-registration" element={<TrustRegistration />} />
+        <Route path="public-limited-company" element={<PublicLimitedCompany />} />
+        <Route path="producer-company" element={<ProducerCompany />} />
+        <Route path="mca-name-approval" element={<McaNameApproval />} />
+        <Route path="indian-subsidiary" element={<IndianSubsidiary />} />
+
         {/* <Route path="*" element={<NotFound />} /> */}
         {/* <Route path='/' element={<Homepage />} />
     <Route path='/about' element={<About />} />

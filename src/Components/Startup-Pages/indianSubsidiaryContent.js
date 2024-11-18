@@ -1,6 +1,4 @@
-import React from 'react'
-
-  export const trustRegistrationContent = {
+  export const indianSubsidiaryContent = {
       PricingSection: {
             title: "Trust Registration",
             customerRating: {

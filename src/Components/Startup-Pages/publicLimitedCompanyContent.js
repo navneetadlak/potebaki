@@ -1,6 +1,6 @@
 import React from 'react'
 
-  export const trustRegistrationContent = {
+  export const publicLimitedCompanyContent = {
       PricingSection: {
             title: "Trust Registration",
             customerRating: {

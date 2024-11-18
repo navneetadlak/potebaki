@@ -1,6 +1,7 @@
+
 import React from 'react'
 
-  export const trustRegistrationContent = {
+  export const producerCompanyContent = {
       PricingSection: {
             title: "Trust Registration",
             customerRating: {
