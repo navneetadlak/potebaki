@@ -431,7 +431,7 @@ const Proprietorship = ({
       </p>
     </div>
     {lastparagraph.note && (
-      <p className="font-bold text-xl">{lastparagraph.note}</p>
+      <p className="font-semibold text-lg">{lastparagraph.note}</p>
     )}
   </>
 )}

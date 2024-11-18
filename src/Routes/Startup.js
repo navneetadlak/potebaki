@@ -28,14 +28,6 @@ const Startup = () => {
         <Route path="producer-company" element={<ProducerCompany />} />
         <Route path="mca-name-approval" element={<McaNameApproval />} />
         <Route path="indian-subsidiary" element={<IndianSubsidiary />} />
-
-        {/* <Route path="*" element={<NotFound />} /> */}
-        {/* <Route path='/' element={<Homepage />} />
-    <Route path='/about' element={<About />} />
-    <Route path='/business-stats' element={<BusinessStats />} />
-    <Route path='/testimonials' element={<Testimonials />} />
-    <Route path='/footer' element={<Footer />} />
-    <Route path='/contactUs' element={<ContactUs />} /> */}
       </Routes>
     </div>
   );
