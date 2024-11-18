@@ -7,6 +7,7 @@ import OnePersonCompany from "../Components/Startup-Pages/OnePersonCompany";
 import LimitedLiabilityPartnership from "../Components/Startup-Pages/LimitedLiabilityPartnership";
 import PrivateLimitedCompany from "../Components/Startup-Pages/PrivateLimitedCompany";
 import Section8Company from "../Components/Startup-Pages/Section8Company";
+import TrustRegistration from "../Components/Startup-Pages/TrustRegistration";
 
 const Startup = () => {
   return (
@@ -18,6 +19,7 @@ const Startup = () => {
         <Route path="/llp" element={<LimitedLiabilityPartnership />} />
         <Route path="private-limited-company" element={<PrivateLimitedCompany />} />
         <Route path="section-8-company" element={<Section8Company />} />
+        <Route path="trust-registration" element={<TrustRegistration />} />
         {/* <Route path="*" element={<NotFound />} /> */}
         {/* <Route path='/' element={<Homepage />} />
     <Route path='/about' element={<About />} />

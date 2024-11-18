@@ -14,6 +14,7 @@ import Licenses from "../ReusableComponents/Licenses";
 import OnlineRegistration from "../ReusableComponents/OnlineRegistration";
 import AdditionalInfo from "../ReusableComponents/AdditionalInfo";
 import AdvantageAndDisadvantages from "../ReusableComponents/AdvantageAndDisadvantages";
+import RequiredDocument from "../ReusableComponents/RequiredDocument";
 
 const Proprietorship = ({
   content,
@@ -31,6 +32,9 @@ const Proprietorship = ({
     disadvantages,
     requiredDocument,
     requiredDocumentsec,
+    reasons,
+    contentofTrust,
+    documentReqTrust,
     opcRegistration,
     privateRegistration,
     requiredDocumentPrivateLtd,
@@ -46,6 +50,7 @@ const Proprietorship = ({
     partnership,
     paragraphLLP,
     documentsRequired,
+    
     effortlessLLP,
     secLastPara,
     lastparagraph,
@@ -149,30 +154,11 @@ const Proprietorship = ({
     )}
   </div>
 ))}
-
-    {/* Required Documents for OPC Registration Online */}
-    {requiredDocumentsec && requiredDocumentsec.length > 0 && (
-  <>
-    {requiredDocumentsec.map((section, index) => (
-      <div key={index} className="mb-4">
-        {/* Render heading if available */}
-        {section.heading && (
-          <h2 className="text-xl font-semibold mb-2">{section.heading}</h2>
-        )}
-
-        {/* Render subheading if available */}
-        {section.subheading && (
-          <p className="mb-4">{section.subheading}</p>
-        )}
-
-        {/* Render title if available */}
-        {section.title && (
-          <p className="mb-2">{section.title}</p>
-        )}
-      </div>
-    ))}
-  </>
-)}
+        {console.log(contentofTrust)}
+        {RequiredDocument && <RequiredDocument requiredDocumentsec={reasons} /> }
+          {RequiredDocument && <RequiredDocument requiredDocumentsec={requiredDocumentsec} /> }
+          {RequiredDocument && <RequiredDocument requiredDocumentsec={contentofTrust} /> }
+          {RequiredDocument && <RequiredDocument requiredDocumentsec={documentReqTrust} /> }
 
           {/* What is private limited section  */}
           {AdvantageAndDisadvantages && <AdvantageAndDisadvantages advantagesData={whatisprivatelimited} />}
