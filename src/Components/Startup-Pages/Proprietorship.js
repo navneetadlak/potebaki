@@ -50,7 +50,6 @@ const Proprietorship = ({
     partnership,
     paragraphLLP,
     documentsRequired,
-    
     effortlessLLP,
     secLastPara,
     lastparagraph,
@@ -100,44 +99,53 @@ const Proprietorship = ({
   <h1 className="text-5xl font-medium mb-4 text-center items-center">
     {mainSection.title}
   </h1>
-  {mainSection.description.map((para, index) => (
+  {mainSection.description?.map((para, index) => (
     <p key={index} className="mb-4">
-      {para.split('\n').map((line, idx) => (
+      {para
+        ?.split('\n')
+        .map((line, idx) => (
+          <span key={idx}>
+            {line}
+            <br />
+          </span>
+        ))}
+    </p>
+  ))}
+  <h2 className="text-xl font-semibold mb-4">{mainSection.subTitle}</h2>
+  <p className="mb-4">
+    {mainSection.subDescription
+      ?.split('\n')
+      .map((line, idx) => (
         <span key={idx}>
           {line}
           <br />
         </span>
       ))}
-    </p>
-  ))}
-  <h2 className="text-xl font-semibold mb-4">{mainSection.subTitle}</h2>
-  <p className="mb-4">
-    {mainSection.subDescription.split('\n').map((line, idx) => (
-      <span key={idx}>
-        {line}
-        <br />
-      </span>
-    ))}
   </p>
   <h2 className="text-xl font-semibold mb-4">{mainSection.subTitle2}</h2>
   <p>
-    {mainSection.subDescription2.split('\n').map((line, idx) => (
-      <span key={idx}>
-        {line}
-        <br />
-      </span>
-    ))}
+    {mainSection.subDescription2
+      ?.split('\n')
+      .map((line, idx) => (
+        <span key={idx}>
+          {line}
+          <br />
+        </span>
+      ))}
   </p>
   <h2 className="text-xl font-semibold mb-4">{mainSection.subTitle3}</h2>
   <p>
-    {mainSection.subDescription3.split('\n').map((line, idx) => (
-      <span key={idx}>
-        {line}
-        <br />
-      </span>
-    ))}
+    {mainSection.subDescription3
+      ?.split('\n')
+      .map((line, idx) => (
+        <span key={idx}>
+          {line}
+          <br />
+        </span>
+      ))}
   </p>
 </div>
+
 
 
           {/* Sticky Sidebar Section */}
