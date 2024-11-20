@@ -15,6 +15,7 @@ import OnlineRegistration from "../ReusableComponents/OnlineRegistration";
 import AdditionalInfo from "../ReusableComponents/AdditionalInfo";
 import AdvantageAndDisadvantages from "../ReusableComponents/AdvantageAndDisadvantages";
 import RequiredDocument from "../ReusableComponents/RequiredDocument";
+import SectionComponent from "../ReusableComponents/SectionComponent";
 
 const Proprietorship = ({
   content,
@@ -23,6 +24,7 @@ const Proprietorship = ({
   const {
     mainSection,
     sidebar,
+    subsidiariesInIndia,
     licenses,
     partnerinindia, //for partnership page
     impotanceofpartnership,
@@ -144,6 +146,9 @@ const Proprietorship = ({
         </span>
       ))}
   </p>
+
+  <SectionComponent data={subsidiariesInIndia} />
+
 </div>
 
 
