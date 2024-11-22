@@ -1,5 +1,3 @@
-import React from 'react'
-
   export const mcaNameApprovalContent = {
     PricingSection: {
       title: "MCA Name & Company Registration",
