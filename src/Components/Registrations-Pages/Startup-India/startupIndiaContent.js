@@ -28,7 +28,7 @@ import React from 'react'
     "mainSection": {
       "title": "Startup India Registration",
       "description": [
-        "Are you ready to launch your startup in India? The Startup India initiative, a flagship program by the Indian Government, is designed to empower and support entrepreneurs like you. By obtaining Startup India Registration, you can access many benefits, including tax exemptions, simplified compliance processes, and various funding opportunities. This registration not only establishes your business legally but also connects you to a robust network of resources and support systems, helping you scale and succeed in a competitive market.\n\nIndiaFilings is here to assist you with a quick and efficient Startup India registration process, enabling you to embark on your journey toward success.\n\n Join the ever-growing community of successful entrepreneurs by registering with Startup India today! "
+        "Are you ready to launch your startup in India? The Startup India initiative, a flagship program by the Indian Government, is designed to empower and support entrepreneurs like you. By obtaining Startup India Registration, you can access many benefits, including tax exemptions, simplified compliance processes, and various funding opportunities. This registration not only establishes your business legally but also connects you to a robust network of resources and support systems, helping you scale and succeed in a competitive market.\n\n Potebaki is here to assist you with a quick and efficient Startup India registration process, enabling you to embark on your journey toward success.\n\n Join the ever-growing community of successful entrepreneurs by registering with Startup India today! "
       ],
       "subTitle": "Startup India Scheme",
       "subDescription": "Startup India is an initiative by the Indian Government designed to boost the growth and development of startups across the country. Launched in 2016, the primary aim of the Startup India scheme is to cultivate a thriving startup ecosystem, positioning India as a global leader in innovation. By obtaining startup registration in india, startups gain access to myriad benefits. ",
@@ -395,7 +395,7 @@ import React from 'react'
                   {
                     stepTitle: "Incorporate Your Business",
                     stepDescription:
-                      "Begin by incorporating your business. You can choose from several structures, such as a Private Limited Company, Partnership Firm, or Limited Liability Partnership (LLP). This involves submitting a registration application along with the necessary documents and fees to the appropriate authority. \n\nPrivate Limited Company or LLP: File your registration application with the Registrar of Companies (ROC)\n\nPartnership Firm: Submit your registration application to the Registrar of Firms. \n\nFor both types of registration, you will need to obtain a Certificate of Incorporation or Partnership registration, confirming the legal formation of your business. The experts at IndiaFilings can help you register your company easily in India. ",
+                      "Begin by incorporating your business. You can choose from several structures, such as a Private Limited Company, Partnership Firm, or Limited Liability Partnership (LLP). This involves submitting a registration application along with the necessary documents and fees to the appropriate authority. \n\nPrivate Limited Company or LLP: File your registration application with the Registrar of Companies (ROC)\n\nPartnership Firm: Submit your registration application to the Registrar of Firms. \n\nFor both types of registration, you will need to obtain a Certificate of Incorporation or Partnership registration, confirming the legal formation of your business. The experts at PoteBaki can help you register your company easily in India. ",
                   },
                   {
                     stepTitle: "Register with Startup India",
@@ -410,7 +410,7 @@ import React from 'react'
                   {
                     stepTitle: "Obtain Your Startup India Recognition Number  ",
                     stepDescription:
-                      "Once you apply for registration, you will immediately receive a DPIIT recognition number. This serves as a preliminary acknowledgement of your application. The official Startup India Certificate of Registration will be issued after the relevant authority thoroughly reviews all your submitted documents. This Startup India certificate is your formal recognition under the Startup India initiative, confirming that your startup meets all the necessary compliance and eligibility criteria.\n\nAfter receiving the DPIIT certificate, you can apply for various benefits offered under the Startup India scheme, such as tax exemptions (under the Income Tax Act), patent filing, and IPR services. IndiaFilings makes this process easier for your new business with reasonable startup India registration fees.",
+                      "Once you apply for registration, you will immediately receive a DPIIT recognition number. This serves as a preliminary acknowledgement of your application. The official Startup India Certificate of Registration will be issued after the relevant authority thoroughly reviews all your submitted documents. This Startup India certificate is your formal recognition under the Startup India initiative, confirming that your startup meets all the necessary compliance and eligibility criteria.\n\nAfter receiving the DPIIT certificate, you can apply for various benefits offered under the Startup India scheme, such as tax exemptions (under the Income Tax Act), patent filing, and IPR services. Potebaki makes this process easier for your new business with reasonable startup India registration fees.",
                   },
                 //   {
                 //     stepTitle: "Step 5: Filing of Incorporation Application",
@@ -561,8 +561,8 @@ import React from 'react'
     //   },
 
       lastparagraph: {
-          title: "Choose IndiaFilings for Your Startup Registration!",
-          description: "Choose IndiaFilings for expert support in obtaining your Startup India Certificate. Our team is dedicated to guiding you through every step of the startup india registration process, from company registration to securing your DPIIT certificate. We provide comprehensive assistance to help you meet compliance requirements with affordable startup India registration fees and pave the way for your startup’s success and growth.",
+          title: "Choose PoteBaki for Your Startup Registration!",
+          description: "Choose PoteBaki for expert support in obtaining your Startup India Certificate. Our team is dedicated to guiding you through every step of the startup india registration process, from company registration to securing your DPIIT certificate. We provide comprehensive assistance to help you meet compliance requirements with affordable startup India registration fees and pave the way for your startup’s success and growth.",
           note : "Contact our Experts today and take the first step towards your startup success!",
         },   
 }

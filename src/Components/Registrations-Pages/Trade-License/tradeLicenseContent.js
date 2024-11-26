@@ -1,91 +1,91 @@
 export const tradeLicenseContent = {
     PricingSection: {
-      title: "India Business Setup",
+      title: "Trade License",
       customerRating: {
         rating: 4.4,
         count: 8566,
       },
-      description: "Register your company in less than 7 days through a seamless online process.",
+      description: "Trade license is mandatory for businesses operating in a commercial property. Easily apply for Trade License online using IndiaFilings.",
       documentTitle: "Documents Required",
       documents: ["PAN Card", "Aadhaar Card"],
       products: [
         // {
-        //   title: "Name Approval",
+        //   title: "Telangana",
         //   price: "INR 2899",
-        //   offers: ["Name Application Fee", "Instant Filing", "4 Name Choice"],
+        //   offers: ["Application Preparation", "Application Filing", "Trade License Number", "1 Year Trade License"],
         //   allInclusive: true,
         // },
         {
-          title: "Incorporation",
+          title: "Chennai",
           price: "INR 6988",
-          offers: ["MCA Name Approval", "2 Digital Signatures", "Incorporation Fee", "Company Incorporation", "Share Certificates", "GST Registration", "DBS Bank Account"],
+          offers: ["Application Preparation", "Application Filing", "Trade License Number", "1 Year Trade License"],
           allInclusive: true,
         }
       ]
     },
     "mainSection": {
-      "title": "Indian Subsidiary Company Registration",
+      "title": "Trade License",
       "description": [
-        "Setting up a subsidiary in India can be a transformative step for expanding your business operations and accessing one of the world's largest and most dynamic markets. At IndiaFilings, we specialise in providing comprehensive and tailored services for the incorporation of a foreign subsidiary in India. Our team of experts is here to guide you through the complexities of Indian subsidiary registration, from understanding the legal requirements and navigating regulatory approvals to assisting with compliance and documentation.  Partner with us for the incorporation of a foreign subsidiary in India and unlock India's vast business potential to drive your company's growth and success."
+        "Engaging in any business activity within India mandates adherence to various regulations, among which acquiring a Trade License is paramount. Serving as an official document to commence specific trade or business operations within a designated locale. Trade license ensures businesses follow municipal norms and uphold public health and safety standards. With India's robust regulatory landscape, obtaining a Trade License becomes an indispensable step for businesses aiming to carve a niche in the competitive market, reinforcing the foundation for a trustworthy and lawful business.\n\nGetting a Trade License in India involves complex steps and rules. IndiaFilings makes this easier by guiding you through the process and helping you get your license smoothly."
       ],
-      "subTitle": "Subsidiary Company",
-      "subDescription": "A subsidiary company is often referred to as a sister company, while the company that exercises control over it is known as the parent company or holding company. The parent company holds the authority to control the subsidiary company, either in part or entirely.\n\nThe registration process for a foreign subsidiary company in india is governed by the Companies Act of 2013. According to the Companies Act of 2013, a subsidiary company can be defined as a company in which a foreign corporate body or parent entity holds a minimum of 50% of the total share capital. In essence, the parent company exerts a significant influence and control over the subsidiary company.",
-      //    "subTitle2": "Types of Subsidiaries in India",
-      // "subDescription2": "A Producer Company, as defined, is a legal entity established under the amended Companies Act of 1956.\n\nGoverned by the provisions outlined in Section 465 of the Companies Act, 2013, it is subjected to the regulations outlined in Part IX A of the Companies Act, 1956, with necessary modifications.\n\nThe objectives of a Producer Company incorporation must align with the activities specified in Section 581B of the Companies Act 1956.",
-      // "subTitle3": "Objective of Producer Company",
-      // "subDescription3": "A Producer Company's objective is to advance its members' interests by facilitating activities related to the production, marketing, sale, and export of their primary products.\n\nAdditionally, the producer company incorporation is empowered to import goods or services essential for the welfare of its members.",
-      // "subTitle4": "Types of Subsidiaries in India",
-
+      "subTitle": "What is a Trade License?",
+      "subDescription": "A trade license is an official document or certificate issued by the Municipal Corporation of a state granting permission to the applicant (individual seeking to establish a business) to engage in a specific trade or business activity within a designated area or location.\n\nThis license ensures that the business complies with all safety standards mandated by the State Municipal Corporation, safeguarding residents from potential health hazards. Obtaining a trade license is mandatory for all businesses falling under the purview of the respective state's State Municipal Corporation Act.\n\n It's important to note that a trade license restricts the holder from engaging in any trade or business activity other than the one for which it was issued. Additionally, the license does not confer any property ownership to the holder.",
+         "subTitle2": "Who Can Issue a Trade License?",
+      "subDescription2": "As mentioned above, Trade licenses are typically issued by the licensing department of the Municipal Corporation, which encompasses various departments such as industries, engineering, and health. These departments grant permission through a formal document or certificate, allowing businesses to operate within their jurisdiction. The issuance process may vary from state to state, depending on the rules and regulations of local government agencies, specifically the Municipal Corporation.",
+      "subTitle3": "The Importance of a Trade License",
+      "subDescription3": "In India, trade licenses were established four decades ago under the regulations of the respective state governments' Municipal Corporation Acts. These licenses are crucial in safeguarding against various trades or businesses' nuisances and health hazards.\n\nState governments require trade licenses for conducting specific businesses or trades within designated areas to prevent unethical business practices. The government can regulate various commercial activities nationwide by mandating trade licenses. This regulatory framework promotes societal harmony by ensuring every business adheres to relevant rules, guidelines, and safety measures.",
+      "subTitle4": "Main Objectives of a Trade License",
+      "subDescription4": "The primary aim of a Trade License is to ensure that business activities within a specific area are regulated and controlled. This licensing system helps local authorities maintain public safety, health, and welfare by overseeing and managing the urban business landscape. By mandating a Trade License, the government ensures that businesses do not negatively impact the surrounding environment and community.",
     },
 
-    subsidiariesInIndia: [
-      {
-        heading: "Types of Subsidiaries in India",
-        subheading: "In India, subsidiaries can be categorized into two primary types:",
-      },
-      {
-        title: "Wholly-Owned Subsidiary",
-        description:
-          "In a wholly-owned subsidiary, the parent company possesses 100% ownership of the subsidiary's shares. However, it's important to note that wholly-owned subsidiaries can only be established in sectors that permit 100% Foreign Direct Investment (FDI).",
-      },
-      {
-        title: "Subsidiary Company",
-        description:
-          "In this category of subsidiary, the parent company owns 50% of the subsidiary's shares.",
-      },
-      {
-        note: 
-          "Before proceeding with establishing a foreign subsidiary company in India, obtaining approval from the Reserve Bank of India is a crucial prerequisite. This regulatory step ensures compliance with the country's foreign investment regulations and safeguards the interests of all stakeholders involved.",
-      },
-    ],    
+    // subsidiariesInIndia: [
+    //   {
+    //     heading: "Types of Subsidiaries in India",
+    //     subheading: "In India, subsidiaries can be categorized into two primary types:",
+    //   },
+    //   {
+    //     title: "Wholly-Owned Subsidiary",
+    //     description:
+    //       "In a wholly-owned subsidiary, the parent company possesses 100% ownership of the subsidiary's shares. However, it's important to note that wholly-owned subsidiaries can only be established in sectors that permit 100% Foreign Direct Investment (FDI).",
+    //   },
+    //   {
+    //     title: "Subsidiary Company",
+    //     description:
+    //       "In this category of subsidiary, the parent company owns 50% of the subsidiary's shares.",
+    //   },
+    //   {
+    //     note: 
+    //       "Before proceeding with establishing a foreign subsidiary company in India, obtaining approval from the Reserve Bank of India is a crucial prerequisite. This regulatory step ensures compliance with the country's foreign investment regulations and safeguards the interests of all stakeholders involved.",
+    //   },
+    // ],    
 
     "sidebar": {
       "title": "RELATED GUIDES",
       "guides": [
         {
-          "title": "Subsidiary Company",
+          "title": "Trade License in Mumbai",
           "link": "#"
         },
         {
-          "title": "Can subsidiary own shares in parent company?",
+          "title": "Delhi Trade License",
           "link": "#"
         },
         {
-          "title": "Board Resolution for Incorporation of Subsidiary",
+          "title": "Uttar Pradesh Trade License",
           "link": "#"
         },
         {
-          "title": "Starting a Foreign Company’s Subsidiary in India",
+          "title": "Trade License in India: All You Need to Know",
           "link": "#"
         },
         {
-          "title": "Comprehensive Guide to Articles of Association (AOA)",
+          "title": "Andhra Pradesh Trade License",
           "link": "#"
         },
-        {
-          "title": "CIN Number of a Company: Everything You Need to Know",
-          "link": "#"
-        },
+        // {
+        //   "title": "CIN Number of a Company: Everything You Need to Know",
+        //   "link": "#"
+        // },
         // {
         //   "title": "Public Company: A Comprehensive Guide",
         //   "link": "#"
@@ -202,17 +202,17 @@ export const tradeLicenseContent = {
       //     ],
       // },
 
-      requiredDocumentsec: {
-          heading: "Taxation of Indian Subsidiary Companies",
-          subheading: "Indian subsidiary companies are subject to specific taxation policies:",
-          titles: [
-            "Taxes are levied on all income earned within or outside India, including dividends from foreign subsidiaries.",
-            "Tax rates for foreign subsidiaries in India include 50% for royalty received for technical services from the government or any Indian entity and 40% for other income.",
-            "A surcharge of 2% is applied if the company's income falls between Rs. 1 Crore and Rs. 10 Crores; for payments above Rs. 10 Crores, a 5% surcharge is levied.",
-            "A 4% health and education cess is added to the total tax amount.",
-            "Concessional tax rates apply to Indian subsidiaries in specific sectors, such as oil exploration, air transportation, and shipping businesses.",
-             ],
-      },
+      // requiredDocumentsec: {
+      //     heading: "Taxation of Indian Subsidiary Companies",
+      //     subheading: "Indian subsidiary companies are subject to specific taxation policies:",
+      //     titles: [
+      //       "Taxes are levied on all income earned within or outside India, including dividends from foreign subsidiaries.",
+      //       "Tax rates for foreign subsidiaries in India include 50% for royalty received for technical services from the government or any Indian entity and 40% for other income.",
+      //       "A surcharge of 2% is applied if the company's income falls between Rs. 1 Crore and Rs. 10 Crores; for payments above Rs. 10 Crores, a 5% surcharge is levied.",
+      //       "A 4% health and education cess is added to the total tax amount.",
+      //       "Concessional tax rates apply to Indian subsidiaries in specific sectors, such as oil exploration, air transportation, and shipping businesses.",
+      //        ],
+      // },
       
 
         // contentofTrust: {
@@ -243,48 +243,48 @@ export const tradeLicenseContent = {
         //   ]
         // },
         
-        advantages: [
-          {
-            heading: "Advantages of Indian Subsidiary Company Registration",
-            subheading:
-              "There are several compelling advantages associated with the incorporation of a foreign subsidiary in India.",
-          },
-          {
-            title: "Entry into the Indian Market",
-            description:
-              "India's competitive environment offers a plethora of investment opportunities that attract foreign entrepreneurs to establish their subsidiary companies in the country.",
-          },
-          {
-            title: "Foreign Direct Investment (FDI) in India",
-            description:
-              "FDI involves investments by foreign companies in Indian private companies through share subscriptions or acquisitions. In 2020, the Indian government introduced a provision requiring prior approval for investments from countries sharing a border with India, making Indian subsidiary registration an attractive option for foreign investors.",
-          },
-          {
-            title: "Perpetual Succession",
-            description:
-              "The concept of perpetual succession ensures that a company's existence remains intact regardless of events like changes in management, transfers of membership, or insolvency. The company continues to operate seamlessly, providing stability and continuity.",
-          },
-          {
-            title: "Limited Liability",
-            description:
-              "Limited liability is a significant advantage that encourages individuals to opt for company formation over other business structures. This principle extends to Indian subsidiary registration companies, protecting the personal assets of shareholders and directors. The company bears responsibility for its debts to third parties, shielding the personal assets of its stakeholders.",
-          },
-          {
-            title: "Scope of Diversification",
-            description:
-              "Establishing an Indian subsidiary company registration provides a strategic avenue for foreign businesses to expand their operations. This contributes to the growth and development of the Indian economy and introduces a wide range of goods and services, fostering healthy competition.",
-          },
-          {
-            title: "Separate Legal Identity",
-            description:
-              "According to the Companies Act, a company is recognized as a distinct legal entity separate from its shareholders and directors. This legal status empowers the company to engage in agreements with other competent entities as an artificial legal person. It also grants the company the ability to initiate legal actions and respond to allegations before the judicial system in its own name, without direct involvement from its members or directors.",
-          },
-          {
-            title: "Property Ownership and Rental",
-            description:
-              "A subsidiary company, being a legal entity, possesses the authority and right to purchase or rent properties in India for its business activities. To prevent potential conflicts among company members, it is advisable to acquire such properties in the name of the company itself, aligning with the principle of perpetual succession.\n\n These are the major advantages of getting an Indian subsidiary registration and establishing a company.",
-          },
-        ],
+        // advantages: [
+        //   {
+        //     heading: "Advantages of Indian Subsidiary Company Registration",
+        //     subheading:
+        //       "There are several compelling advantages associated with the incorporation of a foreign subsidiary in India.",
+        //   },
+        //   {
+        //     title: "Entry into the Indian Market",
+        //     description:
+        //       "India's competitive environment offers a plethora of investment opportunities that attract foreign entrepreneurs to establish their subsidiary companies in the country.",
+        //   },
+        //   {
+        //     title: "Foreign Direct Investment (FDI) in India",
+        //     description:
+        //       "FDI involves investments by foreign companies in Indian private companies through share subscriptions or acquisitions. In 2020, the Indian government introduced a provision requiring prior approval for investments from countries sharing a border with India, making Indian subsidiary registration an attractive option for foreign investors.",
+        //   },
+        //   {
+        //     title: "Perpetual Succession",
+        //     description:
+        //       "The concept of perpetual succession ensures that a company's existence remains intact regardless of events like changes in management, transfers of membership, or insolvency. The company continues to operate seamlessly, providing stability and continuity.",
+        //   },
+        //   {
+        //     title: "Limited Liability",
+        //     description:
+        //       "Limited liability is a significant advantage that encourages individuals to opt for company formation over other business structures. This principle extends to Indian subsidiary registration companies, protecting the personal assets of shareholders and directors. The company bears responsibility for its debts to third parties, shielding the personal assets of its stakeholders.",
+        //   },
+        //   {
+        //     title: "Scope of Diversification",
+        //     description:
+        //       "Establishing an Indian subsidiary company registration provides a strategic avenue for foreign businesses to expand their operations. This contributes to the growth and development of the Indian economy and introduces a wide range of goods and services, fostering healthy competition.",
+        //   },
+        //   {
+        //     title: "Separate Legal Identity",
+        //     description:
+        //       "According to the Companies Act, a company is recognized as a distinct legal entity separate from its shareholders and directors. This legal status empowers the company to engage in agreements with other competent entities as an artificial legal person. It also grants the company the ability to initiate legal actions and respond to allegations before the judicial system in its own name, without direct involvement from its members or directors.",
+        //   },
+        //   {
+        //     title: "Property Ownership and Rental",
+        //     description:
+        //       "A subsidiary company, being a legal entity, possesses the authority and right to purchase or rent properties in India for its business activities. To prevent potential conflicts among company members, it is advisable to acquire such properties in the name of the company itself, aligning with the principle of perpetual succession.\n\n These are the major advantages of getting an Indian subsidiary registration and establishing a company.",
+        //   },
+        // ],
         
           
         
@@ -292,88 +292,136 @@ export const tradeLicenseContent = {
 
       eligibility: [
         {
-          heading: "Compliance Requirements for Indian Subsidiary Registration",
+          heading: "Advantages of Trade License",
           subheading:
-            "To establish a legal and valid Indian subsidiary company registration, compliance with specific regulations is mandatory:",
+            "The advantages of obtaining a Trade License are listed as follows:",
         },
         {
-          title: "Foreign Exchange Management Act (FEMA)",
+          title: "Legal Compliance",
           description:
-            "Foreign companies based in India must adhere to foreign exchange laws and regulations outlined in the Foreign Exchange Management Act, 1999.",
+            "Obtaining a trade license ensures that your business operates within the legal framework set by the municipality or local governing body.",
         },
         {
-          title: "Companies Act, 2013",
+          title: "Public Safety",
           description:
-            "All Indian subsidiary companies must comply with the Companies Act, 2013 provisions.",
+            "Trade licenses often require businesses to adhere to safety standards and regulations, contributing to the public's overall safety.",
         },
         {
-          title: "Reserve Bank of India (RBI) Compliances",
+          title: "Business Credibility",
           description:
-            "RBI imposes several foreign exchange management compliances on Indian subsidiary companies.",
+            "Having a trade license can enhance the credibility of your business, instilling trust and confidence among customers, suppliers, and partners.",
         },
         {
-          title: "Income Tax Act, 1961",
+          title: "Regulatory Compliance",
           description:
-            "Indian subsidiaries must file income tax returns every year. The corporate tax rate in India is currently 25%.",
+            "Trade licenses help businesses comply with various regulatory requirements, avoiding potential fines, penalties, or legal issues.",
         },
         {
-          title: "Annual Returns",
+          title: "Access to Government Support",
           description:
-            "Companies are required to file annual returns with the MCA and the Registrar of Companies.",
+            "Some government schemes, incentives, or benefits may require businesses to have a valid trade license to qualify.",
         },
         {
-          title: "SEBI (Listing Obligations and Disclosure Regulations)",
+          title: "Establishing Business Legitimacy",
           description:
-            "If the subsidiary lists its securities on a stock exchange, it must comply with SEBI regulations.",
+            "A trade license serves as proof of your business's legitimacy, which can be beneficial when dealing with clients, banks, or investors.",
         },
-      ],
-        
-        
-        
+        {
+          title: "Facilitates Expansion",
+          description:
+            "A trade license may be necessary when expanding your business operations or applying for permits or approvals for new projects or ventures.",
+        },
+      ],    
         
         
           disadvantages: [
             {
-              heading: "Requirements and Key Facts about Company Registration in India",
+              heading: "Businesses Requiring Trade License Registration",
               subheading:
-                "Here are the essential elements to consider for the incorporation of a foreign subsidiary in India:",
+                "The following types of businesses typically require a trade license to operate legally and comply with regulations:",
             },
             {
-              title: "Company Name",
+              title: "Shops and Establishments",
               description:
-                "Your new business requires a unique name that is distinct from existing businesses' names or trademarks.",
+                "Retail stores, restaurants, hotels, theatres, amusement parks, and similar establishments engaged in trading or commercial activities typically need a trade license from the local municipal corporation.",
             },
             {
-              title: "Shareholders",
+              title: "Food Establishments",
               description:
-                "The parent company can hold 100% of the shares, or any combination of two foreign nationals can be shareholders. It is not mandatory to have an Indian resident as a shareholder.",
+                "Restaurants, cafes, food stalls, food processing units, and catering services that prepare, sell, or distribute food and beverages often require a trade license along with an FSSAI license.",
             },
             {
-              title: "Share Capital",
+              title: "Manufacturing Units",
               description:
-                "India does not impose a minimum capital requirement for company registration.",
+                "Factories, workshops, and industrial plants involved in manufacturing and production are usually required to obtain a trade license to ensure safety and environmental regulations compliance.",
             },
             {
-              title: "Directors",
+              title: "Healthcare Facilities",
               description:
-                "A minimum of two directors is mandatory, with at least one director being an Indian resident. Nominee directorship services can be provided if required.",
+                "Hospitals, clinics, nursing homes, and diagnostic centres need a trade license to ensure they meet the necessary standards for providing healthcare services.",
             },
             {
-              title: "Registered Address",
+              title: "Entertainment and Leisure Activities",
               description:
-                "Every company in India must have a registered address that is officially recorded in government records. Virtual office address services are available to meet this requirement.",
+                "Cinema halls, multiplexes, video game parlours, gyms, spas, and health clubs involved in entertainment and leisure activities typically require a trade license for public safety and regulatory compliance.",
             },
             {
-              title: "Annual General Meeting (AGM)",
+              title: "Transport Services",
               description:
-                "According to the Companies Act, every Indian company must conduct at least one general meeting annually, in addition to two board meetings.",
+                "Auto rickshaws, taxis, cab aggregators, and goods carriers offering transportation services may need a trade license for legal operation.",
             },
             {
-              title: "Company Secretary",
+              title: "Construction and Real Estate",
               description:
-                "It is mandatory to file three secretarial returns each year, which are handled by a company secretary. IndiaFilings can assist with this requirement. A statutory auditor must also be appointed.",
+                "Real estate developers, construction companies, and contractors may require a trade license to conduct their activities within specific municipal limits.",
+            },
+            {
+              title: "Fireworks and Explosives",
+              description:
+                "Businesses engaged in the manufacturing, storage, sale, or use of fireworks and explosive materials are subject to strict regulations and usually need a trade license.",
+            },
+            {
+              title: "Liquor Establishments",
+              description:
+                "Liquor shops, bars, and pubs that sell and distribute alcoholic beverages require a trade license and permits from relevant authorities.",
+            },
+            {
+              title: "Street Vendors and Hawkers",
+              description:
+                "Individuals or groups engaged in street vending or hawking activities may need a trade license or specific vendor license from local authorities.",
             },
           ],
+
+          typesOfTradeLicenses: [
+            {
+              heading: "Types of Trade Licenses Issued by the Municipality",
+              subheading:
+                "The municipality issues various types of trade licenses based on the nature of the business. The main categories include:",
+            },
+            {
+              title: "Type A: Food Service Establishments",
+              description: "Required for all food service establishments, including restaurants, cafes, and catering services.",
+            },
+            {
+              title: "Type B: Manufacturing and Processing Units",
+              description:
+                "Issued to units involved in manufacturing and processing activities that utilize machinery and electricity, such as milling units.",
+            },
+            {
+              title: "Type C: High-Risk Activities",
+              description:
+                "Provided for businesses engaged in high-risk activities, including the production of fireworks and wood and timber structures.",
+            },
+          ],
+          
+          gumastaLicense: [
+            {
+              heading: "Gumasta License",
+              subheading:
+                "In Maharashtra, a trade license is commonly referred to as a Gumasta License. Across the rest of India, it may be known by different names depending on the region.",
+            },
+          ],
+          
             
             
 
@@ -411,77 +459,47 @@ export const tradeLicenseContent = {
           //   },
           
           privateRegistration: {
-              heading: "How to Register a Subsidiary Company in India?",
+              heading: "Procedure for Applying Trade License",
               intro:
-                "Incorporation of a foreign subsidiary in India involves several key steps and compliance requirements. Here's a step-by-step guide on how to register a subsidiary company in India:",
+                "Trade license applications can be submitted either online or offline. They must be filed with the city municipal corporation governing the area where the business is situated. The timeline for application submission differs depending on the State Municipal Corporation Act, with some states requiring the application before business commencement, while others allow it within 30 days of initiating operations.",
               sections: [
                 {
                   steps: [
                     {
-                      stepTitle: "Step 1: Determine the Type of Company",
+                      stepTitle: "Step 1: Fill Out the Application Form",
                       stepDescription:
-                        "Decide on the type of company you want to establish for the incorporation of a foreign subsidiary in India.",
+                        "Obtain the application form for a trade license from the local municipal authority's office or website.\n\nFill in the form accurately, providing all requested information regarding your business and personal details.",
                     },
                     {
-                      stepTitle: "Step 2: Obtain Digital Signature Certificate (DSC)",
+                      stepTitle: "Step 2: Submit the Application",
                       stepDescription:
-                        "Since the registration process is conducted online, you must obtain a Digital Signature Certificate (DSC) for the proposed directors of the company. The DSC is used to sign the necessary documents during the registration process electronically.",
+                        "Depending on the municipality's system, submit the completed application form along with all the required documents to the municipal authority, either in person or online.\n\nPay the application fee, which varies depending on the type of business, size, and location.",
                     },
                     {
-                      stepTitle: "Step 3: Apply for a Director Identification Number (DIN)",
+                      stepTitle: "Step 3: Municipal Inspectio",
                       stepDescription:
-                        "The directors of the subsidiary company must obtain a Director Identification Number (DIN) from the Ministry of Corporate Affairs (MCA). This can be done by submitting the DIN application online.",
+                        "Sometimes, a municipal inspector may visit your business location to verify the details provided in your application and ensure compliance with local health, safety, and environmental standards.",
                     },
                     {
-                      stepTitle: "Step 4: Name Approval",
+                      stepTitle: "Step 4: Obtain the License",
                       stepDescription:
-                        "Choose a unique name for your subsidiary company and apply for its approval through the MCA's online portal. Ensure that the chosen name adheres to the naming guidelines provided by the MCA.",
+                        "Once your application is approved, you will receive your trade license. The time frame for approval can vary but generally takes a few weeks.\n\nDepending on the municipal authority's process, you can collect the trade license in person or receive it by mail or online.",
                     },
                     {
-                      stepTitle: "Step 5: Draft Memorandum of Association (MoA) and Articles of Association (AoA)",
+                      stepTitle: "Step 5: Renewal",
                       stepDescription:
-                        "MoA and AoA are legal documents that outline the company's objectives, rules, and regulations. Prepare these documents following the Companies Act 2013.",
+                        "Remember that a trade license is typically valid for one year and must be renewed annually. Keep track of the renewal date and submit a renewal application and the required fee before the license expires to avoid penalties.",
                     },
-                    {
-                      stepTitle: "Step 6: File Incorporation Documents",
-                      stepDescription:
-                        "Once your chosen name is approved, you must file the incorporation documents, including the MoA, AoA, and other required forms, with the Registrar of Companies (ROC) through the MCA's online portal. The incorporation process is typically done using the SPICe+ form on the Ministry of Corporate Affairs portal.",
-                    },
-                    {
-                      stepTitle: "Step 7: Payment of Registration Fees",
-                      stepDescription:
-                        "Pay the necessary registration fees to the ROC based on the authorized capital of the subsidiary company.",
-                    },
-                    {
-                      stepTitle: "Step 8: Obtain a Certificate of Incorporation (COI)",
-                      stepDescription:
-                        "If all the submitted documents and information are in order, the ROC will issue a Certificate of Incorporation. This certificate officially confirms the Indian subsidiary registration for a company.",
-                    },
-                    {
-                      stepTitle: "Step 9: Apply for Permanent Account Number (PAN) and Tax Registration",
-                      stepDescription:
-                        "After obtaining the CoI, apply for a Permanent Account Number and a Tax Deduction and Collection Account Number from the Income Tax Department for the subsidiary company.",
-                    },
-                    {
-                      stepTitle: "Step 10: Open Bank Account",
-                      stepDescription:
-                        "Finally, open a bank account in the name of the foreign subsidiary company in India.\n\n Compliance with Other Regulations: In addition to the company registration process, ensure compliance with other relevant regulations.",
-                    },
-                    {
-                      stepTitle: "Step 11: Compliance with Other Regulations",
-                      stepDescription:
-                        "In addition to the company registration process, ensure compliance with other relevant regulations.",
-                    },
-                    {
-                      stepTitle: "Step 12: Obtain a GST Number",
-                      stepDescription:
-                        "Goods and Services Tax (GST) registration is required after completing the above steps, mainly if the company engages in various business activities. Every Indian company must apply for a GST number for taxation purposes.",
-                    },
-                    {
-                      stepTitle: "Step 13: Initiating Business Operations",
-                      stepDescription:
-                        "Once the incorporation of a foreign subsidiary in India is completed, the company can commence its business operations.\n\n These step-by-step guide provides you a thorough Indian subsidiary registration process.",
-                    },
+                    // {
+                    //   stepTitle: "Step 9: Apply for Permanent Account Number (PAN) and Tax Registration",
+                    //   stepDescription:
+                    //     "After obtaining the CoI, apply for a Permanent Account Number and a Tax Deduction and Collection Account Number from the Income Tax Department for the subsidiary company.",
+                    // },
+                    // {
+                    //   stepTitle: "Step 13: Initiating Business Operations",
+                    //   stepDescription:
+                    //     "Once the incorporation of a foreign subsidiary in India is completed, the company can commence its business operations.\n\n These step-by-step guide provides you a thorough Indian subsidiary registration process.",
+                    // },
                   ],
                 },
               ],
@@ -490,28 +508,28 @@ export const tradeLicenseContent = {
           
           
           
-          // documentChecklist: [
-          //     {
-          //       heading: "Document Checklist:",
-          //       subheading: "Ensure you have the following documents to register new company,",
-          //     },
-          //     {
-          //       title: "For Indian Nationals",
-          //       description:
-          //         "Self-attested PAN card copy, passport-sized photo, Aadhaar Card, proof of identity, and address proof.",
-          //     },
-          //     {
-          //       title: "For Foreign Nationals",
-          //       description:
-          //         "Notarized documents, passport-sized photo, passport, and address proof.",
-          //     },
-          //     {
-          //       title: "Registered Office Documents",
-          //       description:
-          //         "Proof of business address, copy of the rent agreement (if applicable), and owner's no objection certificate.",
-          //     },
-              
-          //   ],
+          documentChecklist: [
+            {
+              heading: "Eligibility to Apply for a Trade License",
+              subheading:
+                "The eligibility criteria to apply for a trade license are outlined below:",
+            },
+            {
+              title: "Meeting Legal Age Requirement",
+              description:
+                "Applicants must be over 18 years old to be eligible for a trade license.",
+            },
+            {
+              title: "No Criminal Records",
+              description:
+                "Applicants should not have criminal records to qualify for a trade license.",
+            },
+            {
+              title: "Legally Permissible Business",
+              description:
+                "To be eligible for a trade license, the proposed business must comply with all legal requirements and regulations.",
+            },
+          ],
       
             
           
@@ -582,43 +600,54 @@ export const tradeLicenseContent = {
     //     ],
     //   },
 
-    // effortlessLLP : [
-    //   {
-    //     heading: "Mandatory legal requirements for Section 8 Company", 
-    //     subheading: "Before applying for the incorporation process of a Section 8 company in India, specific legal requisites must be fulfilled. These requirements are as follows:",
-    //   },
-    //   {
-    //     title: "Number of Directors",
-    //     description: 
-    //       "A minimum of two directors is required if the Section 8 entity intends to operate as a private limited company. However, a minimum of three directors are required if the entity aims to operate as a public limited company.",
-    //   },
-    //   {
-    //     title: "Number of Members",
-    //     description: 
-    //       "If the Section 8 Company Act aims to function as a private limited company, the number of members is capped at 200 by the Ministry of Corporate Affairs (MCA). However, there is no such limit for Section 8 entities with a business structure like a public limited company.",
-    //   },
-    //   {
-    //     title: "Capital Requirement and Name",
-    //     description: 
-    //       "According to the Companies Act 2013, Section 8 entities are not required to maintain a minimum paid-up capital. Moreover, NGOs operating as Section 8 entities are not obligated to affix terms like private limited or limited in their name.",
-    //   },
-    //   {
-    //     title: "Company Objects",
-    //     description: 
-    //       "Only entities with non-profit objectives are eligible for Section 8 registration. The Memorandum of Association and Articles of Association must clearly state such goals for which the Company is established. Any profits the Section 8 entity generates must be utilized for charitable purposes or reinvested in the entity. The profit of Section 8 entities is not available to its members in any form. These legal requisites ensure that Section 8 companies operate with transparency and the intended purpose of promoting social welfare.",
-    //   },
-    // ],
+    effortlessLLP : [
+      {
+    heading: "Documents Required for Trade License",
+    subheading:
+      "The following documents are necessary to apply for a trade license:",
+  },
+  {
+    title: "Completed Form-353",
+    description:
+      "The application form provided by the municipality must be duly filled out and submitted.",
+  },
+  {
+    title: "Letter of Approval",
+    description:
+      "A letter of approval from the proprietor or a neighbouring commercial real estate owner may be required.",
+  },
+  {
+    title: "City Census Map",
+    description:
+      "The city census map indicating the location of the retail property is necessary.",
+  },
+  {
+    title: "Tax Statements",
+    description:
+      "Tax statements related to the property or business may need to be submitted.",
+  },
+  {
+    title: "Building Plan (if applicable)",
+    description:
+      "A building plan may be required if the company deals with explosives or toxic materials.",
+  },
+  {
+    title: "Additional Documentation",
+    description:
+      "The Municipal Ward Officer may request additional documentation during registration.",
+  },
+],
     
     
 
-      // secLastPara: {
-      //     title: "Securing Approval for Your Company Name from MCA In India",
-      //     description: "Obtaining company name approval from the Ministry of Corporate Affairs (MCA) is crucial in setting up your business. This approval process is designed to ensure that the name you select for your company is unique and adheres to the legal standards set by the MCA.\n\nUnder the Companies Act of 2013, every company in India must have a name that is not only distinct from that of existing companies but also in compliance with all legal norms. The MCA check company name and approval process is thorough, verifying that your desired name is not in use, too similar to another entity's name, or in infringement of any trademarks or regulations. This process solves the problem of how to get name approval for company.",
-      // },
+      secLastPara: {
+          title: "Penalties for Non-Compliance",
+          description: "Operating a business without a valid trade license or not adhering to the conditions of the license can lead to fines, penalties, and even the closure of the business.\n\nA trade license is crucial for operating a business legally and smoothly in India. It ensures compliance with local laws and builds trust among customers and other stakeholders.",
+      },
 
       lastparagraph: {
-          title: "How PoteBaki Can Assist with Indian Subsidiary Company Registration",
-          description: "Still unsure how to register a subsidiary company in India? IndiaFilings simplifies Indian subsidiary registration by offering comprehensive support at every crucial step. From selecting a unique name and obtaining essential Director Identification Numbers (DIN) and Digital Signature Certificates (DSC) to assisting with PAN and TAN applications and setting up a dedicated company bank account, we streamline the entire registration process.\n\n Our expert team ensures compliance with regulatory requirements, including the Foreign Exchange Management Act (FEMA), Companies Act, 2013, Reserve Bank of India (RBI) compliances, and the Income Tax Act, 1961.\n\n We facilitate filing annual returns, guide you through SEBI (Listing Obligations and Disclosure Regulations) compliance, and provide tax services to navigate India's taxation policies. With IndiaFilings as your partner, you can initiate and grow your Indian subsidiary business confidently and efficiently.",
+          title: "Obtain Your Trade License Easily with IndiaFilings",
+          description: "IndiaFilings offers comprehensive assistance in obtaining a trade license, simplifying the complex process for businesses. Our team of experts guides clients through every step, from application submission to obtaining the license. With extensive knowledge of the regulatory requirements and procedures, we ensure that all necessary documents are accurately prepared and filed with the relevant authorities.\n\nBy choosing IndiaFilings, businesses can save time and effort, ensure compliance with legal requirements, and expedite the process of obtaining a trade license.",
           // note : "Get started today and easily establish your public limited company in India.",
         },   
 }

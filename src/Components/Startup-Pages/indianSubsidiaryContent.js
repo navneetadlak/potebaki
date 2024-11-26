@@ -26,7 +26,7 @@
     "mainSection": {
       "title": "Indian Subsidiary Company Registration",
       "description": [
-        "Setting up a subsidiary in India can be a transformative step for expanding your business operations and accessing one of the world's largest and most dynamic markets. At IndiaFilings, we specialise in providing comprehensive and tailored services for the incorporation of a foreign subsidiary in India. Our team of experts is here to guide you through the complexities of Indian subsidiary registration, from understanding the legal requirements and navigating regulatory approvals to assisting with compliance and documentation.  Partner with us for the incorporation of a foreign subsidiary in India and unlock India's vast business potential to drive your company's growth and success."
+        "Setting up a subsidiary in India can be a transformative step for expanding your business operations and accessing one of the world's largest and most dynamic markets. At Potebaki, we specialise in providing comprehensive and tailored services for the incorporation of a foreign subsidiary in India. Our team of experts is here to guide you through the complexities of Indian subsidiary registration, from understanding the legal requirements and navigating regulatory approvals to assisting with compliance and documentation.  Partner with us for the incorporation of a foreign subsidiary in India and unlock India's vast business potential to drive your company's growth and success."
       ],
       "subTitle": "Subsidiary Company",
       "subDescription": "A subsidiary company is often referred to as a sister company, while the company that exercises control over it is known as the parent company or holding company. The parent company holds the authority to control the subsidiary company, either in part or entirely.\n\nThe registration process for a foreign subsidiary company in india is governed by the Companies Act of 2013. According to the Companies Act of 2013, a subsidiary company can be defined as a company in which a foreign corporate body or parent entity holds a minimum of 50% of the total share capital. In essence, the parent company exerts a significant influence and control over the subsidiary company.",
@@ -371,7 +371,7 @@
             {
               title: "Company Secretary",
               description:
-                "It is mandatory to file three secretarial returns each year, which are handled by a company secretary. IndiaFilings can assist with this requirement. A statutory auditor must also be appointed.",
+                "It is mandatory to file three secretarial returns each year, which are handled by a company secretary. PoteBaki can assist with this requirement. A statutory auditor must also be appointed.",
             },
           ],
             
@@ -618,7 +618,7 @@
 
       lastparagraph: {
           title: "How PoteBaki Can Assist with Indian Subsidiary Company Registration",
-          description: "Still unsure how to register a subsidiary company in India? IndiaFilings simplifies Indian subsidiary registration by offering comprehensive support at every crucial step. From selecting a unique name and obtaining essential Director Identification Numbers (DIN) and Digital Signature Certificates (DSC) to assisting with PAN and TAN applications and setting up a dedicated company bank account, we streamline the entire registration process.\n\n Our expert team ensures compliance with regulatory requirements, including the Foreign Exchange Management Act (FEMA), Companies Act, 2013, Reserve Bank of India (RBI) compliances, and the Income Tax Act, 1961.\n\n We facilitate filing annual returns, guide you through SEBI (Listing Obligations and Disclosure Regulations) compliance, and provide tax services to navigate India's taxation policies. With IndiaFilings as your partner, you can initiate and grow your Indian subsidiary business confidently and efficiently.",
+          description: "Still unsure how to register a subsidiary company in India? PoteBaki simplifies Indian subsidiary registration by offering comprehensive support at every crucial step. From selecting a unique name and obtaining essential Director Identification Numbers (DIN) and Digital Signature Certificates (DSC) to assisting with PAN and TAN applications and setting up a dedicated company bank account, we streamline the entire registration process.\n\n Our expert team ensures compliance with regulatory requirements, including the Foreign Exchange Management Act (FEMA), Companies Act, 2013, Reserve Bank of India (RBI) compliances, and the Income Tax Act, 1961.\n\n We facilitate filing annual returns, guide you through SEBI (Listing Obligations and Disclosure Regulations) compliance, and provide tax services to navigate India's taxation policies. With Potebaki as your partner, you can initiate and grow your Indian subsidiary business confidently and efficiently.",
           // note : "Get started today and easily establish your public limited company in India.",
         },   
 }

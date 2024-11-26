@@ -32,6 +32,8 @@ const Proprietorship = ({
     eligibility,
     advantages,
     disadvantages,
+    gumastaLicense,
+    typesOfTradeLicenses,
     requiredDocument,
     requiredDocumentsec,
     reasons,
@@ -146,6 +148,17 @@ const Proprietorship = ({
         </span>
       ))}
   </p>
+  <h2 className="text-xl font-semibold mb-4">{mainSection.subTitle4}</h2>
+  <p>
+    {mainSection.subDescription4
+      ?.split('\n')
+      .map((line, idx) => (
+        <span key={idx}>
+          {line}
+          <br />
+        </span>
+      ))}
+  </p>
 
   <SectionComponent data={subsidiariesInIndia} />
 
@@ -214,6 +227,33 @@ const Proprietorship = ({
           {AdvantageAndDisadvantages && <AdvantageAndDisadvantages advantagesData={disadvantages} />}
 
           {/* Limited Liability Partnership (LLP) Name Structure */}
+
+          {/*  */}
+          <div className="trade-license-info">
+      {/* Types of Trade Licenses */}
+      <section className="mb-2">
+        <h2 className="text-2xl font-semibold mb-2">{typesOfTradeLicenses[0]?.heading}</h2>
+        <p className="mb-2">{typesOfTradeLicenses[0]?.subheading}</p>
+        <ul>
+          {typesOfTradeLicenses.slice(1).map((type, index) => (
+            <li key={index}>
+              <h3 className="font-medium">{type.title}</h3>
+              <p className="mb-2">{type.description}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Gumasta License */}
+      <section className="mb-2">
+        {gumastaLicense.map((license, index) => (
+          <div key={index}>
+            <h2 className="text-2xl font-semibold">{license.heading}</h2>
+            <p className="mb-2">{license.subheading}</p>
+          </div>
+        ))}
+      </section>
+    </div>
 
           {/* lastparagraph section */}
  {paragraphLLP?.title && paragraphLLP?.description && (
