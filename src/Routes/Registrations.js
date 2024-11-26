@@ -3,6 +3,7 @@ import TradeLicense from "../Components/Registrations-Pages/Trade-License/TradeL
 import StartupIndia from "../Components/Registrations-Pages/Startup-India/StartupIndia";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import FssaiRegistration from "../Components/Registrations-Pages/FSSAI-Registration/FssaiRegistration";
 
 const Registrations = () => {
   return (
@@ -10,6 +11,10 @@ const Registrations = () => {
       <Routes>
         <Route path="/startup-india" element={<StartupIndia />} />
         <Route path="/trade-license" element={<TradeLicense />} />
+        <Route path="/fssai-registration" element={<FssaiRegistration />} />
+        <Route path="/fssai-license" element={<FssaiRegistration />} />
+        
+
       </Routes>
     </div>
   );
